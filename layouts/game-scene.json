@@ -18,24 +18,65 @@
     "gridColor": 10401023,
     "gridAlpha": 0.4,
     "snap": false,
-    "zoomFactor": 0.39251611754882326,
+    "zoomFactor": 0.33253870912508016,
     "windowMask": false
   },
   "objectsGroups": [],
-  "variables": [],
+  "variables": [
+    {
+      "name": "FishNo",
+      "type": "number",
+      "value": 0
+    }
+  ],
   "instances": [
     {
       "angle": 0,
-      "customSize": false,
-      "height": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 80,
       "keepRatio": true,
       "layer": "",
-      "name": "FishBlue",
-      "persistentUuid": "26d81648-6a0c-4c6e-8355-5dc0d7b447b1",
-      "width": 0,
-      "x": 626,
-      "y": 322,
-      "zOrder": 1,
+      "name": "SpawnPoint1",
+      "persistentUuid": "504ebf9b-8d4e-4b5e-82e7-f68a643eb895",
+      "width": 80,
+      "x": -280,
+      "y": 500,
+      "zOrder": 8,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 80,
+      "keepRatio": true,
+      "layer": "",
+      "name": "SpawnPoint2",
+      "persistentUuid": "97f58f74-19a5-43c0-88a0-db545495dc35",
+      "width": 80,
+      "x": 1560,
+      "y": 500,
+      "zOrder": 9,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 48,
+      "height": 20,
+      "keepRatio": true,
+      "layer": "UI",
+      "name": "FillBar",
+      "persistentUuid": "1176468e-79a9-44cf-9cb2-f780f26be4c9",
+      "width": 317,
+      "x": 24,
+      "y": 33,
+      "zOrder": 10,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -44,15 +85,15 @@
       "angle": 0,
       "customSize": true,
       "depth": 1,
-      "height": 718,
+      "height": 902,
       "keepRatio": true,
       "layer": "",
       "name": "WaterFrizzyBrightSurface",
-      "persistentUuid": "4ca33695-fefc-46e7-b4e2-4763849931cf",
-      "width": 1283,
-      "x": -2,
-      "y": 1,
-      "zOrder": 0,
+      "persistentUuid": "72f42cdc-a87e-486b-9532-9a5d22389bba",
+      "width": 1718,
+      "x": -214,
+      "y": -86,
+      "zOrder": -1,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -63,97 +104,12 @@
       "height": 0,
       "keepRatio": true,
       "layer": "",
-      "name": "EnemyFish_1",
-      "persistentUuid": "82a7cf13-cf39-424b-b6eb-f2e0ef74b0bb",
+      "name": "Bubble_Spawner",
+      "persistentUuid": "45599b79-3670-4195-87cc-4da18735bd81",
       "width": 0,
-      "x": 1307,
-      "y": 596,
-      "zOrder": 2,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "flippedX": true,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "",
-      "name": "EnemyFish_1",
-      "persistentUuid": "19c2b7c6-f107-4c65-859a-e73590087d9b",
-      "width": 0,
-      "x": -141,
-      "y": 532,
-      "zOrder": 3,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "flippedX": true,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "",
-      "name": "EnemyFish_1",
-      "persistentUuid": "721fab62-d8a2-4038-b4d0-0180105866c0",
-      "width": 0,
-      "x": -132,
-      "y": 136,
-      "zOrder": 4,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "",
-      "name": "EnemyFish_1",
-      "persistentUuid": "96cd9774-63dd-45f6-b0a1-59a6a8fbe063",
-      "width": 0,
-      "x": 1314,
-      "y": 135,
-      "zOrder": 5,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 0,
-      "height": 128,
-      "keepRatio": true,
-      "layer": "",
-      "name": "EnemyFish_2",
-      "persistentUuid": "4a2c6d3d-43bd-49ee-82cf-e20a095a861b",
-      "width": 128,
-      "x": -167,
-      "y": 301,
-      "zOrder": 7,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 0,
-      "flippedX": true,
-      "height": 128,
-      "keepRatio": true,
-      "layer": "",
-      "name": "EnemyFish_2",
-      "persistentUuid": "b2b81bda-34a2-4d52-ac7c-8a517803c78e",
-      "width": 128,
-      "x": 1297,
-      "y": 317,
-      "zOrder": 7,
+      "x": 137,
+      "y": 613,
+      "zOrder": 12,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -180,7 +136,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "water frizzy bright surface.png",
+                  "image": "assets\\background\\ocean1.jpg",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -200,16 +156,16 @@
                         "y": 0
                       },
                       {
-                        "x": 288,
+                        "x": 1200,
                         "y": 0
                       },
                       {
-                        "x": 288,
-                        "y": 288
+                        "x": 1200,
+                        "y": 630
                       },
                       {
                         "x": 0,
-                        "y": 288
+                        "y": 630
                       }
                     ]
                   ]
@@ -223,7 +179,7 @@
     {
       "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "f74643f249aef27b37b540d2ec50f18f65c07253a824dcdf0bde8d6079905609",
-      "name": "SquareJoystickOuter",
+      "name": "SpawnPoint1",
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
@@ -279,6 +235,257 @@
           ]
         }
       ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "f74643f249aef27b37b540d2ec50f18f65c07253a824dcdf0bde8d6079905609",
+      "name": "SpawnPoint2",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.025,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Square joystick outer.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 80,
+                    "y": 80
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 160,
+                        "y": 0
+                      },
+                      {
+                        "x": 160,
+                        "y": 160
+                      },
+                      {
+                        "x": 0,
+                        "y": 160
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "f74643f249aef27b37b540d2ec50f18f65c07253a824dcdf0bde8d6079905609",
+      "name": "Bubble_Spawner",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [
+        {
+          "name": "Spawned",
+          "type": "boolean",
+          "value": false
+        }
+      ],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.025,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Square joystick outer.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 80,
+                    "y": 80
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 160,
+                        "y": 0
+                      },
+                      {
+                        "x": 160,
+                        "y": 160
+                      },
+                      {
+                        "x": 0,
+                        "y": 160
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "f74643f249aef27b37b540d2ec50f18f65c07253a824dcdf0bde8d6079905609",
+      "name": "SpawnPoint4",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.025,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Square joystick outer.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 80,
+                    "y": 80
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 160,
+                        "y": 0
+                      },
+                      {
+                        "x": 160,
+                        "y": 160
+                      },
+                      {
+                        "x": 0,
+                        "y": 160
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "bubble",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\bubble.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 57,
+                    "y": 57
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 114,
+                        "y": 0
+                      },
+                      {
+                        "x": 114,
+                        "y": 114
+                      },
+                      {
+                        "x": 0,
+                        "y": 114
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -288,21 +495,138 @@
         "objectName": "WaterFrizzyBrightSurface"
       },
       {
-        "objectName": "SquareJoystickOuter"
+        "objectName": "SpawnPoint1"
+      },
+      {
+        "objectName": "Bubble_Spawner"
+      },
+      {
+        "objectName": "SpawnPoint2"
+      },
+      {
+        "objectName": "SpawnPoint4"
+      },
+      {
+        "objectName": "bubble"
       }
     ]
   },
   "events": [
     {
       "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "DepartScene"
+          },
+          "parameters": [
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "PlayMusicCanal"
+          },
+          "parameters": [
+            "",
+            "assets\\bgm\\PEACEFUL UNDERWATER Sounds for DEEP SLEEP 🌊  Deep OCEAN ASMRAmbience.mp3",
+            "1",
+            "yes",
+            "25",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "Create"
+          },
+          "parameters": [
+            "",
+            "Player_Fish",
+            "600",
+            "300",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "ScalableCapability::ScalableBehavior::SetValue"
+          },
+          "parameters": [
+            "Player_Fish",
+            "Scale",
+            "=",
+            "0.3"
+          ]
+        },
+        {
+          "type": {
+            "value": "ChangePlan"
+          },
+          "parameters": [
+            "Player_Fish",
+            "=",
+            "2"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
       "conditions": [],
       "actions": [
+        {
+          "type": {
+            "value": "SetCameraCenterX"
+          },
+          "parameters": [
+            "",
+            "=",
+            "lerp(CameraX(), Player_Fish.X(), 0.05)",
+            "",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "SetCameraCenterY"
+          },
+          "parameters": [
+            "",
+            "=",
+            "lerp(CameraY(), Player_Fish.Y(), 0.05)",
+            "",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "ClampCamera"
+          },
+          "parameters": [
+            "",
+            "-210",
+            "-86",
+            "1500",
+            "815",
+            "",
+            "0"
+          ]
+        },
         {
           "type": {
             "value": "PathfindingBehavior::SetDestination"
           },
           "parameters": [
-            "FishBlue",
+            "Player_Fish",
             "Pathfinding",
             "",
             "CursorX()-(Player.Width()/2)",
@@ -316,24 +640,725 @@
       "conditions": [
         {
           "type": {
-            "value": "PosX"
+            "value": "MouseButtonFromTextPressed"
           },
           "parameters": [
-            "FishBlue",
-            ">",
-            "CursorX()"
+            "",
+            "\"Left\""
+          ]
+        }
+      ],
+      "actions": [],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ResetObjectTimer"
+              },
+              "parameters": [
+                "Player_Fish",
+                "\"Boost\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CompareObjectTimer"
+              },
+              "parameters": [
+                "Player_Fish",
+                "\"Boost\"",
+                "<=",
+                "0.1"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "PathfindingBehavior::Speed"
+              },
+              "parameters": [
+                "Player_Fish",
+                "Pathfinding",
+                "+",
+                "1000"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "inverted": true,
+            "value": "MouseButtonFromTextPressed"
+          },
+          "parameters": [
+            "",
+            "\"Left\""
+          ]
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "ResetObjectTimer"
+          },
+          "parameters": [
+            "Player_Fish",
+            "\"Boost\""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "AnimatableCapability::AnimatableBehavior::HasAnimationEnded"
+          },
+          "parameters": [
+            "Player_Fish",
+            "Animation"
           ]
         }
       ],
       "actions": [
         {
           "type": {
-            "value": "FlippableCapability::FlippableBehavior::FlipX"
+            "value": "AnimatableCapability::AnimatableBehavior::SetName"
           },
           "parameters": [
-            "FishBlue",
-            "Flippable",
-            "no"
+            "Player_Fish",
+            "Animation",
+            "=",
+            "\"idle\""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::Value"
+          },
+          "parameters": [
+            "FillBar",
+            ">=",
+            "100",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Tween::TweenBehavior::AddObjectScaleTween3"
+          },
+          "parameters": [
+            "Player_Fish",
+            "Tween",
+            "\"Stage2\"",
+            "0.5",
+            "\"linear\"",
+            "1",
+            "",
+            "yes"
+          ]
+        },
+        {
+          "type": {
+            "value": "PlaySound"
+          },
+          "parameters": [
+            "",
+            "assets\\sfx\\bigger sound.MP3",
+            "",
+            "100",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "Wait"
+          },
+          "parameters": [
+            "1"
+          ]
+        },
+        {
+          "type": {
+            "value": "SetBooleanObjectVariable"
+          },
+          "parameters": [
+            "Player_Fish",
+            "Stage2",
+            "True",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::Value"
+          },
+          "parameters": [
+            "FillBar",
+            ">=",
+            "500",
+            ""
+          ]
+        }
+      ],
+      "actions": []
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "BooleanVariable"
+          },
+          "parameters": [
+            "PlayerGotEaten",
+            "True",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::SetValue"
+          },
+          "parameters": [
+            "FillBar",
+            "=",
+            "0",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "Wait"
+          },
+          "parameters": [
+            "2"
+          ]
+        },
+        {
+          "type": {
+            "value": "Create"
+          },
+          "parameters": [
+            "",
+            "Player_Fish",
+            "600",
+            "300",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "Flash::Flash::Flash"
+          },
+          "parameters": [
+            "Player_Fish",
+            "Flash",
+            "2",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "SetBooleanVariable"
+          },
+          "parameters": [
+            "PlayerGotEaten",
+            "False",
+            ""
+          ]
+        }
+      ],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::Value"
+              },
+              "parameters": [
+                "FillBar",
+                "<",
+                "100",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ScalableCapability::ScalableBehavior::SetValue"
+              },
+              "parameters": [
+                "Player_Fish",
+                "Scale",
+                "=",
+                "0.3"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::Value"
+              },
+              "parameters": [
+                "FillBar",
+                ">=",
+                "100",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ScalableCapability::ScalableBehavior::SetValue"
+              },
+              "parameters": [
+                "Player_Fish",
+                "Scale",
+                "=",
+                "0.6"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "BooleanVariable"
+          },
+          "parameters": [
+            "Spawned",
+            "False",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "SetNumberVariable"
+          },
+          "parameters": [
+            "SpawnChoice",
+            "=",
+            "RandomInRange(1,2)"
+          ]
+        },
+        {
+          "type": {
+            "value": "SetNumberVariable"
+          },
+          "parameters": [
+            "FishNo",
+            "=",
+            "RandomInRange(1,2)"
+          ]
+        },
+        {
+          "type": {
+            "value": "MettreY"
+          },
+          "parameters": [
+            "SpawnPoint1",
+            "=",
+            "RandomInRange(100, 620)"
+          ]
+        },
+        {
+          "type": {
+            "value": "MettreY"
+          },
+          "parameters": [
+            "SpawnPoint2",
+            "=",
+            "RandomInRange(100, 620)"
+          ]
+        },
+        {
+          "type": {
+            "value": "Wait"
+          },
+          "parameters": [
+            "0.5"
+          ]
+        },
+        {
+          "type": {
+            "value": "SetBooleanVariable"
+          },
+          "parameters": [
+            "Spawned",
+            "True",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "NumberVariable"
+          },
+          "parameters": [
+            "SpawnChoice",
+            "=",
+            "1"
+          ]
+        },
+        {
+          "type": {
+            "value": "BooleanVariable"
+          },
+          "parameters": [
+            "Spawned",
+            "True",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": []
+        }
+      ],
+      "actions": [],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "FishNo",
+                "=",
+                "1"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "EnemyFish_1",
+                "SpawnPoint1.X()",
+                "SpawnPoint1.Y()",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "FlippableCapability::FlippableBehavior::FlipX"
+              },
+              "parameters": [
+                "EnemyFish_1",
+                "Flippable",
+                "yes"
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "0.5"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "Spawned",
+                "False",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "FishNo",
+                "=",
+                "2"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "EnemyFish_2",
+                "SpawnPoint1.X()",
+                "SpawnPoint1.Y()",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ScalableCapability::ScalableBehavior::SetValue"
+              },
+              "parameters": [
+                "EnemyFish_2",
+                "Scale",
+                "=",
+                "3"
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "0.5"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "Spawned",
+                "False",
+                ""
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "NumberVariable"
+          },
+          "parameters": [
+            "SpawnChoice",
+            "=",
+            "2"
+          ]
+        },
+        {
+          "type": {
+            "value": "BooleanVariable"
+          },
+          "parameters": [
+            "Spawned",
+            "True",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": []
+        }
+      ],
+      "actions": [],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "FishNo",
+                "=",
+                "1"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "EnemyFish_1",
+                "SpawnPoint2.X()",
+                "SpawnPoint2.Y()",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "0.5"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "Spawned",
+                "False",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "FishNo",
+                "=",
+                "2"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "EnemyFish_2",
+                "SpawnPoint2.X()",
+                "SpawnPoint2.Y()",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ScalableCapability::ScalableBehavior::SetValue"
+              },
+              "parameters": [
+                "EnemyFish_2",
+                "Scale",
+                "=",
+                "3"
+              ]
+            },
+            {
+              "type": {
+                "value": "FlippableCapability::FlippableBehavior::FlipX"
+              },
+              "parameters": [
+                "EnemyFish_2",
+                "Flippable",
+                "yes"
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "0.5"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "Spawned",
+                "False",
+                ""
+              ]
+            }
           ]
         }
       ]
@@ -346,7 +1371,34 @@
             "value": "PosX"
           },
           "parameters": [
-            "FishBlue",
+            "Player_Fish",
+            ">",
+            "CursorX()"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "FlippableCapability::FlippableBehavior::FlipX"
+          },
+          "parameters": [
+            "Player_Fish",
+            "Flippable",
+            "yes"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "PosX"
+          },
+          "parameters": [
+            "Player_Fish",
             "<",
             "CursorX()"
           ]
@@ -358,9 +1410,9 @@
             "value": "FlippableCapability::FlippableBehavior::FlipX"
           },
           "parameters": [
-            "FishBlue",
+            "Player_Fish",
             "Flippable",
-            "yes"
+            "no"
           ]
         }
       ]
@@ -370,7 +1422,6 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "FishEnemy1",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -384,7 +1435,7 @@
                 "value": "Distance"
               },
               "parameters": [
-                "FishBlue",
+                "Player_Fish",
                 "EnemyFish_1",
                 "150",
                 ""
@@ -404,6 +1455,17 @@
                     "EnemyFish_1",
                     "Flippable"
                   ]
+                },
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "Tween::IsPlaying"
+                  },
+                  "parameters": [
+                    "EnemyFish_1",
+                    "Tween",
+                    "\"Fish1MovingRight\""
+                  ]
                 }
               ],
               "actions": [
@@ -414,12 +1476,12 @@
                   "parameters": [
                     "EnemyFish_1",
                     "Tween",
-                    "\"MovingRight\"",
-                    "1300",
+                    "\"Fish1MovingRight\"",
+                    "1560",
                     "EnemyFish_1.Y()",
                     "\"linear\"",
                     "5",
-                    ""
+                    "yes"
                   ]
                 }
               ]
@@ -436,6 +1498,17 @@
                     "EnemyFish_1",
                     "Flippable"
                   ]
+                },
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "Tween::IsPlaying"
+                  },
+                  "parameters": [
+                    "EnemyFish_1",
+                    "Tween",
+                    "\"Fish1MovingLeft\""
+                  ]
                 }
               ],
               "actions": [
@@ -446,12 +1519,12 @@
                   "parameters": [
                     "EnemyFish_1",
                     "Tween",
-                    "\"MovingLeft\"",
-                    "-100",
+                    "\"Fish1MovingLeft\"",
+                    "-280",
                     "EnemyFish_1.Y()",
                     "\"linear\"",
                     "5",
-                    ""
+                    "yes"
                   ]
                 }
               ]
@@ -466,38 +1539,43 @@
                 "value": "Distance"
               },
               "parameters": [
-                "FishBlue",
+                "Player_Fish",
                 "EnemyFish_1",
                 "150",
                 ""
               ]
             }
           ],
-          "actions": [
+          "actions": [],
+          "events": [
             {
-              "type": {
-                "value": "Tween::StopTween"
-              },
-              "parameters": [
-                "EnemyFish_1",
-                "Tween",
-                "\"MovingRight\"",
-                ""
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Tween::StopTween"
+                  },
+                  "parameters": [
+                    "EnemyFish_1",
+                    "Tween",
+                    "\"Fish1MovingRight\"",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::StopTween"
+                  },
+                  "parameters": [
+                    "EnemyFish_1",
+                    "Tween",
+                    "\"Fish1MovingLeft\"",
+                    ""
+                  ]
+                }
               ]
             },
-            {
-              "type": {
-                "value": "Tween::StopTween"
-              },
-              "parameters": [
-                "EnemyFish_1",
-                "Tween",
-                "\"MovingLeft\"",
-                ""
-              ]
-            }
-          ],
-          "events": [
             {
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
@@ -508,7 +1586,7 @@
                   "parameters": [
                     "EnemyFish_1",
                     "<",
-                    "FishBlue.CenterX()"
+                    "Player_Fish.CenterX()"
                   ]
                 },
                 {
@@ -541,7 +1619,7 @@
                   "parameters": [
                     "EnemyFish_1",
                     ">",
-                    "FishBlue.CenterX()"
+                    "Player_Fish.CenterX()"
                   ]
                 },
                 {
@@ -574,7 +1652,7 @@
                   "parameters": [
                     "EnemyFish_1",
                     ">",
-                    "FishBlue.Y()"
+                    "Player_Fish.Y()"
                   ]
                 }
               ],
@@ -586,7 +1664,7 @@
                   "parameters": [
                     "EnemyFish_1",
                     "+",
-                    "1.5"
+                    "2"
                   ]
                 }
               ]
@@ -601,7 +1679,7 @@
                   "parameters": [
                     "EnemyFish_1",
                     "<",
-                    "FishBlue.Y()"
+                    "Player_Fish.Y()"
                   ]
                 }
               ],
@@ -613,7 +1691,7 @@
                   "parameters": [
                     "EnemyFish_1",
                     "-",
-                    "1.5"
+                    "2"
                   ]
                 }
               ]
@@ -639,7 +1717,7 @@
                   "parameters": [
                     "EnemyFish_1",
                     "+",
-                    "1.5"
+                    "3"
                   ]
                 }
               ]
@@ -666,7 +1744,7 @@
                   "parameters": [
                     "EnemyFish_1",
                     "-",
-                    "1.5"
+                    "3"
                   ]
                 }
               ]
@@ -681,15 +1759,157 @@
                 "value": "CollisionNP"
               },
               "parameters": [
-                "FishBlue",
+                "Player_Fish",
                 "EnemyFish_1",
                 "",
                 "",
                 ""
               ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
             }
           ],
           "actions": [
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectScaleTween3"
+              },
+              "parameters": [
+                "EnemyFish_1",
+                "Tween",
+                "\"Eaten\"",
+                "0.01",
+                "\"linear\"",
+                "0.2",
+                "no",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectPositionTween2"
+              },
+              "parameters": [
+                "EnemyFish_1",
+                "Tween",
+                "\"Eaten2\"",
+                "Player_Fish.X(\"Mouth\")",
+                "Player_Fish.Y(\"Mouth\")",
+                "\"linear\"",
+                "0.1",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "Player_Fish",
+                "Animation",
+                "=",
+                "\"eat\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "Tween::HasFinished"
+              },
+              "parameters": [
+                "EnemyFish_1",
+                "Tween",
+                "\"Eaten\""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "ScoreEarned_Text",
+                "Player_Fish.X()",
+                "Player_Fish.Y()",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "ScoreEarned_Text",
+                "Text",
+                "=",
+                "\"10\""
+              ]
+            },
+            {
+              "type": {
+                "value": "ScalableCapability::ScalableBehavior::SetValue"
+              },
+              "parameters": [
+                "ScoreEarned_Text",
+                "Scale",
+                "=",
+                "0.1"
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectScaleTween3"
+              },
+              "parameters": [
+                "ScoreEarned_Text",
+                "Tween",
+                "\"ScoreAppear\"",
+                "1",
+                "\"linear\"",
+                "0.25",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "assets\\sfx\\eat sound 1.MP3",
+                "",
+                "50",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::SetValue"
+              },
+              "parameters": [
+                "FillBar",
+                "+",
+                "10",
+                ""
+              ]
+            },
             {
               "type": {
                 "value": "Delete"
@@ -697,6 +1917,28 @@
               "parameters": [
                 "EnemyFish_1",
                 ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "0.25"
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+              },
+              "parameters": [
+                "ScoreEarned_Text",
+                "Tween",
+                "\"ScoreDisappear\"",
+                "0",
+                "\"linear\"",
+                "1",
+                "yes"
               ]
             }
           ]
@@ -722,7 +1964,7 @@
                 "value": "Distance"
               },
               "parameters": [
-                "FishBlue",
+                "Player_Fish",
                 "EnemyFish_2",
                 "150",
                 ""
@@ -743,6 +1985,17 @@
                     "EnemyFish_2",
                     "Flippable"
                   ]
+                },
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "Tween::IsPlaying"
+                  },
+                  "parameters": [
+                    "EnemyFish_2",
+                    "Tween",
+                    "\"Fish2MovingRight\""
+                  ]
                 }
               ],
               "actions": [
@@ -753,9 +2006,9 @@
                   "parameters": [
                     "EnemyFish_2",
                     "Tween",
-                    "\"MovingRight\"",
-                    "1300",
-                    "EnemyFish_1.Y()",
+                    "\"Fish2MovingRight\"",
+                    "1560",
+                    "EnemyFish_2.Y()",
                     "\"linear\"",
                     "5",
                     ""
@@ -774,6 +2027,17 @@
                     "EnemyFish_2",
                     "Flippable"
                   ]
+                },
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "Tween::IsPlaying"
+                  },
+                  "parameters": [
+                    "EnemyFish_2",
+                    "Tween",
+                    "\"Fish2MovingLeft\""
+                  ]
                 }
               ],
               "actions": [
@@ -784,9 +2048,9 @@
                   "parameters": [
                     "EnemyFish_2",
                     "Tween",
-                    "\"MovingLeft\"",
-                    "-100",
-                    "EnemyFish_1.Y()",
+                    "\"Fish2MovingLeft\"",
+                    "-280",
+                    "EnemyFish_2.Y()",
                     "\"linear\"",
                     "5",
                     ""
@@ -804,7 +2068,7 @@
                 "value": "Distance"
               },
               "parameters": [
-                "FishBlue",
+                "Player_Fish",
                 "EnemyFish_2",
                 "150",
                 ""
@@ -819,7 +2083,7 @@
               "parameters": [
                 "EnemyFish_2",
                 "Tween",
-                "\"MovingLeft\"",
+                "\"Fish2MovingLeft\"",
                 ""
               ]
             },
@@ -830,7 +2094,7 @@
               "parameters": [
                 "EnemyFish_2",
                 "Tween",
-                "\"MovingRight\"",
+                "\"Fish2MovingRight\"",
                 ""
               ]
             }
@@ -846,7 +2110,7 @@
                   "parameters": [
                     "EnemyFish_2",
                     "<",
-                    "FishBlue.CenterX()"
+                    "Player_Fish.X()"
                   ]
                 },
                 {
@@ -879,7 +2143,7 @@
                   "parameters": [
                     "EnemyFish_2",
                     ">",
-                    "FishBlue.CenterX()"
+                    "Player_Fish.X()"
                   ]
                 },
                 {
@@ -912,7 +2176,7 @@
                   "parameters": [
                     "EnemyFish_2",
                     ">",
-                    "FishBlue.Y()"
+                    "Player_Fish.Y()"
                   ]
                 }
               ],
@@ -939,7 +2203,7 @@
                   "parameters": [
                     "EnemyFish_2",
                     "<",
-                    "FishBlue.Y()"
+                    "Player_Fish.Y()"
                   ]
                 }
               ],
@@ -1010,12 +2274,401 @@
               ]
             }
           ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Player_Fish",
+                "EnemyFish_2",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "Flash::Flash::IsFlashing"
+                  },
+                  "parameters": [
+                    "Player_Fish",
+                    "Flash",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "Player_Fish",
+                    "Stage2",
+                    "False",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "Player_Fish",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "assets\\sfx\\vine boom sound.MP3",
+                    "",
+                    "100",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetBooleanVariable"
+                  },
+                  "parameters": [
+                    "PlayerGotEaten",
+                    "True",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "Player_Fish",
+                    "Stage2",
+                    "True",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Tween::TweenBehavior::AddObjectScaleTween3"
+                  },
+                  "parameters": [
+                    "EnemyFish_2",
+                    "Tween",
+                    "\"Eaten\"",
+                    "0.01",
+                    "\"linear\"",
+                    "0.2",
+                    "no",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::TweenBehavior::AddObjectPositionTween2"
+                  },
+                  "parameters": [
+                    "EnemyFish_2",
+                    "Tween",
+                    "\"Eaten2\"",
+                    "Player_Fish.X(\"Mouth\")",
+                    "Player_Fish.Y(\"Mouth\")",
+                    "\"linear\"",
+                    "0.1",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                  },
+                  "parameters": [
+                    "Player_Fish",
+                    "Animation",
+                    "=",
+                    "\"eat\""
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "Tween::HasFinished"
+              },
+              "parameters": [
+                "EnemyFish_2",
+                "Tween",
+                "\"Eaten\""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "ScoreEarned_Text",
+                "Player_Fish.X()",
+                "Player_Fish.Y()",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "ScoreEarned_Text",
+                "Text",
+                "=",
+                "\"30\""
+              ]
+            },
+            {
+              "type": {
+                "value": "ScalableCapability::ScalableBehavior::SetValue"
+              },
+              "parameters": [
+                "ScoreEarned_Text",
+                "Scale",
+                "=",
+                "0.1"
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectScaleTween3"
+              },
+              "parameters": [
+                "ScoreEarned_Text",
+                "Tween",
+                "\"ScoreAppear\"",
+                "1",
+                "\"linear\"",
+                "0.25",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "assets\\sfx\\eating sound 2.MP3",
+                "",
+                "80",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::SetValue"
+              },
+              "parameters": [
+                "FillBar",
+                "+",
+                "30",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "EnemyFish_2",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "0.25"
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+              },
+              "parameters": [
+                "ScoreEarned_Text",
+                "Tween",
+                "\"ScoreDisappear\"",
+                "0",
+                "\"linear\"",
+                "1",
+                "yes"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BooleanObjectVariable"
+              },
+              "parameters": [
+                "Bubble_Spawner",
+                "Spawned",
+                "False",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetBooleanObjectVariable"
+              },
+              "parameters": [
+                "Bubble_Spawner",
+                "Spawned",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "MettreX"
+              },
+              "parameters": [
+                "Bubble_Spawner",
+                "=",
+                "RandomInRange(-80, 1360)"
+              ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "bubble",
+                "Bubble_Spawner.X()",
+                "Bubble_Spawner.Y()",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectPositionTween2"
+              },
+              "parameters": [
+                "bubble",
+                "Tween",
+                "\"Floating\"",
+                "bubble.X()",
+                "-230",
+                "\"linear\"",
+                "10",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "3"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanObjectVariable"
+              },
+              "parameters": [
+                "Bubble_Spawner",
+                "Spawned",
+                "False",
+                ""
+              ]
+            }
+          ]
         }
       ],
       "parameters": []
     }
   ],
   "layers": [
+    {
+      "ambientLightColorB": 200,
+      "ambientLightColorG": 200,
+      "ambientLightColorR": 200,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 3,
+      "cameraType": "",
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "isLocked": false,
+      "name": "Background",
+      "renderingType": "",
+      "visibility": true,
+      "cameras": [],
+      "effects": [
+        {
+          "effectType": "Scene3D::HemisphereLight",
+          "name": "3D Light",
+          "doubleParameters": {
+            "elevation": 45,
+            "intensity": 1,
+            "rotation": 0
+          },
+          "stringParameters": {
+            "groundColor": "64;64;64",
+            "skyColor": "255;255;255",
+            "top": "Y-"
+          },
+          "booleanParameters": {}
+        }
+      ]
+    },
     {
       "ambientLightColorB": 200,
       "ambientLightColorG": 200,
@@ -1059,6 +2712,39 @@
           "booleanParameters": {}
         }
       ]
+    },
+    {
+      "ambientLightColorB": 200,
+      "ambientLightColorG": 200,
+      "ambientLightColorR": 200,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 3,
+      "cameraType": "",
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "isLocked": false,
+      "name": "UI",
+      "renderingType": "",
+      "visibility": true,
+      "cameras": [],
+      "effects": [
+        {
+          "effectType": "Scene3D::HemisphereLight",
+          "name": "3D Light",
+          "doubleParameters": {
+            "elevation": 45,
+            "intensity": 1,
+            "rotation": 0
+          },
+          "stringParameters": {
+            "groundColor": "64;64;64",
+            "skyColor": "255;255;255",
+            "top": "Y-"
+          },
+          "booleanParameters": {}
+        }
+      ]
     }
   ],
   "behaviorsSharedData": [
@@ -1067,12 +2753,12 @@
       "type": "AnimatableCapability::AnimatableBehavior"
     },
     {
-      "name": "BoidsMovement",
-      "type": "BoidsMovement::BoidsMovement"
-    },
-    {
       "name": "Effect",
       "type": "EffectCapability::EffectBehavior"
+    },
+    {
+      "name": "Flash",
+      "type": "Flash::Flash"
     },
     {
       "name": "Flippable",
@@ -1093,6 +2779,10 @@
     {
       "name": "Scale",
       "type": "ScalableCapability::ScalableBehavior"
+    },
+    {
+      "name": "Text",
+      "type": "TextContainerCapability::TextContainerBehavior"
     },
     {
       "name": "Tween",

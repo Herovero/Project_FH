@@ -242,20 +242,215 @@
           "identifier": "https://asset-resources.gdevelop.io/public-resources/32x32 Fantasy Icons Pack v2/Icons/Fishing Items/ee387da34307ed6df68d916512849c89eca7b931be06de04ec5521c460dab725_Tropical Fish_Shadow.png",
           "name": "Tropical Fish_Shadow.png"
         }
+      },
+      {
+        "file": "assets/sfx/fish eating sound.MP3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\sfx\\fish eating sound.MP3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Copper Bar Border.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Copper Bar Border.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Resource bars/pixel art/1310fa26ab130bebfe59cdfa310836bfed3ca8d190cfed17a7dd3bdfe0a2a87f_Copper Bar Border.png",
+          "name": "Copper Bar Border.png"
+        }
+      },
+      {
+        "file": "assets/Framed Pixel Red Fill Bar.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"assets/Framed Pixel Red Fill Bar.png\",\"extension\":\".png\",\"pskl\":{}}",
+        "name": "Framed Pixel Red Fill Bar.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Resource bars/pixel art/ed31faa46e5c04883605d72470e0f3bfe1c2e679dc6a4a632ab03e105866ff8b_Framed Pixel Red Fill Bar.png",
+          "name": "Framed Pixel Red Fill Bar.png"
+        }
+      },
+      {
+        "file": "assets/bgm/PEACEFUL UNDERWATER Sounds for DEEP SLEEP 🌊  Deep OCEAN ASMRAmbience.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\bgm\\PEACEFUL UNDERWATER Sounds for DEEP SLEEP 🌊  Deep OCEAN ASMRAmbience.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/sfx/vine boom sound.MP3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\sfx\\vine boom sound.MP3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/sfx/big sound.MP3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\sfx\\big sound.MP3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/fish/Piranta/prn6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\fish\\Piranta\\prn6.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/fish/Piranta/prn5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\fish\\Piranta\\prn5.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/fish/Piranta/prn4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\fish\\Piranta\\prn4.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/fish/Piranta/prn3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\fish\\Piranta\\prn3.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/fish/Piranta/prn2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\fish\\Piranta\\prn2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/fish/Piranta/prn1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\fish\\Piranta\\prn1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/background/ocean1.jpg",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\background\\ocean1.jpg",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/sfx/eat sound 1.MP3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\sfx\\eat sound 1.MP3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/sfx/eating sound 2.MP3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\sfx\\eating sound 2.MP3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/sfx/bigger sound.MP3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\sfx\\bigger sound.MP3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Kenney Blocks.ttf",
+        "kind": "font",
+        "metadata": "",
+        "name": "b6fd0cb2a1206afe3882f0187839aac780734a091c5e6c57ee25c84acdc1a499_Kenney Blocks.ttf",
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Kenney Font Pack/b6fd0cb2a1206afe3882f0187839aac780734a091c5e6c57ee25c84acdc1a499_Kenney Blocks.ttf",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "file": "assets/bubble.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\bubble.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/bubble2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\bubble2.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
   },
   "objects": [
     {
-      "adaptCollisionMaskAutomatically": true,
+      "adaptCollisionMaskAutomatically": false,
       "assetStoreId": "d3c7e3d0eed042c9ebcde2ef04b35e43001e65313f12a62e5549265b96585ffb",
-      "name": "FishBlue",
+      "name": "Player_Fish",
       "type": "Sprite",
       "updateIfNotVisible": false,
-      "variables": [],
+      "variables": [
+        {
+          "name": "Stage2",
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "name": "Stage3",
+          "type": "boolean",
+          "value": false
+        }
+      ],
       "effects": [],
       "behaviors": [
+        {
+          "name": "Flash",
+          "type": "Flash::Flash",
+          "HalfPeriodTime": 0.1,
+          "IsFlashing": false,
+          "FlashDuration": 0
+        },
         {
           "name": "Pathfinding",
           "type": "PathfindingBehavior::PathfindingBehavior",
@@ -271,11 +466,15 @@
           "maxSpeed": 500,
           "rotateObject": false,
           "smoothingMaxCellGap": 1
+        },
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
         }
       ],
       "animations": [
         {
-          "name": "swim",
+          "name": "idle",
           "useMultipleDirections": false,
           "directions": [
             {
@@ -284,12 +483,18 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "fish blue_swim_1.png",
-                  "points": [],
+                  "image": "assets\\fish\\Piranta\\prn6.png",
+                  "points": [
+                    {
+                      "name": "Mouth",
+                      "x": 270,
+                      "y": 200
+                    }
+                  ],
                   "originPoint": {
                     "name": "origine",
-                    "x": 0,
-                    "y": 0
+                    "x": 160,
+                    "y": 160
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -300,56 +505,20 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 0,
-                        "y": 7
+                        "x": 240.5,
+                        "y": 227
                       },
                       {
-                        "x": 64,
-                        "y": 7
+                        "x": 242,
+                        "y": 173
                       },
                       {
-                        "x": 64,
-                        "y": 59
+                        "x": 292.5,
+                        "y": 173.5
                       },
                       {
-                        "x": 0,
-                        "y": 59
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "fish blue_swim_2.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 0,
-                        "y": 7
-                      },
-                      {
-                        "x": 64,
-                        "y": 7
-                      },
-                      {
-                        "x": 64,
-                        "y": 59
-                      },
-                      {
-                        "x": 0,
-                        "y": 59
+                        "x": 290,
+                        "y": 227
                       }
                     ]
                   ]
@@ -359,21 +528,27 @@
           ]
         },
         {
-          "name": "rest",
+          "name": "eat",
           "useMultipleDirections": false,
           "directions": [
             {
-              "looping": true,
-              "timeBetweenFrames": 0.025,
+              "looping": false,
+              "timeBetweenFrames": 0.08,
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "fish blue_rest.png",
-                  "points": [],
+                  "image": "assets\\fish\\Piranta\\prn1.png",
+                  "points": [
+                    {
+                      "name": "Mouth",
+                      "x": 270,
+                      "y": 200
+                    }
+                  ],
                   "originPoint": {
                     "name": "origine",
-                    "x": 0,
-                    "y": 0
+                    "x": 160,
+                    "y": 160
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -384,20 +559,146 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 0,
-                        "y": 7
+                        "x": 240.5,
+                        "y": 227
                       },
                       {
-                        "x": 64,
-                        "y": 7
+                        "x": 242,
+                        "y": 173
                       },
                       {
-                        "x": 64,
-                        "y": 59
+                        "x": 292.5,
+                        "y": 173.5
                       },
                       {
-                        "x": 0,
-                        "y": 59
+                        "x": 290,
+                        "y": 227
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\fish\\Piranta\\prn2.png",
+                  "points": [
+                    {
+                      "name": "Mouth",
+                      "x": 270,
+                      "y": 200
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 160,
+                    "y": 160
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 240.5,
+                        "y": 227
+                      },
+                      {
+                        "x": 242,
+                        "y": 173
+                      },
+                      {
+                        "x": 292.5,
+                        "y": 173.5
+                      },
+                      {
+                        "x": 290,
+                        "y": 227
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\fish\\Piranta\\prn3.png",
+                  "points": [
+                    {
+                      "name": "Mouth",
+                      "x": 270,
+                      "y": 200
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 160,
+                    "y": 160
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 240.5,
+                        "y": 227
+                      },
+                      {
+                        "x": 242,
+                        "y": 173
+                      },
+                      {
+                        "x": 292.5,
+                        "y": 173.5
+                      },
+                      {
+                        "x": 290,
+                        "y": 227
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\fish\\Piranta\\prn5.png",
+                  "points": [
+                    {
+                      "name": "Mouth",
+                      "x": 270,
+                      "y": 200
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 160,
+                    "y": 160
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 240.5,
+                        "y": 227
+                      },
+                      {
+                        "x": 242,
+                        "y": 173
+                      },
+                      {
+                        "x": 292.5,
+                        "y": 173.5
+                      },
+                      {
+                        "x": 290,
+                        "y": 227
                       }
                     ]
                   ]
@@ -418,20 +719,6 @@
       "effects": [],
       "behaviors": [
         {
-          "name": "BoidsMovement",
-          "type": "BoidsMovement::BoidsMovement",
-          "MaxSpeed": 360,
-          "MaxAcceleration": 720,
-          "ShouldRotate": false,
-          "CohesionRadius": 64,
-          "AlignmentRadius": 48,
-          "SeparationRadius": 32,
-          "CohesionWeight": 1,
-          "AlignmentWeight": 1,
-          "SeparationWeight": 2,
-          "CollisionLayer": 0
-        },
-        {
           "name": "Tween",
           "type": "Tween::TweenBehavior"
         }
@@ -451,8 +738,8 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 0,
-                    "y": 0
+                    "x": 32,
+                    "y": 32
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -487,8 +774,8 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 0,
-                    "y": 0
+                    "x": 32,
+                    "y": 32
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -535,8 +822,8 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 0,
-                    "y": 0
+                    "x": 32,
+                    "y": 32
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -600,8 +887,8 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 0,
-                    "y": 0
+                    "x": 16,
+                    "y": 16
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -648,8 +935,8 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 0,
-                    "y": 0
+                    "x": 16,
+                    "y": 16
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -683,19 +970,160 @@
           ]
         }
       ]
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "ScoreEarned_Text",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ],
+      "string": "Text",
+      "font": "b6fd0cb2a1206afe3882f0187839aac780734a091c5e6c57ee25c84acdc1a499_Kenney Blocks.ttf",
+      "textAlignment": "left",
+      "characterSize": 40,
+      "color": {
+        "b": 255,
+        "g": 255,
+        "r": 255
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": true,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "0;0;0",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "Text",
+        "font": "b6fd0cb2a1206afe3882f0187839aac780734a091c5e6c57ee25c84acdc1a499_Kenney Blocks.ttf",
+        "textAlignment": "left",
+        "verticalTextAlignment": "top",
+        "characterSize": 40,
+        "color": "255;255;255"
+      }
+    },
+    {
+      "assetStoreId": "6a16d25e5a4b7e16b72187c4cab1164e2e8fba46d78b9af0132f10301b4224e9",
+      "name": "FillBar",
+      "type": "PanelSpriteContinuousBar::PanelSpriteContinuousBar",
+      "variant": "",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "MaxValue": 700,
+        "InitialValue": 0,
+        "BarLeftPadding": 9,
+        "BarRightPadding": 9,
+        "BarBottomPadding": 3,
+        "BarTopPadding": 3,
+        "EasingDuration": 0.25,
+        "PreviousHighValueDuration": 0,
+        "ShowLabel": false
+      },
+      "childrenContent": {
+        "Background": {
+          "bottomMargin": 6,
+          "height": 15,
+          "leftMargin": 11,
+          "rightMargin": 11,
+          "texture": "Copper Bar Border.png",
+          "tiled": false,
+          "topMargin": 6,
+          "width": 96
+        },
+        "Buffer": {
+          "bottomMargin": 0,
+          "height": 8,
+          "leftMargin": 0,
+          "rightMargin": 0,
+          "texture": "Framed Pixel Red Fill Bar.png",
+          "tiled": false,
+          "topMargin": 0,
+          "width": 32
+        },
+        "FillBar": {
+          "bottomMargin": 3,
+          "height": 8,
+          "leftMargin": 4,
+          "rightMargin": 4,
+          "texture": "Framed Pixel Red Fill Bar.png",
+          "tiled": false,
+          "topMargin": 3,
+          "width": 32
+        },
+        "Label": {
+          "bold": false,
+          "italic": false,
+          "smoothed": true,
+          "underlined": false,
+          "string": "8 / 16",
+          "font": "",
+          "textAlignment": "center",
+          "characterSize": 8,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "8 / 16",
+            "font": "",
+            "textAlignment": "center",
+            "verticalTextAlignment": "top",
+            "characterSize": 8,
+            "color": "255;255;255"
+          }
+        }
+      }
     }
   ],
   "objectsFolderStructure": {
     "folderName": "__ROOT",
     "children": [
       {
-        "objectName": "FishBlue"
+        "objectName": "Player_Fish"
       },
       {
         "objectName": "EnemyFish_1"
       },
       {
         "objectName": "EnemyFish_2"
+      },
+      {
+        "objectName": "ScoreEarned_Text"
+      },
+      {
+        "objectName": "FillBar"
       }
     ]
   },
@@ -712,7 +1140,23 @@
       ]
     }
   ],
-  "variables": [],
+  "variables": [
+    {
+      "name": "SpawnChoice",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "name": "Spawned",
+      "type": "boolean",
+      "value": false
+    },
+    {
+      "name": "PlayerGotEaten",
+      "type": "boolean",
+      "value": false
+    }
+  ],
   "layouts": [
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
@@ -736,6 +1180,22 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/eventsFunctionsExtensions/timedbackandforthmovement"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/flash"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/panelspritecontinuousbar"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/smoothcamera"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/stayonscreen"
     }
   ],
   "externalLayouts": []
