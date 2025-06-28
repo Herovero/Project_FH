@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.4,
     "snap": false,
-    "zoomFactor": 0.24672586957406523,
+    "zoomFactor": 0.272535989677296,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -424,6 +424,11 @@
           "name": "Spawned",
           "type": "boolean",
           "value": false
+        },
+        {
+          "name": "ItemNo",
+          "type": "number",
+          "value": 0
         }
       ],
       "effects": [],
@@ -1390,7 +1395,7 @@
           "name": "Sticker",
           "type": "Sticker::Sticker",
           "OnlyFollowPosition": false,
-          "IsDestroyedWithParent": false
+          "IsDestroyedWithParent": true
         }
       ],
       "animations": [
@@ -1434,6 +1439,272 @@
                       {
                         "x": 0,
                         "y": 100
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "stun_powerup",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Sticker",
+          "type": "Sticker::Sticker",
+          "OnlyFollowPosition": false,
+          "IsDestroyedWithParent": true
+        }
+      ],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\power-ups\\stun icon.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 25,
+                    "y": 25
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 5,
+                        "y": 1
+                      },
+                      {
+                        "x": 46,
+                        "y": 1
+                      },
+                      {
+                        "x": 46,
+                        "y": 47
+                      },
+                      {
+                        "x": 5,
+                        "y": 47
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "magnet_powerup",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Sticker",
+          "type": "Sticker::Sticker",
+          "OnlyFollowPosition": false,
+          "IsDestroyedWithParent": true
+        }
+      ],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\power-ups\\magnet icon.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 25,
+                    "y": 25
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 3,
+                        "y": 3
+                      },
+                      {
+                        "x": 47,
+                        "y": 3
+                      },
+                      {
+                        "x": 47,
+                        "y": 47
+                      },
+                      {
+                        "x": 3,
+                        "y": 47
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "magnet_icon",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Sticker",
+          "type": "Sticker::Sticker",
+          "OnlyFollowPosition": false,
+          "IsDestroyedWithParent": true
+        }
+      ],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\power-ups\\magnet icon.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 25,
+                    "y": 25
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 3,
+                        "y": 3
+                      },
+                      {
+                        "x": 47,
+                        "y": 3
+                      },
+                      {
+                        "x": 47,
+                        "y": 47
+                      },
+                      {
+                        "x": 3,
+                        "y": 47
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "4994e0c7eaf8fe6e02b713e5de50bf7fce9189dfe8442d68af4abf84b81db3cb",
+      "name": "FishBone",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ],
+      "animations": [
+        {
+          "name": "No Shadow",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.025,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Fish-Bone_No Shadow.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 16,
+                    "y": 16
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 3,
+                        "y": 4
+                      },
+                      {
+                        "x": 29,
+                        "y": 4
+                      },
+                      {
+                        "x": 29,
+                        "y": 26
+                      },
+                      {
+                        "x": 3,
+                        "y": 26
                       }
                     ]
                   ]
@@ -1492,6 +1763,18 @@
       },
       {
         "objectName": "enemy3_hitbox"
+      },
+      {
+        "objectName": "stun_powerup"
+      },
+      {
+        "objectName": "magnet_powerup"
+      },
+      {
+        "objectName": "magnet_icon"
+      },
+      {
+        "objectName": "FishBone"
       }
     ]
   },
@@ -1661,53 +1944,179 @@
       ]
     },
     {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "BooleanObjectVariable"
-          },
-          "parameters": [
-            "Player_Fish",
-            "Dizzy",
-            "False",
-            ""
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "PathfindingBehavior::SetDestination"
-          },
-          "parameters": [
-            "Player_Fish",
-            "Pathfinding",
-            "",
-            "CursorX()-(Player.Width()/2)",
-            "CursorY()-(Player.Height()/2)"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "MouseButtonFromTextPressed"
-          },
-          "parameters": [
-            "",
-            "\"Left\""
-          ]
-        }
-      ],
-      "actions": [],
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "name": "Player Movement",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
       "events": [
         {
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
+            {
+              "type": {
+                "value": "BooleanObjectVariable"
+              },
+              "parameters": [
+                "Player_Fish",
+                "Dizzy",
+                "False",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "PathfindingBehavior::SetDestination"
+              },
+              "parameters": [
+                "Player_Fish",
+                "Pathfinding",
+                "",
+                "CursorX()-(Player.Width()/2)",
+                "CursorY()-(Player.Height()/2)"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PosX"
+              },
+              "parameters": [
+                "Player_Fish",
+                ">",
+                "CursorX()"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "FlippableCapability::FlippableBehavior::FlipX"
+              },
+              "parameters": [
+                "Player_Fish",
+                "Flippable",
+                "yes"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PosX"
+              },
+              "parameters": [
+                "Player_Fish",
+                "<",
+                "CursorX()"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "FlippableCapability::FlippableBehavior::FlipX"
+              },
+              "parameters": [
+                "Player_Fish",
+                "Flippable",
+                "no"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "MouseButtonFromTextPressed"
+              },
+              "parameters": [
+                "",
+                "\"Left\""
+              ]
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ResetObjectTimer"
+                  },
+                  "parameters": [
+                    "Player_Fish",
+                    "\"Boost\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "CompareObjectTimer"
+                  },
+                  "parameters": [
+                    "Player_Fish",
+                    "\"Boost\"",
+                    "<=",
+                    "0.1"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PathfindingBehavior::Speed"
+                  },
+                  "parameters": [
+                    "Player_Fish",
+                    "Pathfinding",
+                    "+",
+                    "1500"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": true,
+                "value": "MouseButtonFromTextPressed"
+              },
+              "parameters": [
+                "",
+                "\"Left\""
+              ]
+            },
             {
               "type": {
                 "value": "BuiltinCommonInstructions::Once"
@@ -1732,294 +2141,66 @@
           "conditions": [
             {
               "type": {
-                "value": "CompareObjectTimer"
+                "value": "AnimatableCapability::AnimatableBehavior::HasAnimationEnded"
               },
               "parameters": [
                 "Player_Fish",
-                "\"Boost\"",
-                "<=",
-                "0.1"
+                "Animation"
               ]
             }
           ],
           "actions": [
             {
               "type": {
-                "value": "PathfindingBehavior::Speed"
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
               },
               "parameters": [
                 "Player_Fish",
-                "Pathfinding",
-                "+",
-                "1500"
+                "Animation",
+                "=",
+                "\"idle\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::HasAnimationEnded"
+              },
+              "parameters": [
+                "Player_FishClone",
+                "Animation"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "Player_FishClone",
+                "Animation",
+                "=",
+                "\"idle\""
               ]
             }
           ]
         }
-      ]
+      ],
+      "parameters": []
     },
     {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "inverted": true,
-            "value": "MouseButtonFromTextPressed"
-          },
-          "parameters": [
-            "",
-            "\"Left\""
-          ]
-        },
-        {
-          "type": {
-            "value": "BuiltinCommonInstructions::Once"
-          },
-          "parameters": []
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "ResetObjectTimer"
-          },
-          "parameters": [
-            "Player_Fish",
-            "\"Boost\""
-          ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "AnimatableCapability::AnimatableBehavior::HasAnimationEnded"
-          },
-          "parameters": [
-            "Player_Fish",
-            "Animation"
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "AnimatableCapability::AnimatableBehavior::SetName"
-          },
-          "parameters": [
-            "Player_Fish",
-            "Animation",
-            "=",
-            "\"idle\""
-          ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::Value"
-          },
-          "parameters": [
-            "FillBar",
-            ">=",
-            "100",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "BuiltinCommonInstructions::Once"
-          },
-          "parameters": []
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "Tween::TweenBehavior::AddObjectScaleTween3"
-          },
-          "parameters": [
-            "Player_Fish",
-            "Tween",
-            "\"Stage2\"",
-            "0.5",
-            "\"linear\"",
-            "1",
-            "",
-            "yes"
-          ]
-        },
-        {
-          "type": {
-            "value": "PlaySound"
-          },
-          "parameters": [
-            "",
-            "assets\\sfx\\bigger sound.MP3",
-            "",
-            "100",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "Wait"
-          },
-          "parameters": [
-            "1"
-          ]
-        },
-        {
-          "type": {
-            "value": "SetBooleanObjectVariable"
-          },
-          "parameters": [
-            "Player_Fish",
-            "Stage2",
-            "True",
-            ""
-          ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::Value"
-          },
-          "parameters": [
-            "FillBar",
-            ">=",
-            "300",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "BuiltinCommonInstructions::Once"
-          },
-          "parameters": []
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "Tween::TweenBehavior::AddObjectScaleTween3"
-          },
-          "parameters": [
-            "Player_Fish",
-            "Tween",
-            "\"Stage3\"",
-            "0.8",
-            "\"linear\"",
-            "1",
-            "",
-            "yes"
-          ]
-        },
-        {
-          "type": {
-            "value": "PlaySound"
-          },
-          "parameters": [
-            "",
-            "assets\\sfx\\bigger sound.MP3",
-            "",
-            "100",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "Wait"
-          },
-          "parameters": [
-            "1"
-          ]
-        },
-        {
-          "type": {
-            "value": "SetBooleanObjectVariable"
-          },
-          "parameters": [
-            "Player_Fish",
-            "Stage3",
-            "True",
-            ""
-          ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "BooleanVariable"
-          },
-          "parameters": [
-            "PlayerGotEaten",
-            "True",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "BuiltinCommonInstructions::Once"
-          },
-          "parameters": []
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "Wait"
-          },
-          "parameters": [
-            "2"
-          ]
-        },
-        {
-          "type": {
-            "value": "Create"
-          },
-          "parameters": [
-            "",
-            "Player_Fish",
-            "600",
-            "300",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "Flash::Flash::Flash"
-          },
-          "parameters": [
-            "Player_Fish",
-            "Flash",
-            "2",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "SetBooleanVariable"
-          },
-          "parameters": [
-            "PlayerGotEaten",
-            "False",
-            ""
-          ]
-        }
-      ],
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "name": "Player grows size",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
       "events": [
         {
           "type": "BuiltinCommonInstructions::Standard",
@@ -2030,73 +2211,52 @@
               },
               "parameters": [
                 "FillBar",
-                "<",
-                "100",
-                ""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::SetValue"
-              },
-              "parameters": [
-                "FillBar",
-                "=",
-                "0",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "ScalableCapability::ScalableBehavior::SetValue"
-              },
-              "parameters": [
-                "Player_Fish",
-                "Scale",
-                "=",
-                "0.3"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::Value"
-              },
-              "parameters": [
-                "FillBar",
                 ">=",
-                "100",
+                "200",
                 ""
               ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
             }
           ],
           "actions": [
             {
               "type": {
-                "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::SetValue"
+                "value": "Tween::TweenBehavior::AddObjectScaleTween3"
               },
               "parameters": [
-                "FillBar",
-                "=",
+                "Player_Fish",
+                "Tween",
+                "\"Stage2\"",
+                "0.5",
+                "\"linear\"",
+                "1",
+                "",
+                "yes"
+              ]
+            },
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "assets\\sfx\\bigger sound.MP3",
+                "",
                 "100",
                 ""
               ]
             },
             {
               "type": {
-                "value": "ScalableCapability::ScalableBehavior::SetValue"
+                "value": "Wait"
               },
               "parameters": [
-                "Player_Fish",
-                "Scale",
-                "=",
-                "0.6"
+                "1"
               ]
             },
             {
@@ -2111,146 +2271,299 @@
               ]
             }
           ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "BooleanVariable"
-          },
-          "parameters": [
-            "Spawned",
-            "False",
-            ""
-          ]
         },
         {
-          "type": {
-            "value": "KeyFromTextPressed"
-          },
-          "parameters": [
-            "",
-            "\"e\""
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::Value"
+              },
+              "parameters": [
+                "FillBar",
+                ">=",
+                "600",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectScaleTween3"
+              },
+              "parameters": [
+                "Player_Fish",
+                "Tween",
+                "\"Stage3\"",
+                "0.8",
+                "\"linear\"",
+                "1",
+                "",
+                "yes"
+              ]
+            },
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "assets\\sfx\\bigger sound.MP3",
+                "",
+                "100",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanObjectVariable"
+              },
+              "parameters": [
+                "Player_Fish",
+                "Stage3",
+                "True",
+                ""
+              ]
+            }
           ]
-        },
-        {
-          "type": {
-            "value": "BuiltinCommonInstructions::Once"
-          },
-          "parameters": []
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "SetNumberVariable"
-          },
-          "parameters": [
-            "SpawnChoice",
-            "=",
-            "RandomInRange(1,2)"
-          ]
-        },
-        {
-          "type": {
-            "value": "SetNumberVariable"
-          },
-          "parameters": [
-            "FishNo",
-            "=",
-            "RandomInRange(1,2)"
-          ]
-        },
-        {
-          "type": {
-            "value": "MettreY"
-          },
-          "parameters": [
-            "Enemy1_Spawn1",
-            "=",
-            "RandomInRange(100, 620)"
-          ]
-        },
-        {
-          "type": {
-            "value": "MettreY"
-          },
-          "parameters": [
-            "Enemy1_Spawn2",
-            "=",
-            "RandomInRange(100, 620)"
-          ]
-        },
-        {
-          "type": {
-            "value": "Wait"
-          },
-          "parameters": [
-            "0.5"
-          ]
-        },
-        {
-          "type": {
-            "value": "SetBooleanVariable"
-          },
-          "parameters": [
-            "Spawned",
-            "True",
-            ""
-          ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "NumberVariable"
-          },
-          "parameters": [
-            "SpawnChoice",
-            "=",
-            "1"
-          ]
-        },
-        {
-          "type": {
-            "value": "BooleanVariable"
-          },
-          "parameters": [
-            "Spawned",
-            "True",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "BuiltinCommonInstructions::Once"
-          },
-          "parameters": []
         }
       ],
-      "actions": [],
+      "parameters": []
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "name": "Player got eaten",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
       "events": [
         {
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
               "type": {
-                "value": "NumberVariable"
+                "value": "BooleanVariable"
               },
               "parameters": [
-                "FishNo",
-                "=",
-                "1"
+                "PlayerGotEaten",
+                "True",
+                ""
               ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
             }
           ],
           "actions": [
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "2"
+              ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "Player_Fish",
+                "600",
+                "300",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Flash::Flash::Flash"
+              },
+              "parameters": [
+                "Player_Fish",
+                "Flash",
+                "2",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "PlayerGotEaten",
+                "False",
+                ""
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::Value"
+                  },
+                  "parameters": [
+                    "FillBar",
+                    "<",
+                    "200",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::SetValue"
+                  },
+                  "parameters": [
+                    "FillBar",
+                    "=",
+                    "0",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ScalableCapability::ScalableBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "Player_Fish",
+                    "Scale",
+                    "=",
+                    "0.3"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::Value"
+                  },
+                  "parameters": [
+                    "FillBar",
+                    ">=",
+                    "200",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::SetValue"
+                  },
+                  "parameters": [
+                    "FillBar",
+                    "=",
+                    "200",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ScalableCapability::ScalableBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "Player_Fish",
+                    "Scale",
+                    "=",
+                    "0.6"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetBooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "Player_Fish",
+                    "Stage2",
+                    "True",
+                    ""
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "parameters": []
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "folded": true,
+      "name": "EnemySpawn",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BooleanObjectVariable"
+              },
+              "parameters": [
+                "Enemy1_Spawn1",
+                "Spawned",
+                "False",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "MettreY"
+              },
+              "parameters": [
+                "Enemy1_Spawn1",
+                "=",
+                "RandomInRange(0, 720)"
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "RandomFloatInRange(0.5, 1)"
+              ]
+            },
             {
               "type": {
                 "value": "Create"
@@ -2275,6 +2588,17 @@
             },
             {
               "type": {
+                "value": "SetBooleanObjectVariable"
+              },
+              "parameters": [
+                "Enemy1_Spawn1",
+                "Spawned",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
                 "value": "Wait"
               },
               "parameters": [
@@ -2283,9 +2607,10 @@
             },
             {
               "type": {
-                "value": "SetBooleanVariable"
+                "value": "SetBooleanObjectVariable"
               },
               "parameters": [
+                "Enemy1_Spawn1",
                 "Spawned",
                 "False",
                 ""
@@ -2298,16 +2623,125 @@
           "conditions": [
             {
               "type": {
-                "value": "NumberVariable"
+                "value": "BooleanObjectVariable"
               },
               "parameters": [
-                "FishNo",
-                "=",
-                "2"
+                "Enemy1_Spawn2",
+                "Spawned",
+                "False",
+                ""
               ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
             }
           ],
           "actions": [
+            {
+              "type": {
+                "value": "MettreY"
+              },
+              "parameters": [
+                "Enemy1_Spawn2",
+                "=",
+                "RandomInRange(0, 720)"
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "RandomFloatInRange(1, 2)"
+              ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "EnemyFish_1",
+                "Enemy1_Spawn2.X()",
+                "Enemy1_Spawn2.Y()",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanObjectVariable"
+              },
+              "parameters": [
+                "Enemy1_Spawn2",
+                "Spawned",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "0.5"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanObjectVariable"
+              },
+              "parameters": [
+                "Enemy1_Spawn2",
+                "Spawned",
+                "False",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BooleanObjectVariable"
+              },
+              "parameters": [
+                "Enemy2_Spawn1",
+                "Spawned",
+                "False",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "MettreY"
+              },
+              "parameters": [
+                "Enemy2_Spawn1",
+                "=",
+                "RandomInRange(0, 720)"
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "RandomFloatInRange(1, 3)"
+              ]
+            },
             {
               "type": {
                 "value": "Create"
@@ -2315,8 +2749,8 @@
               "parameters": [
                 "",
                 "EnemyFish_2",
-                "Enemy1_Spawn1.X()",
-                "Enemy1_Spawn1.Y()",
+                "Enemy2_Spawn1.X()",
+                "Enemy2_Spawn1.Y()",
                 ""
               ]
             },
@@ -2333,98 +2767,29 @@
             },
             {
               "type": {
-                "value": "Wait"
+                "value": "SetBooleanObjectVariable"
               },
               "parameters": [
-                "0.5"
+                "Enemy2_Spawn1",
+                "Spawned",
+                "True",
+                ""
               ]
             },
             {
               "type": {
-                "value": "SetBooleanVariable"
+                "value": "Wait"
               },
               "parameters": [
-                "Spawned",
-                "False",
-                ""
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "NumberVariable"
-          },
-          "parameters": [
-            "SpawnChoice",
-            "=",
-            "2"
-          ]
-        },
-        {
-          "type": {
-            "value": "BooleanVariable"
-          },
-          "parameters": [
-            "Spawned",
-            "True",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "BuiltinCommonInstructions::Once"
-          },
-          "parameters": []
-        }
-      ],
-      "actions": [],
-      "events": [
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "NumberVariable"
-              },
-              "parameters": [
-                "FishNo",
-                "=",
                 "1"
               ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "Create"
-              },
-              "parameters": [
-                "",
-                "EnemyFish_1",
-                "Enemy1_Spawn2.X()",
-                "Enemy1_Spawn2.Y()",
-                ""
-              ]
             },
             {
               "type": {
-                "value": "Wait"
+                "value": "SetBooleanObjectVariable"
               },
               "parameters": [
-                "0.5"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetBooleanVariable"
-              },
-              "parameters": [
+                "Enemy2_Spawn1",
                 "Spawned",
                 "False",
                 ""
@@ -2437,16 +2802,41 @@
           "conditions": [
             {
               "type": {
-                "value": "NumberVariable"
+                "value": "BooleanObjectVariable"
               },
               "parameters": [
-                "FishNo",
-                "=",
-                "2"
+                "Enemy2_Spawn1",
+                "Spawned",
+                "False",
+                ""
               ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
             }
           ],
           "actions": [
+            {
+              "type": {
+                "value": "MettreY"
+              },
+              "parameters": [
+                "Enemy2_Spawn2",
+                "=",
+                "RandomInRange(0, 720)"
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "RandomFloatInRange(1, 3)"
+              ]
+            },
             {
               "type": {
                 "value": "Create"
@@ -2454,8 +2844,8 @@
               "parameters": [
                 "",
                 "EnemyFish_2",
-                "Enemy1_Spawn2.X()",
-                "Enemy1_Spawn2.Y()",
+                "Enemy2_Spawn2.X()",
+                "Enemy2_Spawn2.Y()",
                 ""
               ]
             },
@@ -2482,17 +2872,319 @@
             },
             {
               "type": {
+                "value": "SetBooleanObjectVariable"
+              },
+              "parameters": [
+                "Enemy2_Spawn2",
+                "Spawned",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
                 "value": "Wait"
               },
               "parameters": [
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanObjectVariable"
+              },
+              "parameters": [
+                "Enemy2_Spawn2",
+                "Spawned",
+                "False",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BooleanObjectVariable"
+              },
+              "parameters": [
+                "Enemy3_Spawn1",
+                "Spawned",
+                "False",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "MettreY"
+              },
+              "parameters": [
+                "Enemy3_Spawn1",
+                "=",
+                "RandomInRange(0, 720)"
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "RandomFloatInRange(1, 3)"
+              ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "EnemyFish_3",
+                "Enemy3_Spawn1.X()",
+                "Enemy3_Spawn1.Y()",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ScalableCapability::ScalableBehavior::SetValue"
+              },
+              "parameters": [
+                "EnemyFish_3",
+                "Scale",
+                "=",
+                "1.5"
+              ]
+            },
+            {
+              "type": {
+                "value": "FlippableCapability::FlippableBehavior::FlipX"
+              },
+              "parameters": [
+                "EnemyFish_3",
+                "Flippable",
+                "yes"
+              ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "enemy3_hitbox",
+                "EnemyFish_3.X(\"eat\")",
+                "EnemyFish_3.Y(\"eat\")",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ScalableCapability::ScalableBehavior::SetValue"
+              },
+              "parameters": [
+                "enemy3_hitbox",
+                "Scale",
+                "=",
                 "0.5"
               ]
             },
             {
               "type": {
-                "value": "SetBooleanVariable"
+                "value": "OpacityCapability::OpacityBehavior::SetValue"
               },
               "parameters": [
+                "enemy3_hitbox",
+                "Opacity",
+                "=",
+                "100"
+              ]
+            },
+            {
+              "type": {
+                "value": "Sticker::Sticker::Stick"
+              },
+              "parameters": [
+                "enemy3_hitbox",
+                "Sticker",
+                "EnemyFish_3",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanObjectVariable"
+              },
+              "parameters": [
+                "Enemy3_Spawn1",
+                "Spawned",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "RandomFloatInRange(4, 7)"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanObjectVariable"
+              },
+              "parameters": [
+                "Enemy3_Spawn1",
+                "Spawned",
+                "False",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BooleanObjectVariable"
+              },
+              "parameters": [
+                "Enemy3_Spawn2",
+                "Spawned",
+                "False",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "MettreY"
+              },
+              "parameters": [
+                "Enemy3_Spawn2",
+                "=",
+                "RandomInRange(0, 720)"
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "RandomFloatInRange(1, 3)"
+              ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "EnemyFish_3",
+                "Enemy3_Spawn2.X()",
+                "Enemy3_Spawn2.Y()",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ScalableCapability::ScalableBehavior::SetValue"
+              },
+              "parameters": [
+                "EnemyFish_3",
+                "Scale",
+                "=",
+                "1.5"
+              ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "enemy3_hitbox",
+                "EnemyFish_3.X(\"eat\")",
+                "EnemyFish_3.Y(\"eat\")",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ScalableCapability::ScalableBehavior::SetValue"
+              },
+              "parameters": [
+                "enemy3_hitbox",
+                "Scale",
+                "=",
+                "0.5"
+              ]
+            },
+            {
+              "type": {
+                "value": "OpacityCapability::OpacityBehavior::SetValue"
+              },
+              "parameters": [
+                "enemy3_hitbox",
+                "Opacity",
+                "=",
+                "100"
+              ]
+            },
+            {
+              "type": {
+                "value": "Sticker::Sticker::Stick"
+              },
+              "parameters": [
+                "enemy3_hitbox",
+                "Sticker",
+                "EnemyFish_3",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanObjectVariable"
+              },
+              "parameters": [
+                "Enemy3_Spawn2",
+                "Spawned",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "RandomFloatInRange(4, 7)"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanObjectVariable"
+              },
+              "parameters": [
+                "Enemy3_Spawn2",
                 "Spawned",
                 "False",
                 ""
@@ -2500,729 +3192,8 @@
             }
           ]
         }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "BooleanObjectVariable"
-          },
-          "parameters": [
-            "Enemy1_Spawn1",
-            "Spawned",
-            "False",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "BuiltinCommonInstructions::Once"
-          },
-          "parameters": []
-        }
       ],
-      "actions": [
-        {
-          "type": {
-            "value": "MettreY"
-          },
-          "parameters": [
-            "Enemy1_Spawn1",
-            "=",
-            "RandomInRange(0, 720)"
-          ]
-        },
-        {
-          "type": {
-            "value": "Wait"
-          },
-          "parameters": [
-            "RandomFloatInRange(0.5, 1)"
-          ]
-        },
-        {
-          "type": {
-            "value": "Create"
-          },
-          "parameters": [
-            "",
-            "EnemyFish_1",
-            "Enemy1_Spawn1.X()",
-            "Enemy1_Spawn1.Y()",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "FlippableCapability::FlippableBehavior::FlipX"
-          },
-          "parameters": [
-            "EnemyFish_1",
-            "Flippable",
-            "yes"
-          ]
-        },
-        {
-          "type": {
-            "value": "SetBooleanObjectVariable"
-          },
-          "parameters": [
-            "Enemy1_Spawn1",
-            "Spawned",
-            "True",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "Wait"
-          },
-          "parameters": [
-            "0.5"
-          ]
-        },
-        {
-          "type": {
-            "value": "SetBooleanObjectVariable"
-          },
-          "parameters": [
-            "Enemy1_Spawn1",
-            "Spawned",
-            "False",
-            ""
-          ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "BooleanObjectVariable"
-          },
-          "parameters": [
-            "Enemy1_Spawn2",
-            "Spawned",
-            "False",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "BuiltinCommonInstructions::Once"
-          },
-          "parameters": []
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "MettreY"
-          },
-          "parameters": [
-            "Enemy1_Spawn2",
-            "=",
-            "RandomInRange(0, 720)"
-          ]
-        },
-        {
-          "type": {
-            "value": "Wait"
-          },
-          "parameters": [
-            "RandomFloatInRange(1, 2)"
-          ]
-        },
-        {
-          "type": {
-            "value": "Create"
-          },
-          "parameters": [
-            "",
-            "EnemyFish_1",
-            "Enemy1_Spawn2.X()",
-            "Enemy1_Spawn2.Y()",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "SetBooleanObjectVariable"
-          },
-          "parameters": [
-            "Enemy1_Spawn2",
-            "Spawned",
-            "True",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "Wait"
-          },
-          "parameters": [
-            "0.5"
-          ]
-        },
-        {
-          "type": {
-            "value": "SetBooleanObjectVariable"
-          },
-          "parameters": [
-            "Enemy1_Spawn2",
-            "Spawned",
-            "False",
-            ""
-          ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "BooleanObjectVariable"
-          },
-          "parameters": [
-            "Enemy2_Spawn1",
-            "Spawned",
-            "False",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "BuiltinCommonInstructions::Once"
-          },
-          "parameters": []
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "MettreY"
-          },
-          "parameters": [
-            "Enemy2_Spawn1",
-            "=",
-            "RandomInRange(0, 720)"
-          ]
-        },
-        {
-          "type": {
-            "value": "Wait"
-          },
-          "parameters": [
-            "RandomFloatInRange(1, 3)"
-          ]
-        },
-        {
-          "type": {
-            "value": "Create"
-          },
-          "parameters": [
-            "",
-            "EnemyFish_2",
-            "Enemy2_Spawn1.X()",
-            "Enemy2_Spawn1.Y()",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "ScalableCapability::ScalableBehavior::SetValue"
-          },
-          "parameters": [
-            "EnemyFish_2",
-            "Scale",
-            "=",
-            "3"
-          ]
-        },
-        {
-          "type": {
-            "value": "SetBooleanObjectVariable"
-          },
-          "parameters": [
-            "Enemy2_Spawn1",
-            "Spawned",
-            "True",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "Wait"
-          },
-          "parameters": [
-            "1"
-          ]
-        },
-        {
-          "type": {
-            "value": "SetBooleanObjectVariable"
-          },
-          "parameters": [
-            "Enemy2_Spawn1",
-            "Spawned",
-            "False",
-            ""
-          ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "BooleanObjectVariable"
-          },
-          "parameters": [
-            "Enemy2_Spawn1",
-            "Spawned",
-            "False",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "BuiltinCommonInstructions::Once"
-          },
-          "parameters": []
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "MettreY"
-          },
-          "parameters": [
-            "Enemy2_Spawn2",
-            "=",
-            "RandomInRange(0, 720)"
-          ]
-        },
-        {
-          "type": {
-            "value": "Wait"
-          },
-          "parameters": [
-            "RandomFloatInRange(1, 3)"
-          ]
-        },
-        {
-          "type": {
-            "value": "Create"
-          },
-          "parameters": [
-            "",
-            "EnemyFish_2",
-            "Enemy2_Spawn2.X()",
-            "Enemy2_Spawn2.Y()",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "ScalableCapability::ScalableBehavior::SetValue"
-          },
-          "parameters": [
-            "EnemyFish_2",
-            "Scale",
-            "=",
-            "3"
-          ]
-        },
-        {
-          "type": {
-            "value": "FlippableCapability::FlippableBehavior::FlipX"
-          },
-          "parameters": [
-            "EnemyFish_2",
-            "Flippable",
-            "yes"
-          ]
-        },
-        {
-          "type": {
-            "value": "SetBooleanObjectVariable"
-          },
-          "parameters": [
-            "Enemy2_Spawn2",
-            "Spawned",
-            "True",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "Wait"
-          },
-          "parameters": [
-            "1"
-          ]
-        },
-        {
-          "type": {
-            "value": "SetBooleanObjectVariable"
-          },
-          "parameters": [
-            "Enemy2_Spawn2",
-            "Spawned",
-            "False",
-            ""
-          ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "BooleanObjectVariable"
-          },
-          "parameters": [
-            "Enemy3_Spawn1",
-            "Spawned",
-            "False",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "BuiltinCommonInstructions::Once"
-          },
-          "parameters": []
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "MettreY"
-          },
-          "parameters": [
-            "Enemy3_Spawn1",
-            "=",
-            "RandomInRange(0, 720)"
-          ]
-        },
-        {
-          "type": {
-            "value": "Wait"
-          },
-          "parameters": [
-            "RandomFloatInRange(1, 3)"
-          ]
-        },
-        {
-          "type": {
-            "value": "Create"
-          },
-          "parameters": [
-            "",
-            "EnemyFish_3",
-            "Enemy3_Spawn1.X()",
-            "Enemy3_Spawn1.Y()",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "ScalableCapability::ScalableBehavior::SetValue"
-          },
-          "parameters": [
-            "EnemyFish_3",
-            "Scale",
-            "=",
-            "1.5"
-          ]
-        },
-        {
-          "type": {
-            "value": "FlippableCapability::FlippableBehavior::FlipX"
-          },
-          "parameters": [
-            "EnemyFish_3",
-            "Flippable",
-            "yes"
-          ]
-        },
-        {
-          "type": {
-            "value": "Create"
-          },
-          "parameters": [
-            "",
-            "enemy3_hitbox",
-            "EnemyFish_3.X(\"eat\")",
-            "EnemyFish_3.Y(\"eat\")",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "ScalableCapability::ScalableBehavior::SetValue"
-          },
-          "parameters": [
-            "enemy3_hitbox",
-            "Scale",
-            "=",
-            "0.5"
-          ]
-        },
-        {
-          "type": {
-            "value": "OpacityCapability::OpacityBehavior::SetValue"
-          },
-          "parameters": [
-            "enemy3_hitbox",
-            "Opacity",
-            "=",
-            "100"
-          ]
-        },
-        {
-          "type": {
-            "value": "Sticker::Sticker::Stick"
-          },
-          "parameters": [
-            "enemy3_hitbox",
-            "Sticker",
-            "EnemyFish_3",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "SetBooleanObjectVariable"
-          },
-          "parameters": [
-            "Enemy3_Spawn1",
-            "Spawned",
-            "True",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "Wait"
-          },
-          "parameters": [
-            "RandomFloatInRange(4, 7)"
-          ]
-        },
-        {
-          "type": {
-            "value": "SetBooleanObjectVariable"
-          },
-          "parameters": [
-            "Enemy3_Spawn1",
-            "Spawned",
-            "False",
-            ""
-          ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "BooleanObjectVariable"
-          },
-          "parameters": [
-            "Enemy3_Spawn2",
-            "Spawned",
-            "False",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "BuiltinCommonInstructions::Once"
-          },
-          "parameters": []
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "MettreY"
-          },
-          "parameters": [
-            "Enemy3_Spawn2",
-            "=",
-            "RandomInRange(0, 720)"
-          ]
-        },
-        {
-          "type": {
-            "value": "Wait"
-          },
-          "parameters": [
-            "RandomFloatInRange(1, 3)"
-          ]
-        },
-        {
-          "type": {
-            "value": "Create"
-          },
-          "parameters": [
-            "",
-            "EnemyFish_3",
-            "Enemy3_Spawn2.X()",
-            "Enemy3_Spawn2.Y()",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "ScalableCapability::ScalableBehavior::SetValue"
-          },
-          "parameters": [
-            "EnemyFish_3",
-            "Scale",
-            "=",
-            "1.5"
-          ]
-        },
-        {
-          "type": {
-            "value": "Create"
-          },
-          "parameters": [
-            "",
-            "enemy3_hitbox",
-            "EnemyFish_3.X(\"eat\")",
-            "EnemyFish_3.Y(\"eat\")",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "ScalableCapability::ScalableBehavior::SetValue"
-          },
-          "parameters": [
-            "enemy3_hitbox",
-            "Scale",
-            "=",
-            "0.5"
-          ]
-        },
-        {
-          "type": {
-            "value": "OpacityCapability::OpacityBehavior::SetValue"
-          },
-          "parameters": [
-            "enemy3_hitbox",
-            "Opacity",
-            "=",
-            "100"
-          ]
-        },
-        {
-          "type": {
-            "value": "Sticker::Sticker::Stick"
-          },
-          "parameters": [
-            "enemy3_hitbox",
-            "Sticker",
-            "EnemyFish_3",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "SetBooleanObjectVariable"
-          },
-          "parameters": [
-            "Enemy3_Spawn2",
-            "Spawned",
-            "True",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "Wait"
-          },
-          "parameters": [
-            "RandomFloatInRange(4, 7)"
-          ]
-        },
-        {
-          "type": {
-            "value": "SetBooleanObjectVariable"
-          },
-          "parameters": [
-            "Enemy3_Spawn2",
-            "Spawned",
-            "False",
-            ""
-          ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "PosX"
-          },
-          "parameters": [
-            "Player_Fish",
-            ">",
-            "CursorX()"
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "FlippableCapability::FlippableBehavior::FlipX"
-          },
-          "parameters": [
-            "Player_Fish",
-            "Flippable",
-            "yes"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "PosX"
-          },
-          "parameters": [
-            "Player_Fish",
-            "<",
-            "CursorX()"
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "FlippableCapability::FlippableBehavior::FlipX"
-          },
-          "parameters": [
-            "Player_Fish",
-            "Flippable",
-            "no"
-          ]
-        }
-      ]
+      "parameters": []
     },
     {
       "colorB": 228,
@@ -3337,6 +3308,17 @@
                 "Player_Fish",
                 "EnemyFish_1",
                 "150",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanObjectVariable"
+              },
+              "parameters": [
+                "Player_Fish",
+                "MagnetEnabled",
+                "False",
                 ""
               ]
             }
@@ -3551,6 +3533,83 @@
           "conditions": [
             {
               "type": {
+                "value": "Distance"
+              },
+              "parameters": [
+                "Player_Fish",
+                "EnemyFish_1",
+                "250",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanObjectVariable"
+              },
+              "parameters": [
+                "Player_Fish",
+                "MagnetEnabled",
+                "True",
+                ""
+              ]
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Tween::RemoveTween"
+                  },
+                  "parameters": [
+                    "EnemyFish_1",
+                    "Tween",
+                    "\"Fish1MovingLeft\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::RemoveTween"
+                  },
+                  "parameters": [
+                    "EnemyFish_1",
+                    "Tween",
+                    "\"Fish1MovingRight\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Tween::TweenBehavior::AddObjectPositionTween2"
+                  },
+                  "parameters": [
+                    "EnemyFish_1",
+                    "Tween",
+                    "\"MagnetPull\"",
+                    "Player_Fish.X(\"eat\")",
+                    "Player_Fish.Y(\"eat\")",
+                    "\"linear\"",
+                    "0.25",
+                    ""
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
                 "value": "CollisionNP"
               },
               "parameters": [
@@ -3616,6 +3675,66 @@
               },
               "parameters": [
                 "Player_Fish",
+                "Animation",
+                "=",
+                "\"eat\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Player_FishClone",
+                "EnemyFish_1",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectScaleTween3"
+              },
+              "parameters": [
+                "EnemyFish_1",
+                "Tween",
+                "\"Eaten\"",
+                "0.01",
+                "\"linear\"",
+                "0.2",
+                "no",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectPositionTween2"
+              },
+              "parameters": [
+                "EnemyFish_1",
+                "Tween",
+                "\"Eaten2\"",
+                "Player_FishClone.X(\"Mouth\")",
+                "Player_FishClone.Y(\"Mouth\")",
+                "\"linear\"",
+                "0.1",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "Player_FishClone",
                 "Animation",
                 "=",
                 "\"eat\""
@@ -3767,7 +3886,6 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "FishEnemy2",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -4469,6 +4587,7 @@
           ]
         },
         {
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -4838,64 +4957,76 @@
                   ]
                 }
               ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Player_Fish",
+                "EnemyFish_3",
+                "",
+                "",
+                ""
+              ]
             },
             {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "BooleanObjectVariable"
-                  },
-                  "parameters": [
-                    "Player_Fish",
-                    "Stage3",
-                    "True",
-                    ""
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "Tween::TweenBehavior::AddObjectScaleTween3"
-                  },
-                  "parameters": [
-                    "EnemyFish_3",
-                    "Tween",
-                    "\"Eaten\"",
-                    "0.01",
-                    "\"linear\"",
-                    "0.2",
-                    "no",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Tween::TweenBehavior::AddObjectPositionTween2"
-                  },
-                  "parameters": [
-                    "EnemyFish_3",
-                    "Tween",
-                    "\"Eaten2\"",
-                    "Player_Fish.X(\"Mouth\")",
-                    "Player_Fish.Y(\"Mouth\")",
-                    "\"linear\"",
-                    "0.1",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
-                  },
-                  "parameters": [
-                    "Player_Fish",
-                    "Animation",
-                    "=",
-                    "\"eat\""
-                  ]
-                }
+              "type": {
+                "value": "BooleanObjectVariable"
+              },
+              "parameters": [
+                "Player_Fish",
+                "Stage3",
+                "True",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectScaleTween3"
+              },
+              "parameters": [
+                "EnemyFish_3",
+                "Tween",
+                "\"Eaten\"",
+                "0.01",
+                "\"linear\"",
+                "0.2",
+                "no",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectPositionTween2"
+              },
+              "parameters": [
+                "EnemyFish_3",
+                "Tween",
+                "\"Eaten2\"",
+                "Player_Fish.X(\"Mouth\")",
+                "Player_Fish.Y(\"Mouth\")",
+                "\"linear\"",
+                "0.1",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "Player_Fish",
+                "Animation",
+                "=",
+                "\"eat\""
               ]
             }
           ]
@@ -5034,7 +5165,6 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "ItemSpawn",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -5064,6 +5194,17 @@
                 "Spawned",
                 "True",
                 ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberObjectVariable"
+              },
+              "parameters": [
+                "Bubble_Spawner",
+                "ItemNo",
+                "=",
+                "RandomInRange(1, 3)"
               ]
             },
             {
@@ -5113,68 +5254,250 @@
                 "10",
                 ""
               ]
-            },
+            }
+          ],
+          "events": [
             {
-              "type": {
-                "value": "Create"
-              },
-              "parameters": [
-                "",
-                "shield_powerup",
-                "bubble.X()",
-                "bubble.Y()",
-                ""
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberObjectVariable"
+                  },
+                  "parameters": [
+                    "Bubble_Spawner",
+                    "ItemNo",
+                    "=",
+                    "1"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "shield_powerup",
+                    "bubble.X()",
+                    "bubble.Y()",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ScalableCapability::ScalableBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "shield_powerup",
+                    "Scale",
+                    "=",
+                    "0.75"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Sticker::Sticker::Stick"
+                  },
+                  "parameters": [
+                    "shield_powerup",
+                    "Sticker",
+                    "bubble",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "LinkedObjects::LinkObjects"
+                  },
+                  "parameters": [
+                    "",
+                    "shield_powerup",
+                    "bubble"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "3"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetBooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "Bubble_Spawner",
+                    "Spawned",
+                    "False",
+                    ""
+                  ]
+                }
               ]
             },
             {
-              "type": {
-                "value": "ScalableCapability::ScalableBehavior::SetValue"
-              },
-              "parameters": [
-                "shield_powerup",
-                "Scale",
-                "=",
-                "0.5"
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberObjectVariable"
+                  },
+                  "parameters": [
+                    "Bubble_Spawner",
+                    "ItemNo",
+                    "=",
+                    "2"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "stun_powerup",
+                    "bubble.X()",
+                    "bubble.Y()",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ScalableCapability::ScalableBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "stun_powerup",
+                    "Scale",
+                    "=",
+                    "0.75"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Sticker::Sticker::Stick"
+                  },
+                  "parameters": [
+                    "stun_powerup",
+                    "Sticker",
+                    "bubble",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "LinkedObjects::LinkObjects"
+                  },
+                  "parameters": [
+                    "",
+                    "stun_powerup",
+                    "bubble"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "3"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetBooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "Bubble_Spawner",
+                    "Spawned",
+                    "False",
+                    ""
+                  ]
+                }
               ]
             },
             {
-              "type": {
-                "value": "LinkedObjects::LinkObjects"
-              },
-              "parameters": [
-                "",
-                "shield_powerup",
-                "bubble"
-              ]
-            },
-            {
-              "type": {
-                "value": "Sticker::Sticker::Stick"
-              },
-              "parameters": [
-                "shield_powerup",
-                "Sticker",
-                "bubble",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "Wait"
-              },
-              "parameters": [
-                "20"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetBooleanObjectVariable"
-              },
-              "parameters": [
-                "Bubble_Spawner",
-                "Spawned",
-                "False",
-                ""
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberObjectVariable"
+                  },
+                  "parameters": [
+                    "Bubble_Spawner",
+                    "ItemNo",
+                    "=",
+                    "3"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "magnet_powerup",
+                    "bubble.X()",
+                    "bubble.Y()",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ScalableCapability::ScalableBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "magnet_powerup",
+                    "Scale",
+                    "=",
+                    "0.75"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Sticker::Sticker::Stick"
+                  },
+                  "parameters": [
+                    "magnet_powerup",
+                    "Sticker",
+                    "bubble",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "LinkedObjects::LinkObjects"
+                  },
+                  "parameters": [
+                    "",
+                    "magnet_powerup",
+                    "bubble"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "3"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetBooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "Bubble_Spawner",
+                    "Spawned",
+                    "False",
+                    ""
+                  ]
+                }
               ]
             }
           ]
@@ -5393,6 +5716,339 @@
                   ]
                 }
               ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "LinkedObjects::PickObjectsLinkedTo"
+                  },
+                  "parameters": [
+                    "",
+                    "stun_powerup",
+                    "bubble",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "bubble",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "Player_FishClone",
+                    "Player_Fish.X()",
+                    "Player_Fish.Y() - 50",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ScalableCapability::ScalableBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "Player_FishClone",
+                    "Scale",
+                    "=",
+                    "0.15"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ChangePlan"
+                  },
+                  "parameters": [
+                    "Player_FishClone",
+                    "=",
+                    "2"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "LinkedObjects::PickObjectsLinkedTo"
+                  },
+                  "parameters": [
+                    "",
+                    "magnet_powerup",
+                    "bubble",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "bubble",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "magnet_icon",
+                    "Player_Fish.X()",
+                    "Player_Fish.Y() - 30",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "MettreXY"
+                  },
+                  "parameters": [
+                    "magnet_icon",
+                    "=",
+                    "Player_Fish.X()",
+                    "=",
+                    "Player_Fish.Y() - 50"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ScalableCapability::ScalableBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "magnet_icon",
+                    "Scale",
+                    "=",
+                    "0.5"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetBooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "Player_Fish",
+                    "MagnetEnabled",
+                    "True",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "5"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetBooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "Player_Fish",
+                    "MagnetEnabled",
+                    "False",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "magnet_icon",
+                    ""
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "Distance"
+                      },
+                      "parameters": [
+                        "EnemyFish_1",
+                        "Player_Fish",
+                        "300",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Tween::StopTween"
+                      },
+                      "parameters": [
+                        "EnemyFish_1",
+                        "Tween",
+                        "\"Fish1MovingLeft\"",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Tween::StopTween"
+                      },
+                      "parameters": [
+                        "EnemyFish_1",
+                        "Tween",
+                        "\"Fish1MovingRight\"",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Tween::TweenBehavior::AddObjectPositionTween2"
+                      },
+                      "parameters": [
+                        "EnemyFish_1",
+                        "Tween",
+                        "\"MagnetPull\"",
+                        "Player_Fish.X(\"eat\")",
+                        "Player_Fish.Y(\"eat\")",
+                        "\"linear\"",
+                        "3",
+                        "no"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "MettreXY"
+              },
+              "parameters": [
+                "Player_FishClone",
+                "=",
+                "Player_Fish.X()",
+                "=",
+                "Player_Fish.Y() - 50"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "MettreXY"
+              },
+              "parameters": [
+                "magnet_icon",
+                "=",
+                "Player_Fish.X()",
+                "=",
+                "Player_Fish.Y() - 50"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PosX"
+              },
+              "parameters": [
+                "Player_FishClone",
+                ">",
+                "CursorX()"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "FlippableCapability::FlippableBehavior::FlipX"
+              },
+              "parameters": [
+                "Player_FishClone",
+                "Flippable",
+                "yes"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PosX"
+              },
+              "parameters": [
+                "Player_FishClone",
+                "<",
+                "CursorX()"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "FlippableCapability::FlippableBehavior::FlipX"
+              },
+              "parameters": [
+                "Player_FishClone",
+                "Flippable",
+                "no"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": true,
+                "value": "Visible"
+              },
+              "parameters": [
+                "Player_Fish"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "Player_FishClone",
+                ""
+              ]
             }
           ]
         },
@@ -5475,247 +6131,260 @@
       "parameters": []
     },
     {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "folded": true,
+      "name": "Jellyfish",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
         {
-          "type": {
-            "value": "BooleanObjectVariable"
-          },
-          "parameters": [
-            "JellyFish_Spawner",
-            "Spawned",
-            "False",
-            ""
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BooleanObjectVariable"
+              },
+              "parameters": [
+                "JellyFish_Spawner",
+                "Spawned",
+                "False",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetBooleanObjectVariable"
+              },
+              "parameters": [
+                "JellyFish_Spawner",
+                "Spawned",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "MettreX"
+              },
+              "parameters": [
+                "JellyFish_Spawner",
+                "=",
+                "RandomInRange(-80, 1360)"
+              ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "Jellyfish",
+                "JellyFish_Spawner.X()",
+                "JellyFish_Spawner.Y()",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ScalableCapability::ScalableBehavior::SetValue"
+              },
+              "parameters": [
+                "Jellyfish",
+                "Scale",
+                "=",
+                "0.5"
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectPositionTween2"
+              },
+              "parameters": [
+                "Jellyfish",
+                "Tween",
+                "\"Floating\"",
+                "Jellyfish.X()",
+                "-230",
+                "\"linear\"",
+                "20",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "5"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanObjectVariable"
+              },
+              "parameters": [
+                "JellyFish_Spawner",
+                "Spawned",
+                "False",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Player_Fish",
+                "Jellyfish",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanObjectVariable"
+              },
+              "parameters": [
+                "Player_Fish",
+                "Dizzy",
+                "=",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "inverted": true,
+                "value": "Flash::Flash::IsFlashing"
+              },
+              "parameters": [
+                "Player_Fish",
+                "Flash",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanObjectVariable"
+              },
+              "parameters": [
+                "Player_Fish",
+                "ShieldEnabled",
+                "False",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "assets\\sfx\\dizzy sound.MP3",
+                "",
+                "100",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetAngle"
+              },
+              "parameters": [
+                "Player_Fish",
+                "=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectAngleTween2"
+              },
+              "parameters": [
+                "Player_Fish",
+                "Tween",
+                "\"Dizzy\"",
+                "360",
+                "\"linear\"",
+                "1",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Flash::FlashColor::Flash"
+              },
+              "parameters": [
+                "Player_Fish",
+                "FlashColor",
+                "1",
+                "\"100;255;0\"",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanObjectVariable"
+              },
+              "parameters": [
+                "Player_Fish",
+                "Dizzy",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanObjectVariable"
+              },
+              "parameters": [
+                "Player_Fish",
+                "Dizzy",
+                "False",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Flash::Flash::Flash"
+              },
+              "parameters": [
+                "Player_Fish",
+                "Flash",
+                "1",
+                ""
+              ]
+            }
           ]
         }
       ],
-      "actions": [
-        {
-          "type": {
-            "value": "SetBooleanObjectVariable"
-          },
-          "parameters": [
-            "JellyFish_Spawner",
-            "Spawned",
-            "True",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "MettreX"
-          },
-          "parameters": [
-            "JellyFish_Spawner",
-            "=",
-            "RandomInRange(-80, 1360)"
-          ]
-        },
-        {
-          "type": {
-            "value": "Create"
-          },
-          "parameters": [
-            "",
-            "Jellyfish",
-            "JellyFish_Spawner.X()",
-            "JellyFish_Spawner.Y()",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "ScalableCapability::ScalableBehavior::SetValue"
-          },
-          "parameters": [
-            "Jellyfish",
-            "Scale",
-            "=",
-            "0.5"
-          ]
-        },
-        {
-          "type": {
-            "value": "Tween::TweenBehavior::AddObjectPositionTween2"
-          },
-          "parameters": [
-            "Jellyfish",
-            "Tween",
-            "\"Floating\"",
-            "Jellyfish.X()",
-            "-230",
-            "\"linear\"",
-            "20",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "Wait"
-          },
-          "parameters": [
-            "5"
-          ]
-        },
-        {
-          "type": {
-            "value": "SetBooleanObjectVariable"
-          },
-          "parameters": [
-            "JellyFish_Spawner",
-            "Spawned",
-            "False",
-            ""
-          ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "CollisionNP"
-          },
-          "parameters": [
-            "Player_Fish",
-            "Jellyfish",
-            "",
-            "",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "BooleanObjectVariable"
-          },
-          "parameters": [
-            "Player_Fish",
-            "Dizzy",
-            "=",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "inverted": true,
-            "value": "Flash::Flash::IsFlashing"
-          },
-          "parameters": [
-            "Player_Fish",
-            "Flash",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "BooleanObjectVariable"
-          },
-          "parameters": [
-            "Player_Fish",
-            "ShieldEnabled",
-            "False",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "BuiltinCommonInstructions::Once"
-          },
-          "parameters": []
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "PlaySound"
-          },
-          "parameters": [
-            "",
-            "assets\\sfx\\dizzy sound.MP3",
-            "",
-            "100",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "SetAngle"
-          },
-          "parameters": [
-            "Player_Fish",
-            "=",
-            "0"
-          ]
-        },
-        {
-          "type": {
-            "value": "Tween::TweenBehavior::AddObjectAngleTween2"
-          },
-          "parameters": [
-            "Player_Fish",
-            "Tween",
-            "\"Dizzy\"",
-            "360",
-            "\"linear\"",
-            "1",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "Flash::FlashColor::Flash"
-          },
-          "parameters": [
-            "Player_Fish",
-            "FlashColor",
-            "1",
-            "\"100;255;0\"",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "SetBooleanObjectVariable"
-          },
-          "parameters": [
-            "Player_Fish",
-            "Dizzy",
-            "True",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "Wait"
-          },
-          "parameters": [
-            "1"
-          ]
-        },
-        {
-          "type": {
-            "value": "SetBooleanObjectVariable"
-          },
-          "parameters": [
-            "Player_Fish",
-            "Dizzy",
-            "False",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "Flash::Flash::Flash"
-          },
-          "parameters": [
-            "Player_Fish",
-            "Flash",
-            "1",
-            ""
-          ]
-        }
-      ]
+      "parameters": []
     }
   ],
   "layers": [

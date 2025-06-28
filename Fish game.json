@@ -726,6 +726,225 @@
         "name": "assets\\hitbox.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "assets/power-ups/stun icon.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\power-ups\\stun icon.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/power-ups/magnet icon.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\power-ups\\magnet icon.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Fish-Bone_No Shadow.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Fish-Bone_No Shadow.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/32x32 Fantasy Icons Pack v2/Icons/Fishing Items/125201606a652bb5f14f71ae390702f0fb28c55ee3facc58bf93a66506baaf19_Fish-Bone_No Shadow.png",
+          "name": "Fish-Bone_No Shadow.png"
+        }
+      },
+      {
+        "file": "assets/Fish-Bone_Shadow.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Fish-Bone_Shadow.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/32x32 Fantasy Icons Pack v2/Icons/Fishing Items/b4885b3d61d1f48120148d7612afdebc8f5ee498fa019b07bb3330fa6975f74d_Fish-Bone_Shadow.png",
+          "name": "Fish-Bone_Shadow.png"
+        }
+      },
+      {
+        "file": "assets/background/deep ocean.jpg",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\background\\deep ocean.jpg",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/submarine.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\submarine.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/bgm/Dire Straits  Herta Space Station Battle Theme 6 (Extended) - Honkai_ Star Rail 1.0 OST.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\bgm\\Dire Straits  Herta Space Station Battle Theme 6 (Extended) - Honkai_ Star Rail 1.0 OST.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/sfx/submarine sound.MP3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\sfx\\submarine sound.MP3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Metal Bar Border.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Metal Bar Border.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Resource bars/pixel art/f8e5d88f8b377f182d5d42adf0bf9bc5f94034ac24c410f07ba27c46cda841c3_Metal Bar Border.png",
+          "name": "Metal Bar Border.png"
+        }
+      },
+      {
+        "file": "assets/Pixel Red Fill Bar.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Pixel Red Fill Bar.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Resource bars/pixel art/3eee053defc4f2944d72ef78b5aebbac31634202712157a3630b84fe08d79cbb_Pixel Red Fill Bar.png",
+          "name": "Pixel Red Fill Bar.png"
+        }
+      },
+      {
+        "file": "assets/Pixel Yellow Fill Bar.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Pixel Yellow Fill Bar.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Resource bars/pixel art/62f87cd20640fba9413cea576a648c6995a6d0e0026ba0adadb937ab3adec1b1_Pixel Yellow Fill Bar.png",
+          "name": "Pixel Yellow Fill Bar.png"
+        }
+      },
+      {
+        "file": "assets/Kenney Pixel Square.ttf",
+        "kind": "font",
+        "metadata": "",
+        "name": "1bee9bddf3765d016ea29c21d418cdb0e958d1cd9c0aaa8743f9e174cb486e71_Kenney Pixel Square.ttf",
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Kenney Font Pack/1bee9bddf3765d016ea29c21d418cdb0e958d1cd9c0aaa8743f9e174cb486e71_Kenney Pixel Square.ttf",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "file": "assets/missile.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\missile.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/mine.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\mine.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/sfx/explode sound.MP3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\sfx\\explode sound.MP3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/sfx/missile sound.MP3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\sfx\\missile sound.MP3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/tiled_Tiled Empty UI Heart.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "tiled_Tiled Empty UI Heart.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Resource bars/pixel art/688519c5bb4abaf5805518633f2ff810928e29164497fb5c13dabf97044be843_tiled_Tiled Empty UI Heart.png",
+          "name": "tiled_Tiled Empty UI Heart.png"
+        }
+      },
+      {
+        "file": "assets/tiled_Tiled Filler UI Heart.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "tiled_Tiled Filler UI Heart.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Resource bars/pixel art/5b5c6c85ec4e1f5b6688be565c9a06920a76ee191915738afd61da1481fd6493_tiled_Tiled Filler UI Heart.png",
+          "name": "tiled_Tiled Filler UI Heart.png"
+        }
+      },
+      {
+        "file": "assets/hud heart_empty.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "hud heart_empty.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Kenney New Platformer Pack 1.0/HUD/9873ea8aeb7a8c8d50d2a963b57fe457d6b6a4fc21a6d7f23b0fe8f4117e1b2f_hud heart_empty.png",
+          "name": "hud heart_empty.png"
+        }
+      },
+      {
+        "file": "assets/hud heart_half.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "hud heart_half.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Kenney New Platformer Pack 1.0/HUD/484096b91884b7b0c7358de55ef3805730cf758c57a20b69d81c96f54ef25f53_hud heart_half.png",
+          "name": "hud heart_half.png"
+        }
+      },
+      {
+        "file": "assets/hud heart_idle.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "hud heart_idle.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Kenney New Platformer Pack 1.0/HUD/fc7b160c4a60eeb22251536cc970f4fa0a03ac18ce5882f6ff07a9cb240fa7e9_hud heart_idle.png",
+          "name": "hud heart_idle.png"
+        }
       }
     ],
     "resourceFolders": []
@@ -755,6 +974,11 @@
         },
         {
           "name": "Dizzy",
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "name": "MagnetEnabled",
           "type": "boolean",
           "value": false
         }
@@ -836,20 +1060,20 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 240.5,
-                        "y": 227
+                        "x": 13,
+                        "y": 77.5
                       },
                       {
-                        "x": 242,
-                        "y": 173
+                        "x": 289,
+                        "y": 78.5
                       },
                       {
-                        "x": 292.5,
-                        "y": 173.5
+                        "x": 292,
+                        "y": 251
                       },
                       {
-                        "x": 290,
-                        "y": 227
+                        "x": 13,
+                        "y": 250.5
                       }
                     ]
                   ]
@@ -890,20 +1114,20 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 240.5,
-                        "y": 227
+                        "x": 13,
+                        "y": 77.5
                       },
                       {
-                        "x": 242,
-                        "y": 173
+                        "x": 289,
+                        "y": 78.5
                       },
                       {
-                        "x": 292.5,
-                        "y": 173.5
+                        "x": 292,
+                        "y": 251
                       },
                       {
-                        "x": 290,
-                        "y": 227
+                        "x": 13,
+                        "y": 250.5
                       }
                     ]
                   ]
@@ -932,20 +1156,20 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 240.5,
-                        "y": 227
+                        "x": 13,
+                        "y": 77.5
                       },
                       {
-                        "x": 242,
-                        "y": 173
+                        "x": 289,
+                        "y": 78.5
                       },
                       {
-                        "x": 292.5,
-                        "y": 173.5
+                        "x": 292,
+                        "y": 251
                       },
                       {
-                        "x": 290,
-                        "y": 227
+                        "x": 13,
+                        "y": 250.5
                       }
                     ]
                   ]
@@ -974,20 +1198,20 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 240.5,
-                        "y": 227
+                        "x": 13,
+                        "y": 77.5
                       },
                       {
-                        "x": 242,
-                        "y": 173
+                        "x": 289,
+                        "y": 78.5
                       },
                       {
-                        "x": 292.5,
-                        "y": 173.5
+                        "x": 292,
+                        "y": 251
                       },
                       {
-                        "x": 290,
-                        "y": 227
+                        "x": 13,
+                        "y": 250.5
                       }
                     ]
                   ]
@@ -1016,20 +1240,20 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 240.5,
-                        "y": 227
+                        "x": 13,
+                        "y": 77.5
                       },
                       {
-                        "x": 242,
-                        "y": 173
+                        "x": 289,
+                        "y": 78.5
                       },
                       {
-                        "x": 292.5,
-                        "y": 173.5
+                        "x": 292,
+                        "y": 251
                       },
                       {
-                        "x": 290,
-                        "y": 227
+                        "x": 13,
+                        "y": 250.5
                       }
                     ]
                   ]
@@ -1358,7 +1582,7 @@
       "effects": [],
       "behaviors": [],
       "content": {
-        "MaxValue": 700,
+        "MaxValue": 1000,
         "InitialValue": 0,
         "BarLeftPadding": 9,
         "BarRightPadding": 9,
@@ -1488,11 +1712,11 @@
                         "y": 0
                       },
                       {
-                        "x": 182.5,
+                        "x": 217.5,
                         "y": 0
                       },
                       {
-                        "x": 181.5,
+                        "x": 217.5,
                         "y": 116
                       },
                       {
@@ -1530,11 +1754,11 @@
                         "y": 0
                       },
                       {
-                        "x": 182.5,
+                        "x": 217.5,
                         "y": 0
                       },
                       {
-                        "x": 181.5,
+                        "x": 217.5,
                         "y": 116
                       },
                       {
@@ -1572,11 +1796,11 @@
                         "y": 0
                       },
                       {
-                        "x": 182.5,
+                        "x": 217.5,
                         "y": 0
                       },
                       {
-                        "x": 181.5,
+                        "x": 217.5,
                         "y": 116
                       },
                       {
@@ -1614,11 +1838,11 @@
                         "y": 0
                       },
                       {
-                        "x": 182.5,
+                        "x": 217.5,
                         "y": 0
                       },
                       {
-                        "x": 181.5,
+                        "x": 217.5,
                         "y": 116
                       },
                       {
@@ -1656,11 +1880,11 @@
                         "y": 0
                       },
                       {
-                        "x": 182.5,
+                        "x": 217.5,
                         "y": 0
                       },
                       {
-                        "x": 181.5,
+                        "x": 217.5,
                         "y": 116
                       },
                       {
@@ -1698,11 +1922,11 @@
                         "y": 0
                       },
                       {
-                        "x": 182.5,
+                        "x": 217.5,
                         "y": 0
                       },
                       {
-                        "x": 181.5,
+                        "x": 217.5,
                         "y": 116
                       },
                       {
@@ -1740,11 +1964,11 @@
                         "y": 0
                       },
                       {
-                        "x": 182.5,
+                        "x": 217.5,
                         "y": 0
                       },
                       {
-                        "x": 181.5,
+                        "x": 217.5,
                         "y": 116
                       },
                       {
@@ -1782,11 +2006,11 @@
                         "y": 0
                       },
                       {
-                        "x": 182.5,
+                        "x": 217.5,
                         "y": 0
                       },
                       {
-                        "x": 181.5,
+                        "x": 217.5,
                         "y": 116
                       },
                       {
@@ -1824,11 +2048,11 @@
                         "y": 0
                       },
                       {
-                        "x": 182.5,
+                        "x": 217.5,
                         "y": 0
                       },
                       {
-                        "x": 181.5,
+                        "x": 217.5,
                         "y": 116
                       },
                       {
@@ -1866,11 +2090,11 @@
                         "y": 0
                       },
                       {
-                        "x": 182.5,
+                        "x": 217.5,
                         "y": 0
                       },
                       {
-                        "x": 181.5,
+                        "x": 217.5,
                         "y": 116
                       },
                       {
@@ -1908,11 +2132,11 @@
                         "y": 0
                       },
                       {
-                        "x": 182.5,
+                        "x": 217.5,
                         "y": 0
                       },
                       {
-                        "x": 181.5,
+                        "x": 217.5,
                         "y": 116
                       },
                       {
@@ -1950,11 +2174,11 @@
                         "y": 0
                       },
                       {
-                        "x": 182.5,
+                        "x": 217.5,
                         "y": 0
                       },
                       {
-                        "x": 181.5,
+                        "x": 217.5,
                         "y": 116
                       },
                       {
@@ -1992,11 +2216,11 @@
                         "y": 0
                       },
                       {
-                        "x": 182.5,
+                        "x": 217.5,
                         "y": 0
                       },
                       {
-                        "x": 181.5,
+                        "x": 217.5,
                         "y": 116
                       },
                       {
@@ -2034,11 +2258,11 @@
                         "y": 0
                       },
                       {
-                        "x": 182.5,
+                        "x": 217.5,
                         "y": 0
                       },
                       {
-                        "x": 181.5,
+                        "x": 217.5,
                         "y": 116
                       },
                       {
@@ -2076,11 +2300,11 @@
                         "y": 0
                       },
                       {
-                        "x": 182.5,
+                        "x": 217.5,
                         "y": 0
                       },
                       {
-                        "x": 181.5,
+                        "x": 217.5,
                         "y": 116
                       },
                       {
@@ -2130,11 +2354,11 @@
                         "y": 0
                       },
                       {
-                        "x": 182.5,
+                        "x": 217.5,
                         "y": 0
                       },
                       {
-                        "x": 181.5,
+                        "x": 217.5,
                         "y": 116
                       },
                       {
@@ -2172,11 +2396,11 @@
                         "y": 0
                       },
                       {
-                        "x": 182.5,
+                        "x": 217.5,
                         "y": 0
                       },
                       {
-                        "x": 181.5,
+                        "x": 217.5,
                         "y": 116
                       },
                       {
@@ -2214,11 +2438,11 @@
                         "y": 0
                       },
                       {
-                        "x": 182.5,
+                        "x": 217.5,
                         "y": 0
                       },
                       {
-                        "x": 181.5,
+                        "x": 217.5,
                         "y": 116
                       },
                       {
@@ -2256,11 +2480,11 @@
                         "y": 0
                       },
                       {
-                        "x": 182.5,
+                        "x": 217.5,
                         "y": 0
                       },
                       {
-                        "x": 181.5,
+                        "x": 217.5,
                         "y": 116
                       },
                       {
@@ -2298,11 +2522,11 @@
                         "y": 0
                       },
                       {
-                        "x": 182.5,
+                        "x": 217.5,
                         "y": 0
                       },
                       {
-                        "x": 181.5,
+                        "x": 217.5,
                         "y": 116
                       },
                       {
@@ -2340,16 +2564,325 @@
                         "y": 0
                       },
                       {
-                        "x": 182.5,
+                        "x": 217.5,
                         "y": 0
                       },
                       {
-                        "x": 181.5,
+                        "x": 217.5,
                         "y": 116
                       },
                       {
                         "x": 0,
                         "y": 116
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": false,
+      "assetStoreId": "d3c7e3d0eed042c9ebcde2ef04b35e43001e65313f12a62e5549265b96585ffb",
+      "name": "Player_FishClone",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [
+        {
+          "name": "Stage2",
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "name": "Stage3",
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "name": "ShieldEnabled",
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "name": "Dizzy",
+          "type": "boolean",
+          "value": false
+        }
+      ],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Flash",
+          "type": "Flash::Flash",
+          "HalfPeriodTime": 0.1,
+          "IsFlashing": false,
+          "FlashDuration": 0
+        },
+        {
+          "name": "FlashColor",
+          "type": "Flash::FlashColor",
+          "HalfPeriodTime": 0.1,
+          "IsFlashing": false,
+          "FlashDuration": 0,
+          "TintColor": "\"255;255;255\""
+        },
+        {
+          "acceleration": 400,
+          "allowDiagonals": true,
+          "angleOffset": 0,
+          "angularMaxSpeed": 180,
+          "cellHeight": 20,
+          "cellWidth": 20,
+          "extraBorder": 0,
+          "gridOffsetX": 0,
+          "gridOffsetY": 0,
+          "maxSpeed": 200,
+          "name": "Pathfinding",
+          "rotateObject": true,
+          "smoothingMaxCellGap": 1,
+          "type": "PathfindingBehavior::PathfindingBehavior"
+        },
+        {
+          "name": "Sticker",
+          "type": "Sticker::Sticker",
+          "OnlyFollowPosition": false,
+          "IsDestroyedWithParent": false
+        },
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ],
+      "animations": [
+        {
+          "name": "idle",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.025,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\fish\\Piranta\\prn6.png",
+                  "points": [
+                    {
+                      "name": "Mouth",
+                      "x": 270,
+                      "y": 200
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 160,
+                    "y": 160
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 240.5,
+                        "y": 227
+                      },
+                      {
+                        "x": 242,
+                        "y": 173
+                      },
+                      {
+                        "x": 292.5,
+                        "y": 173.5
+                      },
+                      {
+                        "x": 290,
+                        "y": 227
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "eat",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\fish\\Piranta\\prn1.png",
+                  "points": [
+                    {
+                      "name": "Mouth",
+                      "x": 270,
+                      "y": 200
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 160,
+                    "y": 160
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 240.5,
+                        "y": 227
+                      },
+                      {
+                        "x": 242,
+                        "y": 173
+                      },
+                      {
+                        "x": 292.5,
+                        "y": 173.5
+                      },
+                      {
+                        "x": 290,
+                        "y": 227
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\fish\\Piranta\\prn2.png",
+                  "points": [
+                    {
+                      "name": "Mouth",
+                      "x": 270,
+                      "y": 200
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 160,
+                    "y": 160
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 240.5,
+                        "y": 227
+                      },
+                      {
+                        "x": 242,
+                        "y": 173
+                      },
+                      {
+                        "x": 292.5,
+                        "y": 173.5
+                      },
+                      {
+                        "x": 290,
+                        "y": 227
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\fish\\Piranta\\prn3.png",
+                  "points": [
+                    {
+                      "name": "Mouth",
+                      "x": 270,
+                      "y": 200
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 160,
+                    "y": 160
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 240.5,
+                        "y": 227
+                      },
+                      {
+                        "x": 242,
+                        "y": 173
+                      },
+                      {
+                        "x": 292.5,
+                        "y": 173.5
+                      },
+                      {
+                        "x": 290,
+                        "y": 227
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\fish\\Piranta\\prn5.png",
+                  "points": [
+                    {
+                      "name": "Mouth",
+                      "x": 270,
+                      "y": 200
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 160,
+                    "y": 160
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 240.5,
+                        "y": 227
+                      },
+                      {
+                        "x": 242,
+                        "y": 173
+                      },
+                      {
+                        "x": 292.5,
+                        "y": 173.5
+                      },
+                      {
+                        "x": 290,
+                        "y": 227
                       }
                     ]
                   ]
@@ -2366,6 +2899,9 @@
     "children": [
       {
         "objectName": "Player_Fish"
+      },
+      {
+        "objectName": "Player_FishClone"
       },
       {
         "objectName": "EnemyFish_1"
@@ -2393,6 +2929,9 @@
         },
         {
           "name": "EnemyFish_2"
+        },
+        {
+          "name": "EnemyFish_3"
         }
       ]
     }
@@ -2418,6 +2957,10 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/layouts/game-scene"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/level-boss"
     }
   ],
   "externalEvents": [],
@@ -2457,6 +3000,18 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/eventsFunctionsExtensions/sticker"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/health"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/firebullet"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/tiledunitsbar"
     }
   ],
   "externalLayouts": []
