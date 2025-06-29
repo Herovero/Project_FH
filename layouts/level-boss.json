@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.4,
     "snap": false,
-    "zoomFactor": 0.3216911764705935,
+    "zoomFactor": 0.23867758270258188,
     "windowMask": false
   },
   "objectsGroups": [
@@ -30,6 +30,9 @@
         },
         {
           "name": "sea_mine"
+        },
+        {
+          "name": "circular_saw"
         }
       ]
     }
@@ -44,6 +47,36 @@
       "name": "Health",
       "type": "number",
       "value": 5
+    },
+    {
+      "name": "SpawnCircularSaw",
+      "type": "boolean",
+      "value": false
+    },
+    {
+      "name": "CircularSawType",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "name": "BossLeaves",
+      "type": "boolean",
+      "value": false
+    },
+    {
+      "name": "BossLeaves2",
+      "type": "boolean",
+      "value": false
+    },
+    {
+      "name": "BossLeaves3",
+      "type": "boolean",
+      "value": false
+    },
+    {
+      "name": "BossLeaves4",
+      "type": "boolean",
+      "value": false
     }
   ],
   "instances": [
@@ -287,7 +320,7 @@
       "customSize": false,
       "height": 0,
       "keepRatio": true,
-      "layer": "",
+      "layer": "UI",
       "name": "HeartNo2",
       "persistentUuid": "580387ed-ae36-4899-9f3f-7bab41f4f954",
       "width": 0,
@@ -303,7 +336,7 @@
       "customSize": false,
       "height": 0,
       "keepRatio": true,
-      "layer": "",
+      "layer": "UI",
       "name": "HeartNo3",
       "persistentUuid": "fbe470be-a613-4ebb-b25b-1a8a96de2ac2",
       "width": 0,
@@ -319,7 +352,7 @@
       "customSize": false,
       "height": 0,
       "keepRatio": true,
-      "layer": "",
+      "layer": "UI",
       "name": "HeartNo4",
       "persistentUuid": "735013ec-2401-411b-a933-0e32ff37d42b",
       "width": 0,
@@ -335,13 +368,46 @@
       "customSize": false,
       "height": 0,
       "keepRatio": true,
-      "layer": "",
+      "layer": "UI",
       "name": "HeartNo5",
       "persistentUuid": "b779cfb9-4c9b-43ca-87d1-dc6feafefd71",
       "width": 0,
       "x": 230,
       "y": 17,
       "zOrder": 27,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Bubble_Spawner2",
+      "persistentUuid": "2172973b-18ff-41a0-a011-5a650d7fd586",
+      "width": 0,
+      "x": 634,
+      "y": 914,
+      "zOrder": 28,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 100,
+      "keepRatio": true,
+      "layer": "",
+      "name": "circular_saw",
+      "persistentUuid": "508b214c-87e1-436c-83ff-e492a067af8a",
+      "width": 100,
+      "x": -350,
+      "y": 0,
+      "zOrder": 29,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -1821,6 +1887,31 @@
           "name": "BossMoveLeft2",
           "type": "boolean",
           "value": false
+        },
+        {
+          "name": "BossFollowPlayer",
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "name": "BossFollowPlayer2",
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "name": "BossMoveLeft3",
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "name": "BossFollowing",
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "name": "BossFollowPlayer3",
+          "type": "boolean",
+          "value": false
         }
       ],
       "effects": [],
@@ -1856,11 +1947,19 @@
           "RandomizedAngle": 0
         },
         {
+          "name": "FlashColor",
+          "type": "Flash::FlashColor",
+          "HalfPeriodTime": 0.1,
+          "IsFlashing": false,
+          "FlashDuration": 0,
+          "TintColor": "\"255;255;255\""
+        },
+        {
           "name": "Health",
           "type": "Health::Health",
-          "Health": 10,
+          "Health": 5,
           "CurrentHealth": 0,
-          "MaxHealth": 10,
+          "MaxHealth": 5,
           "DamageCooldown": 0,
           "AllowOverHealing": false,
           "IsHealthJustDamaged": false,
@@ -1882,6 +1981,22 @@
           "ShieldDamageTaken": 2.0247e-320,
           "FlatDamageReduction": 0,
           "PercentDamageReduction": 0
+        },
+        {
+          "acceleration": 150,
+          "allowDiagonals": true,
+          "angleOffset": 0,
+          "angularMaxSpeed": 180,
+          "cellHeight": 20,
+          "cellWidth": 20,
+          "extraBorder": 0,
+          "gridOffsetX": 0,
+          "gridOffsetY": 0,
+          "maxSpeed": 150,
+          "name": "Pathfinding",
+          "rotateObject": false,
+          "smoothingMaxCellGap": 1,
+          "type": "PathfindingBehavior::PathfindingBehavior"
         },
         {
           "name": "Tween",
@@ -2085,8 +2200,8 @@
       "behaviors": [],
       "content": {
         "PreviousHighValueDuration": 1,
-        "InitialValue": 10,
-        "MaxValue": 10,
+        "InitialValue": 5,
+        "MaxValue": 5,
         "BarTopPadding": 7,
         "BarLeftPadding": 9,
         "BarBottomPadding": 7,
@@ -2212,7 +2327,24 @@
       "updateIfNotVisible": false,
       "variables": [],
       "effects": [],
-      "behaviors": [],
+      "behaviors": [
+        {
+          "acceleration": 400,
+          "allowDiagonals": true,
+          "angleOffset": 0,
+          "angularMaxSpeed": 180,
+          "cellHeight": 20,
+          "cellWidth": 20,
+          "extraBorder": 0,
+          "gridOffsetX": 0,
+          "gridOffsetY": 0,
+          "maxSpeed": 400,
+          "name": "Pathfinding",
+          "rotateObject": true,
+          "smoothingMaxCellGap": 1,
+          "type": "PathfindingBehavior::PathfindingBehavior"
+        }
+      ],
       "animations": [
         {
           "name": "",
@@ -3156,6 +3288,395 @@
           ]
         }
       ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "heart_powerup",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Sticker",
+          "type": "Sticker::Sticker",
+          "OnlyFollowPosition": false,
+          "IsDestroyedWithParent": true
+        }
+      ],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\power-ups\\heart icon.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 25,
+                    "y": 25
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 8,
+                        "y": 8
+                      },
+                      {
+                        "x": 42,
+                        "y": 8
+                      },
+                      {
+                        "x": 42,
+                        "y": 42
+                      },
+                      {
+                        "x": 8,
+                        "y": 42
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "target_powerup",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Sticker",
+          "type": "Sticker::Sticker",
+          "OnlyFollowPosition": false,
+          "IsDestroyedWithParent": true
+        }
+      ],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\power-ups\\target icon.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 150,
+                    "y": 150
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 10,
+                        "y": 10
+                      },
+                      {
+                        "x": 290,
+                        "y": 10
+                      },
+                      {
+                        "x": 290,
+                        "y": 290
+                      },
+                      {
+                        "x": 10,
+                        "y": 290
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "f74643f249aef27b37b540d2ec50f18f65c07253a824dcdf0bde8d6079905609",
+      "name": "Bubble_Spawner2",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [
+        {
+          "name": "Spawned",
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "name": "ItemNo",
+          "type": "number",
+          "value": 0
+        }
+      ],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.025,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Square joystick outer.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 80,
+                    "y": 80
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 160,
+                        "y": 0
+                      },
+                      {
+                        "x": 160,
+                        "y": 160
+                      },
+                      {
+                        "x": 0,
+                        "y": 160
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "bubble2",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Sticker",
+          "type": "Sticker::Sticker",
+          "OnlyFollowPosition": false,
+          "IsDestroyedWithParent": false
+        },
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\bubble.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 57,
+                    "y": 57
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 114,
+                        "y": 0
+                      },
+                      {
+                        "x": 114,
+                        "y": 114
+                      },
+                      {
+                        "x": 0,
+                        "y": 114
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": false,
+      "assetStoreId": "",
+      "name": "circular_saw",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\circular saw.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 100,
+                    "y": 100
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 20.5,
+                        "y": 123
+                      },
+                      {
+                        "x": 19,
+                        "y": 93.5
+                      },
+                      {
+                        "x": 24,
+                        "y": 69
+                      },
+                      {
+                        "x": 40.5,
+                        "y": 43
+                      },
+                      {
+                        "x": 67,
+                        "y": 23
+                      },
+                      {
+                        "x": 101.5,
+                        "y": 17
+                      },
+                      {
+                        "x": 136,
+                        "y": 24
+                      },
+                      {
+                        "x": 161.5,
+                        "y": 44
+                      },
+                      {
+                        "x": 177.5,
+                        "y": 67.5
+                      },
+                      {
+                        "x": 184.5,
+                        "y": 99.5
+                      },
+                      {
+                        "x": 177,
+                        "y": 132
+                      },
+                      {
+                        "x": 160.5,
+                        "y": 157
+                      },
+                      {
+                        "x": 134,
+                        "y": 177
+                      },
+                      {
+                        "x": 103,
+                        "y": 183
+                      },
+                      {
+                        "x": 62,
+                        "y": 175
+                      },
+                      {
+                        "x": 35.5,
+                        "y": 152.5
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -3172,6 +3693,9 @@
       },
       {
         "objectName": "Bubble_Spawner"
+      },
+      {
+        "objectName": "Bubble_Spawner2"
       },
       {
         "objectName": "JellyFish_Spawner"
@@ -3192,6 +3716,12 @@
         "objectName": "bubble"
       },
       {
+        "objectName": "bubble2"
+      },
+      {
+        "objectName": "circular_saw"
+      },
+      {
         "objectName": "shield_powerup"
       },
       {
@@ -3207,7 +3737,13 @@
         "objectName": "stun_powerup"
       },
       {
+        "objectName": "heart_powerup"
+      },
+      {
         "objectName": "magnet_powerup"
+      },
+      {
+        "objectName": "target_powerup"
       },
       {
         "objectName": "magnet_icon"
@@ -3292,6 +3828,56 @@
           },
           "parameters": [
             "FillBar"
+          ]
+        },
+        {
+          "type": {
+            "value": "Cache"
+          },
+          "parameters": [
+            "HeartNo1"
+          ]
+        },
+        {
+          "type": {
+            "value": "Cache"
+          },
+          "parameters": [
+            "HeartNo2"
+          ]
+        },
+        {
+          "type": {
+            "value": "Cache"
+          },
+          "parameters": [
+            "HeartNo3"
+          ]
+        },
+        {
+          "type": {
+            "value": "Cache"
+          },
+          "parameters": [
+            "HeartNo4"
+          ]
+        },
+        {
+          "type": {
+            "value": "Cache"
+          },
+          "parameters": [
+            "HeartNo5"
+          ]
+        },
+        {
+          "type": {
+            "value": "SetBooleanVariable"
+          },
+          "parameters": [
+            "BossFightStarted",
+            "False",
+            "0"
           ]
         },
         {
@@ -3482,7 +4068,7 @@
             "assets\\bgm\\Dire Straits  Herta Space Station Battle Theme 6 (Extended) - Honkai_ Star Rail 1.0 OST.mp3",
             "1",
             "yes",
-            "25",
+            "15",
             ""
           ]
         },
@@ -3594,6 +4180,51 @@
             "BossName_Text",
             ""
           ]
+        },
+        {
+          "type": {
+            "value": "Montre"
+          },
+          "parameters": [
+            "HeartNo1",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "Montre"
+          },
+          "parameters": [
+            "HeartNo2",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "Montre"
+          },
+          "parameters": [
+            "HeartNo3",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "Montre"
+          },
+          "parameters": [
+            "HeartNo4",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "Montre"
+          },
+          "parameters": [
+            "HeartNo5",
+            ""
+          ]
         }
       ]
     },
@@ -3602,7 +4233,6 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "Player Movement",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -3628,6 +4258,17 @@
               "parameters": [
                 "BossFightStarted",
                 "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanObjectVariable"
+              },
+              "parameters": [
+                "Player_Fish",
+                "Targetting",
+                "False",
                 ""
               ]
             }
@@ -3669,6 +4310,17 @@
                 "True",
                 ""
               ]
+            },
+            {
+              "type": {
+                "value": "BooleanObjectVariable"
+              },
+              "parameters": [
+                "Player_Fish",
+                "CanRotate",
+                "False",
+                ""
+              ]
             }
           ],
           "actions": [
@@ -3706,6 +4358,17 @@
                 "True",
                 ""
               ]
+            },
+            {
+              "type": {
+                "value": "BooleanObjectVariable"
+              },
+              "parameters": [
+                "Player_Fish",
+                "CanRotate",
+                "False",
+                ""
+              ]
             }
           ],
           "actions": [
@@ -3732,74 +4395,16 @@
                 "",
                 "\"Left\""
               ]
-            }
-          ],
-          "actions": [],
-          "events": [
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "BuiltinCommonInstructions::Once"
-                  },
-                  "parameters": []
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "ResetObjectTimer"
-                  },
-                  "parameters": [
-                    "Player_Fish",
-                    "\"Boost\""
-                  ]
-                }
-              ]
             },
             {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "CompareObjectTimer"
-                  },
-                  "parameters": [
-                    "Player_Fish",
-                    "\"Boost\"",
-                    "<=",
-                    "0.1"
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "PathfindingBehavior::Speed"
-                  },
-                  "parameters": [
-                    "Player_Fish",
-                    "Pathfinding",
-                    "+",
-                    "1500"
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
               "type": {
-                "inverted": true,
-                "value": "MouseButtonFromTextPressed"
+                "value": "BooleanObjectVariable"
               },
               "parameters": [
-                "",
-                "\"Left\""
+                "Player_Fish",
+                "CanRotate",
+                "True",
+                ""
               ]
             },
             {
@@ -3812,11 +4417,306 @@
           "actions": [
             {
               "type": {
-                "value": "ResetObjectTimer"
+                "value": "ShakeObject::ShakeObject_PositionAngle::ShakeObject_PositionAngle"
               },
               "parameters": [
                 "Player_Fish",
-                "\"Boost\""
+                "ShakeObject_PositionAngle",
+                "0.5",
+                "5",
+                "5",
+                "5",
+                "0.08",
+                "yes",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Flash::FlashColor::Flash"
+              },
+              "parameters": [
+                "Player_Fish",
+                "FlashColor",
+                "0",
+                "\"255;0;0\"",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PathfindingBehavior::MaxSpeed"
+              },
+              "parameters": [
+                "Player_Fish",
+                "Pathfinding",
+                "=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanObjectVariable"
+              },
+              "parameters": [
+                "Player_Fish",
+                "Targetting",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "assets\\sfx\\charge sound.MP3",
+                "",
+                "100",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanObjectVariable"
+              },
+              "parameters": [
+                "Player_Fish",
+                "Boosting",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ShakeObject::ShakeObject_PositionAngle::StopShaking"
+              },
+              "parameters": [
+                "Player_Fish",
+                "ShakeObject_PositionAngle",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "assets\\sfx\\boost sound.MP3",
+                "",
+                "100",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanObjectVariable"
+              },
+              "parameters": [
+                "Player_Fish",
+                "Targetting",
+                "False",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PathfindingBehavior::Acceleration"
+              },
+              "parameters": [
+                "Player_Fish",
+                "Pathfinding",
+                "=",
+                "10000"
+              ]
+            },
+            {
+              "type": {
+                "value": "PathfindingBehavior::MaxSpeed"
+              },
+              "parameters": [
+                "Player_Fish",
+                "Pathfinding",
+                "=",
+                "10000"
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "0.4"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanObjectVariable"
+              },
+              "parameters": [
+                "Player_Fish",
+                "CanRotate",
+                "False",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "Player_Fish",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "Player_Fish",
+                "Player_Fish.X()",
+                "Player_Fish.Y()",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ScalableCapability::ScalableBehavior::SetValue"
+              },
+              "parameters": [
+                "Player_Fish",
+                "Scale",
+                "=",
+                "0.3"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanObjectVariable"
+              },
+              "parameters": [
+                "Player_Fish",
+                "Boosting",
+                "False",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Player_Fish",
+                "submarine_boss",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanObjectVariable"
+              },
+              "parameters": [
+                "Player_Fish",
+                "Boosting",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "inverted": true,
+                "value": "Flash::FlashColor::IsFlashing"
+              },
+              "parameters": [
+                "submarine_boss",
+                "FlashColor",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::SetValue"
+              },
+              "parameters": [
+                "Boss_HealthBar",
+                "-",
+                "1",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Health::Health::Hit"
+              },
+              "parameters": [
+                "submarine_boss",
+                "Health",
+                "1",
+                "no",
+                "no",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Flash::FlashColor::Flash"
+              },
+              "parameters": [
+                "submarine_boss",
+                "FlashColor",
+                "2",
+                "\"255;0;0\"",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "assets\\sfx\\metal sound.MP3",
+                "",
+                "100",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PathfindingBehavior::Speed"
+              },
+              "parameters": [
+                "submarine_boss",
+                "Pathfinding",
+                "=",
+                "0"
               ]
             }
           ]
@@ -3893,14 +4793,9 @@
         },
         {
           "type": {
-            "value": "BooleanObjectVariable"
+            "value": "BuiltinCommonInstructions::Once"
           },
-          "parameters": [
-            "submarine_boss",
-            "BossMoveLeft",
-            "False",
-            ""
-          ]
+          "parameters": []
         }
       ],
       "actions": [
@@ -3927,7 +4822,7 @@
           "actions": [
             {
               "type": {
-                "value": "FireBullet::FireBullet::FireTowardObject"
+                "value": "FireBullet::FireBullet::Fire"
               },
               "parameters": [
                 "submarine_boss",
@@ -3935,14 +4830,14 @@
                 "submarine_boss.X(\"Shoot\")",
                 "submarine_boss.Y(\"Shoot\")",
                 "missile",
-                "Player_Fish",
-                "1000",
+                "RandomFloatInRange(130, 230)",
+                "800",
                 ""
               ]
             },
             {
               "type": {
-                "value": "FireBullet::FireBullet::FireTowardObject"
+                "value": "FireBullet::FireBullet::Fire"
               },
               "parameters": [
                 "submarine_boss",
@@ -3950,452 +4845,8 @@
                 "submarine_boss.X(\"Shoot2\")",
                 "submarine_boss.Y(\"Shoot2\")",
                 "missile",
-                "Player_Fish",
-                "1000",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "ScalableCapability::ScalableBehavior::SetValue"
-              },
-              "parameters": [
-                "missile",
-                "Scale",
-                "=",
-                "0.2"
-              ]
-            },
-            {
-              "type": {
-                "value": "PlaySound"
-              },
-              "parameters": [
-                "",
-                "assets\\sfx\\missile sound.MP3",
-                "",
-                "100",
-                ""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "Wait"
-              },
-              "parameters": [
-                "1"
-              ]
-            },
-            {
-              "type": {
-                "value": "FireBullet::FireBullet::FireTowardObject"
-              },
-              "parameters": [
-                "submarine_boss",
-                "FireBullet",
-                "submarine_boss.X(\"Shoot\")",
-                "submarine_boss.Y(\"Shoot\")",
-                "missile",
-                "Player_Fish",
-                "1000",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "FireBullet::FireBullet::FireTowardObject"
-              },
-              "parameters": [
-                "submarine_boss",
-                "FireBullet",
-                "submarine_boss.X(\"Shoot2\")",
-                "submarine_boss.Y(\"Shoot2\")",
-                "missile",
-                "Player_Fish",
-                "1000",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "ScalableCapability::ScalableBehavior::SetValue"
-              },
-              "parameters": [
-                "missile",
-                "Scale",
-                "=",
-                "0.2"
-              ]
-            },
-            {
-              "type": {
-                "value": "PlaySound"
-              },
-              "parameters": [
-                "",
-                "assets\\sfx\\missile sound.MP3",
-                "",
-                "100",
-                ""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "Wait"
-              },
-              "parameters": [
-                "2"
-              ]
-            },
-            {
-              "type": {
-                "value": "FireBullet::FireBullet::FireTowardObject"
-              },
-              "parameters": [
-                "submarine_boss",
-                "FireBullet",
-                "submarine_boss.X(\"Shoot\")",
-                "submarine_boss.Y(\"Shoot\")",
-                "missile",
-                "Player_Fish",
-                "1000",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "FireBullet::FireBullet::FireTowardObject"
-              },
-              "parameters": [
-                "submarine_boss",
-                "FireBullet",
-                "submarine_boss.X(\"Shoot2\")",
-                "submarine_boss.Y(\"Shoot2\")",
-                "missile",
-                "Player_Fish",
-                "1000",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "ScalableCapability::ScalableBehavior::SetValue"
-              },
-              "parameters": [
-                "missile",
-                "Scale",
-                "=",
-                "0.2"
-              ]
-            },
-            {
-              "type": {
-                "value": "PlaySound"
-              },
-              "parameters": [
-                "",
-                "assets\\sfx\\missile sound.MP3",
-                "",
-                "100",
-                ""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "Wait"
-              },
-              "parameters": [
-                "3"
-              ]
-            },
-            {
-              "type": {
-                "value": "FireBullet::FireBullet::FireTowardObject"
-              },
-              "parameters": [
-                "submarine_boss",
-                "FireBullet",
-                "submarine_boss.X(\"Shoot\")",
-                "submarine_boss.Y(\"Shoot\")",
-                "missile",
-                "Player_Fish",
-                "1000",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "FireBullet::FireBullet::FireTowardObject"
-              },
-              "parameters": [
-                "submarine_boss",
-                "FireBullet",
-                "submarine_boss.X(\"Shoot2\")",
-                "submarine_boss.Y(\"Shoot2\")",
-                "missile",
-                "Player_Fish",
-                "1000",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "ScalableCapability::ScalableBehavior::SetValue"
-              },
-              "parameters": [
-                "missile",
-                "Scale",
-                "=",
-                "0.2"
-              ]
-            },
-            {
-              "type": {
-                "value": "PlaySound"
-              },
-              "parameters": [
-                "",
-                "assets\\sfx\\missile sound.MP3",
-                "",
-                "100",
-                ""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "Wait"
-              },
-              "parameters": [
-                "4"
-              ]
-            },
-            {
-              "type": {
-                "value": "FireBullet::FireBullet::FireTowardObject"
-              },
-              "parameters": [
-                "submarine_boss",
-                "FireBullet",
-                "submarine_boss.X(\"Shoot\")",
-                "submarine_boss.Y(\"Shoot\")",
-                "missile",
-                "Player_Fish",
-                "1000",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "FireBullet::FireBullet::FireTowardObject"
-              },
-              "parameters": [
-                "submarine_boss",
-                "FireBullet",
-                "submarine_boss.X(\"Shoot2\")",
-                "submarine_boss.Y(\"Shoot2\")",
-                "missile",
-                "Player_Fish",
-                "1000",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "ScalableCapability::ScalableBehavior::SetValue"
-              },
-              "parameters": [
-                "missile",
-                "Scale",
-                "=",
-                "0.2"
-              ]
-            },
-            {
-              "type": {
-                "value": "PlaySound"
-              },
-              "parameters": [
-                "",
-                "assets\\sfx\\missile sound.MP3",
-                "",
-                "100",
-                ""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "Wait"
-              },
-              "parameters": [
-                "5"
-              ]
-            },
-            {
-              "type": {
-                "value": "FireBullet::FireBullet::FireTowardObject"
-              },
-              "parameters": [
-                "submarine_boss",
-                "FireBullet",
-                "submarine_boss.X(\"Shoot\")",
-                "submarine_boss.Y(\"Shoot\")",
-                "missile",
-                "Player_Fish",
-                "1000",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "FireBullet::FireBullet::FireTowardObject"
-              },
-              "parameters": [
-                "submarine_boss",
-                "FireBullet",
-                "submarine_boss.X(\"Shoot2\")",
-                "submarine_boss.Y(\"Shoot2\")",
-                "missile",
-                "Player_Fish",
-                "1000",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "ScalableCapability::ScalableBehavior::SetValue"
-              },
-              "parameters": [
-                "missile",
-                "Scale",
-                "=",
-                "0.2"
-              ]
-            },
-            {
-              "type": {
-                "value": "PlaySound"
-              },
-              "parameters": [
-                "",
-                "assets\\sfx\\missile sound.MP3",
-                "",
-                "100",
-                ""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "Wait"
-              },
-              "parameters": [
-                "6"
-              ]
-            },
-            {
-              "type": {
-                "value": "FireBullet::FireBullet::FireTowardObject"
-              },
-              "parameters": [
-                "submarine_boss",
-                "FireBullet",
-                "submarine_boss.X(\"Shoot\")",
-                "submarine_boss.Y(\"Shoot\")",
-                "missile",
-                "Player_Fish",
-                "1000",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "FireBullet::FireBullet::FireTowardObject"
-              },
-              "parameters": [
-                "submarine_boss",
-                "FireBullet",
-                "submarine_boss.X(\"Shoot2\")",
-                "submarine_boss.Y(\"Shoot2\")",
-                "missile",
-                "Player_Fish",
-                "1000",
+                "RandomFloatInRange(130, 230)",
+                "800",
                 ""
               ]
             },
@@ -4427,7 +4878,373 @@
                 "value": "Wait"
               },
               "parameters": [
-                "1"
+                "0.5"
+              ]
+            },
+            {
+              "type": {
+                "value": "FireBullet::FireBullet::Fire"
+              },
+              "parameters": [
+                "submarine_boss",
+                "FireBullet",
+                "submarine_boss.X(\"Shoot\")",
+                "submarine_boss.Y(\"Shoot\")",
+                "missile",
+                "RandomFloatInRange(130, 230)",
+                "800",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "FireBullet::FireBullet::Fire"
+              },
+              "parameters": [
+                "submarine_boss",
+                "FireBullet",
+                "submarine_boss.X(\"Shoot2\")",
+                "submarine_boss.Y(\"Shoot2\")",
+                "missile",
+                "RandomFloatInRange(130, 230)",
+                "800",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ScalableCapability::ScalableBehavior::SetValue"
+              },
+              "parameters": [
+                "missile",
+                "Scale",
+                "=",
+                "0.2"
+              ]
+            },
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "assets\\sfx\\missile sound.MP3",
+                "",
+                "100",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "0.5"
+              ]
+            },
+            {
+              "type": {
+                "value": "FireBullet::FireBullet::Fire"
+              },
+              "parameters": [
+                "submarine_boss",
+                "FireBullet",
+                "submarine_boss.X(\"Shoot\")",
+                "submarine_boss.Y(\"Shoot\")",
+                "missile",
+                "RandomFloatInRange(130, 230)",
+                "800",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "FireBullet::FireBullet::Fire"
+              },
+              "parameters": [
+                "submarine_boss",
+                "FireBullet",
+                "submarine_boss.X(\"Shoot2\")",
+                "submarine_boss.Y(\"Shoot2\")",
+                "missile",
+                "RandomFloatInRange(130, 230)",
+                "800",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ScalableCapability::ScalableBehavior::SetValue"
+              },
+              "parameters": [
+                "missile",
+                "Scale",
+                "=",
+                "0.2"
+              ]
+            },
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "assets\\sfx\\missile sound.MP3",
+                "",
+                "100",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "0.5"
+              ]
+            },
+            {
+              "type": {
+                "value": "FireBullet::FireBullet::Fire"
+              },
+              "parameters": [
+                "submarine_boss",
+                "FireBullet",
+                "submarine_boss.X(\"Shoot\")",
+                "submarine_boss.Y(\"Shoot\")",
+                "missile",
+                "RandomFloatInRange(130, 230)",
+                "800",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "FireBullet::FireBullet::Fire"
+              },
+              "parameters": [
+                "submarine_boss",
+                "FireBullet",
+                "submarine_boss.X(\"Shoot2\")",
+                "submarine_boss.Y(\"Shoot2\")",
+                "missile",
+                "RandomFloatInRange(130, 230)",
+                "800",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ScalableCapability::ScalableBehavior::SetValue"
+              },
+              "parameters": [
+                "missile",
+                "Scale",
+                "=",
+                "0.2"
+              ]
+            },
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "assets\\sfx\\missile sound.MP3",
+                "",
+                "100",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "0.5"
+              ]
+            },
+            {
+              "type": {
+                "value": "FireBullet::FireBullet::Fire"
+              },
+              "parameters": [
+                "submarine_boss",
+                "FireBullet",
+                "submarine_boss.X(\"Shoot\")",
+                "submarine_boss.Y(\"Shoot\")",
+                "missile",
+                "RandomFloatInRange(130, 230)",
+                "800",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "FireBullet::FireBullet::Fire"
+              },
+              "parameters": [
+                "submarine_boss",
+                "FireBullet",
+                "submarine_boss.X(\"Shoot2\")",
+                "submarine_boss.Y(\"Shoot2\")",
+                "missile",
+                "RandomFloatInRange(130, 230)",
+                "800",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ScalableCapability::ScalableBehavior::SetValue"
+              },
+              "parameters": [
+                "missile",
+                "Scale",
+                "=",
+                "0.2"
+              ]
+            },
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "assets\\sfx\\missile sound.MP3",
+                "",
+                "100",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "0.5"
+              ]
+            },
+            {
+              "type": {
+                "value": "FireBullet::FireBullet::Fire"
+              },
+              "parameters": [
+                "submarine_boss",
+                "FireBullet",
+                "submarine_boss.X(\"Shoot\")",
+                "submarine_boss.Y(\"Shoot\")",
+                "missile",
+                "RandomFloatInRange(130, 230)",
+                "800",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "FireBullet::FireBullet::Fire"
+              },
+              "parameters": [
+                "submarine_boss",
+                "FireBullet",
+                "submarine_boss.X(\"Shoot2\")",
+                "submarine_boss.Y(\"Shoot2\")",
+                "missile",
+                "RandomFloatInRange(130, 230)",
+                "800",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ScalableCapability::ScalableBehavior::SetValue"
+              },
+              "parameters": [
+                "missile",
+                "Scale",
+                "=",
+                "0.2"
+              ]
+            },
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "assets\\sfx\\missile sound.MP3",
+                "",
+                "100",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "0.5"
+              ]
+            },
+            {
+              "type": {
+                "value": "FireBullet::FireBullet::Fire"
+              },
+              "parameters": [
+                "submarine_boss",
+                "FireBullet",
+                "submarine_boss.X(\"Shoot\")",
+                "submarine_boss.Y(\"Shoot\")",
+                "missile",
+                "RandomFloatInRange(130, 230)",
+                "800",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "FireBullet::FireBullet::Fire"
+              },
+              "parameters": [
+                "submarine_boss",
+                "FireBullet",
+                "submarine_boss.X(\"Shoot2\")",
+                "submarine_boss.Y(\"Shoot2\")",
+                "missile",
+                "RandomFloatInRange(130, 230)",
+                "800",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ScalableCapability::ScalableBehavior::SetValue"
+              },
+              "parameters": [
+                "missile",
+                "Scale",
+                "=",
+                "0.2"
+              ]
+            },
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "assets\\sfx\\missile sound.MP3",
+                "",
+                "100",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "0.5"
               ]
             },
             {
@@ -4510,6 +5327,17 @@
             "submarine_boss",
             "BossMoveRight",
             "True",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "SetBooleanObjectVariable"
+          },
+          "parameters": [
+            "submarine_boss",
+            "BossMoveLeft",
+            "False",
             ""
           ]
         }
@@ -4691,6 +5519,47 @@
                 "3",
                 ""
               ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "4"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanObjectVariable"
+              },
+              "parameters": [
+                "submarine_boss",
+                "BossFollowing",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanObjectVariable"
+              },
+              "parameters": [
+                "submarine_boss",
+                "BossFollowPlayer",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanObjectVariable"
+              },
+              "parameters": [
+                "submarine_boss",
+                "BossMoveRight",
+                "False",
+                ""
+              ]
             }
           ]
         },
@@ -4721,12 +5590,2630 @@
                 "sea_mine",
                 "Scale",
                 "=",
-                "0.2"
+                "0.15"
               ]
             }
           ]
         }
       ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "BooleanObjectVariable"
+          },
+          "parameters": [
+            "submarine_boss",
+            "BossFollowPlayer",
+            "True",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "PathfindingBehavior::SetDestination"
+          },
+          "parameters": [
+            "submarine_boss",
+            "Pathfinding",
+            "",
+            "Player_Fish.X()",
+            "Player_Fish.Y()"
+          ]
+        },
+        {
+          "type": {
+            "value": "FireBullet::FireBullet::SetCooldownOp"
+          },
+          "parameters": [
+            "submarine_boss",
+            "FireBullet",
+            "=",
+            "3",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "FireBullet::FireBullet::FireTowardObject"
+          },
+          "parameters": [
+            "submarine_boss",
+            "FireBullet",
+            "submarine_boss.X(\"Shoot\")",
+            "submarine_boss.Y(\"Shoot\")",
+            "missile",
+            "Player_Fish",
+            "500",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "FireBullet::FireBullet::FireTowardObject"
+          },
+          "parameters": [
+            "submarine_boss",
+            "FireBullet",
+            "submarine_boss.X(\"Shoot2\")",
+            "submarine_boss.Y(\"Shoot2\")",
+            "missile",
+            "Player_Fish",
+            "500",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "ScalableCapability::ScalableBehavior::SetValue"
+          },
+          "parameters": [
+            "missile",
+            "Scale",
+            "=",
+            "0.2"
+          ]
+        }
+      ],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": true,
+                "value": "FireBullet::FireBullet::IsFiringCooldownActive"
+              },
+              "parameters": [
+                "submarine_boss",
+                "FireBullet",
+                "="
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "assets\\sfx\\missile sound.MP3",
+                "",
+                "100",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PathfindingBehavior::PathfindingBehavior::MovementAngleIsAround"
+              },
+              "parameters": [
+                "submarine_boss",
+                "Pathfinding",
+                "0",
+                "90"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "FlippableCapability::FlippableBehavior::FlipX"
+              },
+              "parameters": [
+                "submarine_boss",
+                "Flippable",
+                "no"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PathfindingBehavior::PathfindingBehavior::MovementAngleIsAround"
+              },
+              "parameters": [
+                "submarine_boss",
+                "Pathfinding",
+                "180",
+                "90"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "FlippableCapability::FlippableBehavior::FlipX"
+              },
+              "parameters": [
+                "submarine_boss",
+                "Flippable",
+                "yes"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::Value"
+          },
+          "parameters": [
+            "Boss_HealthBar",
+            "=",
+            "4",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "SetBooleanObjectVariable"
+          },
+          "parameters": [
+            "submarine_boss",
+            "BossFollowPlayer",
+            "False",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "SetBooleanObjectVariable"
+          },
+          "parameters": [
+            "submarine_boss",
+            "BossFollowing",
+            "False",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "Wait"
+          },
+          "parameters": [
+            "1"
+          ]
+        },
+        {
+          "type": {
+            "value": "FlippableCapability::FlippableBehavior::FlipX"
+          },
+          "parameters": [
+            "submarine_boss",
+            "Flippable",
+            "yes"
+          ]
+        },
+        {
+          "type": {
+            "value": "Tween::TweenBehavior::AddObjectPositionTween2"
+          },
+          "parameters": [
+            "submarine_boss",
+            "Tween",
+            "\"Move1\"",
+            "-580",
+            "submarine_boss.Y()",
+            "\"linear\"",
+            "2",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "PlaySound"
+          },
+          "parameters": [
+            "",
+            "assets\\sfx\\submarine sound.MP3",
+            "",
+            "60",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "Wait"
+          },
+          "parameters": [
+            "2"
+          ]
+        },
+        {
+          "type": {
+            "value": "Delete"
+          },
+          "parameters": [
+            "submarine_boss",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "SetBooleanVariable"
+          },
+          "parameters": [
+            "SpawnCircularSaw",
+            "True",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "SetBooleanVariable"
+          },
+          "parameters": [
+            "BossLeaves",
+            "True",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "Wait"
+          },
+          "parameters": [
+            "10"
+          ]
+        },
+        {
+          "type": {
+            "value": "SetBooleanVariable"
+          },
+          "parameters": [
+            "BossLeaves",
+            "False",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "Create"
+          },
+          "parameters": [
+            "",
+            "submarine_boss",
+            "-580",
+            "323",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "SetBooleanObjectVariable"
+          },
+          "parameters": [
+            "submarine_boss",
+            "BossFollowing",
+            "True",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "SetBooleanObjectVariable"
+          },
+          "parameters": [
+            "submarine_boss",
+            "BossFollowPlayer2",
+            "True",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "ScalableCapability::ScalableBehavior::SetValue"
+          },
+          "parameters": [
+            "submarine_boss",
+            "Scale",
+            "=",
+            "0.515"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "BooleanObjectVariable"
+          },
+          "parameters": [
+            "submarine_boss",
+            "BossFollowPlayer2",
+            "True",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "PathfindingBehavior::SetDestination"
+          },
+          "parameters": [
+            "submarine_boss",
+            "Pathfinding",
+            "",
+            "Player_Fish.X()",
+            "Player_Fish.Y()"
+          ]
+        },
+        {
+          "type": {
+            "value": "FireBullet::FireBullet::SetCooldownOp"
+          },
+          "parameters": [
+            "submarine_boss",
+            "FireBullet",
+            "=",
+            "2",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "FireBullet::FireBullet::FireTowardObject"
+          },
+          "parameters": [
+            "submarine_boss",
+            "FireBullet",
+            "submarine_boss.X(\"Shoot\")",
+            "submarine_boss.Y(\"Shoot\")",
+            "missile",
+            "Player_Fish",
+            "500",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "FireBullet::FireBullet::FireTowardObject"
+          },
+          "parameters": [
+            "submarine_boss",
+            "FireBullet",
+            "submarine_boss.X(\"Shoot2\")",
+            "submarine_boss.Y(\"Shoot2\")",
+            "missile",
+            "Player_Fish",
+            "500",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "ScalableCapability::ScalableBehavior::SetValue"
+          },
+          "parameters": [
+            "missile",
+            "Scale",
+            "=",
+            "0.2"
+          ]
+        }
+      ],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": true,
+                "value": "FireBullet::FireBullet::IsFiringCooldownActive"
+              },
+              "parameters": [
+                "submarine_boss",
+                "FireBullet",
+                "="
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "assets\\sfx\\missile sound.MP3",
+                "",
+                "100",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PathfindingBehavior::PathfindingBehavior::MovementAngleIsAround"
+              },
+              "parameters": [
+                "submarine_boss",
+                "Pathfinding",
+                "0",
+                "90"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "FlippableCapability::FlippableBehavior::FlipX"
+              },
+              "parameters": [
+                "submarine_boss",
+                "Flippable",
+                "no"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PathfindingBehavior::PathfindingBehavior::MovementAngleIsAround"
+              },
+              "parameters": [
+                "submarine_boss",
+                "Pathfinding",
+                "180",
+                "90"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "FlippableCapability::FlippableBehavior::FlipX"
+              },
+              "parameters": [
+                "submarine_boss",
+                "Flippable",
+                "yes"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::Value"
+          },
+          "parameters": [
+            "Boss_HealthBar",
+            "=",
+            "3",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "SetBooleanObjectVariable"
+          },
+          "parameters": [
+            "submarine_boss",
+            "BossFollowPlayer2",
+            "False",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "SetBooleanObjectVariable"
+          },
+          "parameters": [
+            "submarine_boss",
+            "BossFollowing",
+            "False",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "Wait"
+          },
+          "parameters": [
+            "1"
+          ]
+        },
+        {
+          "type": {
+            "value": "FlippableCapability::FlippableBehavior::FlipX"
+          },
+          "parameters": [
+            "submarine_boss",
+            "Flippable",
+            "no"
+          ]
+        },
+        {
+          "type": {
+            "value": "Tween::TweenBehavior::AddObjectPositionTween2"
+          },
+          "parameters": [
+            "submarine_boss",
+            "Tween",
+            "\"Move1\"",
+            "1850",
+            "submarine_boss.Y()",
+            "\"linear\"",
+            "2",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "PlaySound"
+          },
+          "parameters": [
+            "",
+            "assets\\sfx\\submarine sound.MP3",
+            "",
+            "60",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "Wait"
+          },
+          "parameters": [
+            "2"
+          ]
+        },
+        {
+          "type": {
+            "value": "Delete"
+          },
+          "parameters": [
+            "submarine_boss",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "Wait"
+          },
+          "parameters": [
+            "1"
+          ]
+        },
+        {
+          "type": {
+            "value": "SetBooleanVariable"
+          },
+          "parameters": [
+            "BossLeaves2",
+            "True",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "BooleanVariable"
+          },
+          "parameters": [
+            "BossLeaves2",
+            "True",
+            ""
+          ]
+        }
+      ],
+      "actions": [],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "submarine_boss",
+                "1850",
+                "0",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ScalableCapability::ScalableBehavior::SetValue"
+              },
+              "parameters": [
+                "submarine_boss",
+                "Scale",
+                "=",
+                "0.515"
+              ]
+            },
+            {
+              "type": {
+                "value": "FireBullet::FireBullet::SetCooldownOp"
+              },
+              "parameters": [
+                "submarine_boss",
+                "FireBullet",
+                "=",
+                "0.1",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "FireBullet::FireBullet::SetBulletQuantityOp"
+              },
+              "parameters": [
+                "submarine_boss",
+                "FireBullet",
+                "=",
+                "2",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectPositionTween2"
+              },
+              "parameters": [
+                "submarine_boss",
+                "Tween",
+                "\"Move2\"",
+                "-580",
+                "submarine_boss.Y()",
+                "\"linear\"",
+                "3",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "FlippableCapability::FlippableBehavior::FlipX"
+              },
+              "parameters": [
+                "submarine_boss",
+                "Flippable",
+                "yes"
+              ]
+            },
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "assets\\sfx\\submarine sound.MP3",
+                "",
+                "60",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "3"
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectPositionTween2"
+              },
+              "parameters": [
+                "submarine_boss",
+                "Tween",
+                "\"Move2\"",
+                "2000",
+                "submarine_boss.Y()",
+                "\"linear\"",
+                "3",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "FlippableCapability::FlippableBehavior::FlipX"
+              },
+              "parameters": [
+                "submarine_boss",
+                "Flippable",
+                "no"
+              ]
+            },
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "assets\\sfx\\submarine sound.MP3",
+                "",
+                "60",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "3"
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectPositionTween2"
+              },
+              "parameters": [
+                "submarine_boss",
+                "Tween",
+                "\"Move2\"",
+                "-580",
+                "submarine_boss.Y()",
+                "\"linear\"",
+                "3",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "FlippableCapability::FlippableBehavior::FlipX"
+              },
+              "parameters": [
+                "submarine_boss",
+                "Flippable",
+                "yes"
+              ]
+            },
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "assets\\sfx\\submarine sound.MP3",
+                "",
+                "60",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "4"
+              ]
+            },
+            {
+              "type": {
+                "value": "FireBullet::FireBullet::SetBulletQuantityOp"
+              },
+              "parameters": [
+                "submarine_boss",
+                "FireBullet",
+                "=",
+                "1",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanObjectVariable"
+              },
+              "parameters": [
+                "submarine_boss",
+                "BossFollowing",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanObjectVariable"
+              },
+              "parameters": [
+                "submarine_boss",
+                "BossFollowPlayer3",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "BossLeaves2",
+                "False",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "FireBullet::FireBullet::Fire"
+              },
+              "parameters": [
+                "submarine_boss",
+                "FireBullet",
+                "submarine_boss.X(\"Mine\")",
+                "submarine_boss.Y(\"Mine\")",
+                "sea_mine",
+                "90",
+                "RandomInRange(100, 400)",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ScalableCapability::ScalableBehavior::SetValue"
+              },
+              "parameters": [
+                "sea_mine",
+                "Scale",
+                "=",
+                "0.15"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "BooleanObjectVariable"
+          },
+          "parameters": [
+            "submarine_boss",
+            "BossFollowPlayer3",
+            "True",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "PathfindingBehavior::SetDestination"
+          },
+          "parameters": [
+            "submarine_boss",
+            "Pathfinding",
+            "",
+            "Player_Fish.X()",
+            "Player_Fish.Y()"
+          ]
+        },
+        {
+          "type": {
+            "value": "FireBullet::FireBullet::SetCooldownOp"
+          },
+          "parameters": [
+            "submarine_boss",
+            "FireBullet",
+            "=",
+            "2",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "FireBullet::FireBullet::FireTowardObject"
+          },
+          "parameters": [
+            "submarine_boss",
+            "FireBullet",
+            "submarine_boss.X(\"Shoot\")",
+            "submarine_boss.Y(\"Shoot\")",
+            "missile",
+            "Player_Fish",
+            "500",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "FireBullet::FireBullet::FireTowardObject"
+          },
+          "parameters": [
+            "submarine_boss",
+            "FireBullet",
+            "submarine_boss.X(\"Shoot2\")",
+            "submarine_boss.Y(\"Shoot2\")",
+            "missile",
+            "Player_Fish",
+            "500",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "FireBullet::FireBullet::Fire"
+          },
+          "parameters": [
+            "submarine_boss",
+            "FireBullet",
+            "submarine_boss.X(\"Mine\") + RandomFloatInRange(-100, 100)",
+            "submarine_boss.Y(\"Mine\")",
+            "sea_mine",
+            "90",
+            "200",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "ScalableCapability::ScalableBehavior::SetValue"
+          },
+          "parameters": [
+            "missile",
+            "Scale",
+            "=",
+            "0.2"
+          ]
+        },
+        {
+          "type": {
+            "value": "ScalableCapability::ScalableBehavior::SetValue"
+          },
+          "parameters": [
+            "sea_mine",
+            "Scale",
+            "=",
+            "0.15"
+          ]
+        }
+      ],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": true,
+                "value": "FireBullet::FireBullet::IsFiringCooldownActive"
+              },
+              "parameters": [
+                "submarine_boss",
+                "FireBullet",
+                "="
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "assets\\sfx\\missile sound.MP3",
+                "",
+                "100",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PathfindingBehavior::PathfindingBehavior::MovementAngleIsAround"
+              },
+              "parameters": [
+                "submarine_boss",
+                "Pathfinding",
+                "0",
+                "90"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "FlippableCapability::FlippableBehavior::FlipX"
+              },
+              "parameters": [
+                "submarine_boss",
+                "Flippable",
+                "no"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PathfindingBehavior::PathfindingBehavior::MovementAngleIsAround"
+              },
+              "parameters": [
+                "submarine_boss",
+                "Pathfinding",
+                "180",
+                "90"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "FlippableCapability::FlippableBehavior::FlipX"
+              },
+              "parameters": [
+                "submarine_boss",
+                "Flippable",
+                "yes"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::Value"
+          },
+          "parameters": [
+            "Boss_HealthBar",
+            "=",
+            "2",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "SetBooleanObjectVariable"
+          },
+          "parameters": [
+            "submarine_boss",
+            "BossFollowPlayer3",
+            "False",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "SetBooleanObjectVariable"
+          },
+          "parameters": [
+            "submarine_boss",
+            "BossFollowing",
+            "False",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "Wait"
+          },
+          "parameters": [
+            "1"
+          ]
+        },
+        {
+          "type": {
+            "value": "FlippableCapability::FlippableBehavior::FlipX"
+          },
+          "parameters": [
+            "submarine_boss",
+            "Flippable",
+            "yes"
+          ]
+        },
+        {
+          "type": {
+            "value": "Tween::TweenBehavior::AddObjectPositionTween2"
+          },
+          "parameters": [
+            "submarine_boss",
+            "Tween",
+            "\"Move1\"",
+            "-580",
+            "submarine_boss.Y()",
+            "\"linear\"",
+            "2",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "PlaySound"
+          },
+          "parameters": [
+            "",
+            "assets\\sfx\\submarine sound.MP3",
+            "",
+            "60",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "Wait"
+          },
+          "parameters": [
+            "2"
+          ]
+        },
+        {
+          "type": {
+            "value": "Delete"
+          },
+          "parameters": [
+            "submarine_boss",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "Wait"
+          },
+          "parameters": [
+            "1"
+          ]
+        },
+        {
+          "type": {
+            "value": "SetBooleanVariable"
+          },
+          "parameters": [
+            "BossLeaves3",
+            "True",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "folded": true,
+      "name": "Circular Saw",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "Rotate"
+              },
+              "parameters": [
+                "circular_saw",
+                "200",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "SpawnCircularSaw",
+                "True",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "BossLeaves",
+                "True",
+                "True"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "CircularSawType",
+                "=",
+                "RandomInRange(1, 8)"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "SpawnCircularSaw",
+                "False",
+                ""
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "CircularSawType",
+                    "=",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "circular_saw",
+                    "-300",
+                    "65",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "circular_saw",
+                    "-300",
+                    "165",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "circular_saw",
+                    "-300",
+                    "265",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "circular_saw",
+                    "-300",
+                    "365",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "circular_saw",
+                    "-300",
+                    "465",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "circular_saw",
+                    "-300",
+                    "565",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "circular_saw",
+                    "-300",
+                    "665",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "circular_saw",
+                    "-300",
+                    "765",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::TweenBehavior::AddObjectPositionXTween2"
+                  },
+                  "parameters": [
+                    "circular_saw",
+                    "Tween",
+                    "\"CircularSawAppear\"",
+                    "1600",
+                    "\"linear\"",
+                    "10",
+                    "10"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ScalableCapability::ScalableBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "circular_saw",
+                    "Scale",
+                    "=",
+                    "0.5"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "2"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetBooleanVariable"
+                  },
+                  "parameters": [
+                    "SpawnCircularSaw",
+                    "True",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "CircularSawType",
+                    "=",
+                    "2"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "circular_saw",
+                    "-300",
+                    "-35",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "circular_saw",
+                    "-300",
+                    "165",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "circular_saw",
+                    "-300",
+                    "265",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "circular_saw",
+                    "-300",
+                    "365",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "circular_saw",
+                    "-300",
+                    "465",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "circular_saw",
+                    "-300",
+                    "565",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "circular_saw",
+                    "-300",
+                    "665",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "circular_saw",
+                    "-300",
+                    "765",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::TweenBehavior::AddObjectPositionXTween2"
+                  },
+                  "parameters": [
+                    "circular_saw",
+                    "Tween",
+                    "\"CircularSawAppear\"",
+                    "1600",
+                    "\"linear\"",
+                    "10",
+                    "10"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ScalableCapability::ScalableBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "circular_saw",
+                    "Scale",
+                    "=",
+                    "0.5"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "2"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetBooleanVariable"
+                  },
+                  "parameters": [
+                    "SpawnCircularSaw",
+                    "True",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "CircularSawType",
+                    "=",
+                    "3"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "circular_saw",
+                    "-300",
+                    "-35",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "circular_saw",
+                    "-300",
+                    "65",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "circular_saw",
+                    "-300",
+                    "265",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "circular_saw",
+                    "-300",
+                    "365",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "circular_saw",
+                    "-300",
+                    "465",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "circular_saw",
+                    "-300",
+                    "565",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "circular_saw",
+                    "-300",
+                    "665",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "circular_saw",
+                    "-300",
+                    "765",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::TweenBehavior::AddObjectPositionXTween2"
+                  },
+                  "parameters": [
+                    "circular_saw",
+                    "Tween",
+                    "\"CircularSawAppear\"",
+                    "1600",
+                    "\"linear\"",
+                    "10",
+                    "10"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ScalableCapability::ScalableBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "circular_saw",
+                    "Scale",
+                    "=",
+                    "0.5"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "2"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetBooleanVariable"
+                  },
+                  "parameters": [
+                    "SpawnCircularSaw",
+                    "True",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "CircularSawType",
+                    "=",
+                    "4"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "circular_saw",
+                    "-300",
+                    "-35",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "circular_saw",
+                    "-300",
+                    "65",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "circular_saw",
+                    "-300",
+                    "165",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "circular_saw",
+                    "-300",
+                    "365",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "circular_saw",
+                    "-300",
+                    "465",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "circular_saw",
+                    "-300",
+                    "565",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "circular_saw",
+                    "-300",
+                    "665",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "circular_saw",
+                    "-300",
+                    "765",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::TweenBehavior::AddObjectPositionXTween2"
+                  },
+                  "parameters": [
+                    "circular_saw",
+                    "Tween",
+                    "\"CircularSawAppear\"",
+                    "1600",
+                    "\"linear\"",
+                    "10",
+                    "10"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ScalableCapability::ScalableBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "circular_saw",
+                    "Scale",
+                    "=",
+                    "0.5"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "2"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetBooleanVariable"
+                  },
+                  "parameters": [
+                    "SpawnCircularSaw",
+                    "True",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "CircularSawType",
+                    "=",
+                    "5"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "circular_saw",
+                    "-300",
+                    "-35",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "circular_saw",
+                    "-300",
+                    "65",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "circular_saw",
+                    "-300",
+                    "165",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "circular_saw",
+                    "-300",
+                    "265",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "circular_saw",
+                    "-300",
+                    "465",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "circular_saw",
+                    "-300",
+                    "565",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "circular_saw",
+                    "-300",
+                    "665",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "circular_saw",
+                    "-300",
+                    "765",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::TweenBehavior::AddObjectPositionXTween2"
+                  },
+                  "parameters": [
+                    "circular_saw",
+                    "Tween",
+                    "\"CircularSawAppear\"",
+                    "1600",
+                    "\"linear\"",
+                    "10",
+                    "10"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ScalableCapability::ScalableBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "circular_saw",
+                    "Scale",
+                    "=",
+                    "0.5"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "2"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetBooleanVariable"
+                  },
+                  "parameters": [
+                    "SpawnCircularSaw",
+                    "True",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "CircularSawType",
+                    "=",
+                    "6"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "circular_saw",
+                    "-300",
+                    "-35",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "circular_saw",
+                    "-300",
+                    "65",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "circular_saw",
+                    "-300",
+                    "165",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "circular_saw",
+                    "-300",
+                    "265",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "circular_saw",
+                    "-300",
+                    "365",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "circular_saw",
+                    "-300",
+                    "465",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "circular_saw",
+                    "-300",
+                    "665",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "circular_saw",
+                    "-300",
+                    "765",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::TweenBehavior::AddObjectPositionXTween2"
+                  },
+                  "parameters": [
+                    "circular_saw",
+                    "Tween",
+                    "\"CircularSawAppear\"",
+                    "1600",
+                    "\"linear\"",
+                    "10",
+                    "10"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ScalableCapability::ScalableBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "circular_saw",
+                    "Scale",
+                    "=",
+                    "0.5"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "2"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetBooleanVariable"
+                  },
+                  "parameters": [
+                    "SpawnCircularSaw",
+                    "True",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "CircularSawType",
+                    "=",
+                    "7"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "circular_saw",
+                    "-300",
+                    "-35",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "circular_saw",
+                    "-300",
+                    "65",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "circular_saw",
+                    "-300",
+                    "165",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "circular_saw",
+                    "-300",
+                    "265",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "circular_saw",
+                    "-300",
+                    "365",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "circular_saw",
+                    "-300",
+                    "465",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "circular_saw",
+                    "-300",
+                    "565",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "circular_saw",
+                    "-300",
+                    "765",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::TweenBehavior::AddObjectPositionXTween2"
+                  },
+                  "parameters": [
+                    "circular_saw",
+                    "Tween",
+                    "\"CircularSawAppear\"",
+                    "1600",
+                    "\"linear\"",
+                    "10",
+                    "10"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ScalableCapability::ScalableBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "circular_saw",
+                    "Scale",
+                    "=",
+                    "0.5"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "2"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetBooleanVariable"
+                  },
+                  "parameters": [
+                    "SpawnCircularSaw",
+                    "True",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "CircularSawType",
+                    "=",
+                    "8"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "circular_saw",
+                    "-300",
+                    "-35",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "circular_saw",
+                    "-300",
+                    "65",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "circular_saw",
+                    "-300",
+                    "165",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "circular_saw",
+                    "-300",
+                    "265",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "circular_saw",
+                    "-300",
+                    "365",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "circular_saw",
+                    "-300",
+                    "465",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "circular_saw",
+                    "-300",
+                    "565",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "circular_saw",
+                    "-300",
+                    "665",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::TweenBehavior::AddObjectPositionXTween2"
+                  },
+                  "parameters": [
+                    "circular_saw",
+                    "Tween",
+                    "\"CircularSawAppear\"",
+                    "1600",
+                    "\"linear\"",
+                    "10",
+                    "10"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ScalableCapability::ScalableBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "circular_saw",
+                    "Scale",
+                    "=",
+                    "0.5"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "2"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetBooleanVariable"
+                  },
+                  "parameters": [
+                    "SpawnCircularSaw",
+                    "True",
+                    ""
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "parameters": []
     },
     {
       "colorB": 228,
@@ -4758,16 +8245,7 @@
               "parameters": [
                 "BossFightStarted",
                 "True",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "KeyFromTextPressed"
-              },
-              "parameters": [
-                "",
-                "\"t\""
+                "="
               ]
             }
           ],
@@ -4785,13 +8263,10 @@
             },
             {
               "type": {
-                "value": "SetNumberObjectVariable"
+                "value": "Wait"
               },
               "parameters": [
-                "Bubble_Spawner",
-                "ItemNo",
-                "=",
-                "RandomInRange(1, 3)"
+                "RandomInRange(9, 12)"
               ]
             },
             {
@@ -4841,250 +8316,211 @@
                 "10",
                 ""
               ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "heart_powerup",
+                "bubble.X()",
+                "bubble.Y()",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ScalableCapability::ScalableBehavior::SetValue"
+              },
+              "parameters": [
+                "heart_powerup",
+                "Scale",
+                "=",
+                "0.75"
+              ]
+            },
+            {
+              "type": {
+                "value": "Sticker::Sticker::Stick"
+              },
+              "parameters": [
+                "heart_powerup",
+                "Sticker",
+                "bubble",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "LinkedObjects::LinkObjects"
+              },
+              "parameters": [
+                "",
+                "heart_powerup",
+                "bubble"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanObjectVariable"
+              },
+              "parameters": [
+                "Bubble_Spawner",
+                "Spawned",
+                "False",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BooleanObjectVariable"
+              },
+              "parameters": [
+                "Bubble_Spawner2",
+                "Spawned",
+                "False",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanObjectVariable"
+              },
+              "parameters": [
+                "submarine_boss",
+                "BossFollowing",
+                "True",
+                ""
+              ]
             }
           ],
-          "events": [
+          "actions": [
             {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "NumberObjectVariable"
-                  },
-                  "parameters": [
-                    "Bubble_Spawner",
-                    "ItemNo",
-                    "=",
-                    "1"
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "Create"
-                  },
-                  "parameters": [
-                    "",
-                    "shield_powerup",
-                    "bubble.X()",
-                    "bubble.Y()",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "ScalableCapability::ScalableBehavior::SetValue"
-                  },
-                  "parameters": [
-                    "shield_powerup",
-                    "Scale",
-                    "=",
-                    "0.75"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Sticker::Sticker::Stick"
-                  },
-                  "parameters": [
-                    "shield_powerup",
-                    "Sticker",
-                    "bubble",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "LinkedObjects::LinkObjects"
-                  },
-                  "parameters": [
-                    "",
-                    "shield_powerup",
-                    "bubble"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Wait"
-                  },
-                  "parameters": [
-                    "3"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetBooleanObjectVariable"
-                  },
-                  "parameters": [
-                    "Bubble_Spawner",
-                    "Spawned",
-                    "False",
-                    ""
-                  ]
-                }
+              "type": {
+                "value": "SetBooleanObjectVariable"
+              },
+              "parameters": [
+                "Bubble_Spawner2",
+                "Spawned",
+                "True",
+                ""
               ]
             },
             {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "NumberObjectVariable"
-                  },
-                  "parameters": [
-                    "Bubble_Spawner",
-                    "ItemNo",
-                    "=",
-                    "2"
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "Create"
-                  },
-                  "parameters": [
-                    "",
-                    "stun_powerup",
-                    "bubble.X()",
-                    "bubble.Y()",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "ScalableCapability::ScalableBehavior::SetValue"
-                  },
-                  "parameters": [
-                    "stun_powerup",
-                    "Scale",
-                    "=",
-                    "0.75"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Sticker::Sticker::Stick"
-                  },
-                  "parameters": [
-                    "stun_powerup",
-                    "Sticker",
-                    "bubble",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "LinkedObjects::LinkObjects"
-                  },
-                  "parameters": [
-                    "",
-                    "stun_powerup",
-                    "bubble"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Wait"
-                  },
-                  "parameters": [
-                    "3"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetBooleanObjectVariable"
-                  },
-                  "parameters": [
-                    "Bubble_Spawner",
-                    "Spawned",
-                    "False",
-                    ""
-                  ]
-                }
+              "type": {
+                "value": "MettreX"
+              },
+              "parameters": [
+                "Bubble_Spawner2",
+                "=",
+                "RandomInRange(-80, 1360)"
               ]
             },
             {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "NumberObjectVariable"
-                  },
-                  "parameters": [
-                    "Bubble_Spawner",
-                    "ItemNo",
-                    "=",
-                    "3"
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "Create"
-                  },
-                  "parameters": [
-                    "",
-                    "magnet_powerup",
-                    "bubble.X()",
-                    "bubble.Y()",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "ScalableCapability::ScalableBehavior::SetValue"
-                  },
-                  "parameters": [
-                    "magnet_powerup",
-                    "Scale",
-                    "=",
-                    "0.75"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Sticker::Sticker::Stick"
-                  },
-                  "parameters": [
-                    "magnet_powerup",
-                    "Sticker",
-                    "bubble",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "LinkedObjects::LinkObjects"
-                  },
-                  "parameters": [
-                    "",
-                    "magnet_powerup",
-                    "bubble"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Wait"
-                  },
-                  "parameters": [
-                    "3"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetBooleanObjectVariable"
-                  },
-                  "parameters": [
-                    "Bubble_Spawner",
-                    "Spawned",
-                    "False",
-                    ""
-                  ]
-                }
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "bubble2",
+                "Bubble_Spawner2.X()",
+                "Bubble_Spawner2.Y()",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ScalableCapability::ScalableBehavior::SetValue"
+              },
+              "parameters": [
+                "bubble2",
+                "Scale",
+                "=",
+                "0.5"
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectPositionTween2"
+              },
+              "parameters": [
+                "bubble2",
+                "Tween",
+                "\"Floating\"",
+                "bubble2.X()",
+                "-230",
+                "\"linear\"",
+                "10",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "target_powerup",
+                "bubble2.X()",
+                "bubble2.Y()",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ScalableCapability::ScalableBehavior::SetValue"
+              },
+              "parameters": [
+                "target_powerup",
+                "Scale",
+                "=",
+                "0.1"
+              ]
+            },
+            {
+              "type": {
+                "value": "Sticker::Sticker::Stick"
+              },
+              "parameters": [
+                "target_powerup",
+                "Sticker",
+                "bubble2",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "LinkedObjects::LinkObjects"
+              },
+              "parameters": [
+                "",
+                "target_powerup",
+                "bubble2"
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "RandomInRange(5, 7)"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanObjectVariable"
+              },
+              "parameters": [
+                "Bubble_Spawner2",
+                "Spawned",
+                "False",
+                ""
               ]
             }
           ]
@@ -5127,11 +8563,23 @@
                 "Flash",
                 ""
               ]
+            },
+            {
+              "type": {
+                "value": "BooleanObjectVariable"
+              },
+              "parameters": [
+                "Player_Fish",
+                "Boosting",
+                "False",
+                ""
+              ]
             }
           ],
           "actions": [],
           "events": [
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -5366,6 +8814,7 @@
               ]
             },
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -5519,6 +8968,155 @@
                         "no"
                       ]
                     }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "LinkedObjects::PickObjectsLinkedTo"
+                  },
+                  "parameters": [
+                    "",
+                    "heart_powerup",
+                    "bubble",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "bubble",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "Health",
+                    "+",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "assets\\sfx\\heal sound.MP3",
+                    "",
+                    "100",
+                    ""
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Player_Fish",
+                "bubble2",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "inverted": true,
+                "value": "Flash::Flash::IsFlashing"
+              },
+              "parameters": [
+                "Player_Fish",
+                "Flash",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanObjectVariable"
+              },
+              "parameters": [
+                "Player_Fish",
+                "Boosting",
+                "False",
+                ""
+              ]
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "LinkedObjects::PickObjectsLinkedTo"
+                  },
+                  "parameters": [
+                    "",
+                    "target_powerup",
+                    "bubble2",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "bubble2",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetBooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "Player_Fish",
+                    "CanRotate",
+                    "True",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "FlippableCapability::FlippableBehavior::FlipX"
+                  },
+                  "parameters": [
+                    "Player_Fish",
+                    "Flippable",
+                    "no"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PathfindingBehavior::RotateObject"
+                  },
+                  "parameters": [
+                    "Player_Fish",
+                    "Pathfinding",
+                    "yes"
                   ]
                 }
               ]
@@ -5884,6 +9482,17 @@
             },
             {
               "type": {
+                "value": "BooleanObjectVariable"
+              },
+              "parameters": [
+                "Player_Fish",
+                "Boosting",
+                "False",
+                ""
+              ]
+            },
+            {
+              "type": {
                 "value": "BuiltinCommonInstructions::Once"
               },
               "parameters": []
@@ -5985,120 +9594,14 @@
       "parameters": []
     },
     {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "CollisionNP"
-          },
-          "parameters": [
-            "Player_Fish",
-            "Danger Objects",
-            "",
-            "",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "inverted": true,
-            "value": "Flash::Flash::IsFlashing"
-          },
-          "parameters": [
-            "Player_Fish",
-            "Flash",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "BooleanObjectVariable"
-          },
-          "parameters": [
-            "Player_Fish",
-            "ShieldEnabled",
-            "False",
-            ""
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "Create"
-          },
-          "parameters": [
-            "",
-            "FishBone",
-            "Player_Fish.X()",
-            "Player_Fish.Y()",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "ScalableCapability::ScalableBehavior::SetValue"
-          },
-          "parameters": [
-            "FishBone",
-            "Scale",
-            "=",
-            "3"
-          ]
-        },
-        {
-          "type": {
-            "value": "Delete"
-          },
-          "parameters": [
-            "Player_Fish",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "SetNumberVariable"
-          },
-          "parameters": [
-            "Health",
-            "-",
-            "1"
-          ]
-        },
-        {
-          "type": {
-            "value": "PlaySound"
-          },
-          "parameters": [
-            "",
-            "assets\\sfx\\explode sound.MP3",
-            "",
-            "100",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "SetBooleanVariable"
-          },
-          "parameters": [
-            "PlayerGotEaten",
-            "True",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "AddForceXY"
-          },
-          "parameters": [
-            "FishBone",
-            "0",
-            "200",
-            "1"
-          ]
-        }
-      ],
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "folded": true,
+      "name": "Player Health and Death",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
       "events": [
         {
           "type": "BuiltinCommonInstructions::Standard",
@@ -6109,9 +9612,42 @@
               },
               "parameters": [
                 "Player_Fish",
-                "missile",
+                "Danger Objects",
                 "",
                 "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "inverted": true,
+                "value": "Flash::Flash::IsFlashing"
+              },
+              "parameters": [
+                "Player_Fish",
+                "Flash",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanObjectVariable"
+              },
+              "parameters": [
+                "Player_Fish",
+                "ShieldEnabled",
+                "False",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanObjectVariable"
+              },
+              "parameters": [
+                "Player_Fish",
+                "Boosting",
+                "False",
                 ""
               ]
             }
@@ -6119,11 +9655,178 @@
           "actions": [
             {
               "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "FishBone",
+                "Player_Fish.X()",
+                "Player_Fish.Y()",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ScalableCapability::ScalableBehavior::SetValue"
+              },
+              "parameters": [
+                "FishBone",
+                "Scale",
+                "=",
+                "3"
+              ]
+            },
+            {
+              "type": {
                 "value": "Delete"
               },
               "parameters": [
-                "missile",
+                "Player_Fish",
                 ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "Health",
+                "-",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "PlayerGotEaten",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "AddForceXY"
+              },
+              "parameters": [
+                "FishBone",
+                "0",
+                "200",
+                "1"
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "Player_Fish",
+                    "missile",
+                    "",
+                    "",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "missile",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "assets\\sfx\\explode sound.MP3",
+                    "",
+                    "100",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "Player_Fish",
+                    "sea_mine",
+                    "",
+                    "",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "sea_mine",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "assets\\sfx\\explode sound.MP3",
+                    "",
+                    "100",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "Player_Fish",
+                    "circular_saw",
+                    "",
+                    "",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "assets\\sfx\\saw sound.MP3",
+                    "",
+                    "60",
+                    ""
+                  ]
+                }
               ]
             }
           ]
@@ -6133,138 +9836,537 @@
           "conditions": [
             {
               "type": {
-                "value": "CollisionNP"
+                "value": "NumberVariable"
               },
               "parameters": [
-                "Player_Fish",
-                "sea_mine",
-                "",
-                "",
-                ""
+                "Health",
+                ">",
+                "5"
               ]
             }
           ],
           "actions": [
             {
               "type": {
-                "value": "Delete"
+                "value": "SetNumberVariable"
               },
               "parameters": [
-                "sea_mine",
+                "Health",
+                "=",
+                "5"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "Health",
+                "=",
+                "5"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "HeartNo5",
+                "Animation",
+                "=",
+                "\"idle\""
+              ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "HeartNo4",
+                "Animation",
+                "=",
+                "\"idle\""
+              ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "HeartNo3",
+                "Animation",
+                "=",
+                "\"idle\""
+              ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "HeartNo2",
+                "Animation",
+                "=",
+                "\"idle\""
+              ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "HeartNo1",
+                "Animation",
+                "=",
+                "\"idle\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "Health",
+                "=",
+                "4"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "HeartNo5",
+                "Animation",
+                "=",
+                "\"empty\""
+              ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "HeartNo4",
+                "Animation",
+                "=",
+                "\"idle\""
+              ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "HeartNo3",
+                "Animation",
+                "=",
+                "\"idle\""
+              ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "HeartNo2",
+                "Animation",
+                "=",
+                "\"idle\""
+              ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "HeartNo1",
+                "Animation",
+                "=",
+                "\"idle\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "Health",
+                "=",
+                "3"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "HeartNo5",
+                "Animation",
+                "=",
+                "\"empty\""
+              ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "HeartNo4",
+                "Animation",
+                "=",
+                "\"empty\""
+              ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "HeartNo3",
+                "Animation",
+                "=",
+                "\"idle\""
+              ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "HeartNo2",
+                "Animation",
+                "=",
+                "\"idle\""
+              ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "HeartNo1",
+                "Animation",
+                "=",
+                "\"idle\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "Health",
+                "=",
+                "2"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "HeartNo5",
+                "Animation",
+                "=",
+                "\"empty\""
+              ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "HeartNo4",
+                "Animation",
+                "=",
+                "\"empty\""
+              ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "HeartNo3",
+                "Animation",
+                "=",
+                "\"empty\""
+              ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "HeartNo2",
+                "Animation",
+                "=",
+                "\"idle\""
+              ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "HeartNo1",
+                "Animation",
+                "=",
+                "\"idle\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "Health",
+                "=",
+                "1"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "HeartNo5",
+                "Animation",
+                "=",
+                "\"empty\""
+              ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "HeartNo4",
+                "Animation",
+                "=",
+                "\"empty\""
+              ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "HeartNo3",
+                "Animation",
+                "=",
+                "\"empty\""
+              ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "HeartNo2",
+                "Animation",
+                "=",
+                "\"empty\""
+              ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "HeartNo1",
+                "Animation",
+                "=",
+                "\"idle\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "Health",
+                "=",
+                "0"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "HeartNo5",
+                "Animation",
+                "=",
+                "\"empty\""
+              ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "HeartNo4",
+                "Animation",
+                "=",
+                "\"empty\""
+              ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "HeartNo3",
+                "Animation",
+                "=",
+                "\"empty\""
+              ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "HeartNo2",
+                "Animation",
+                "=",
+                "\"empty\""
+              ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "HeartNo1",
+                "Animation",
+                "=",
+                "\"empty\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "PlayerGotEaten",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "2"
+              ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "Player_Fish",
+                "600",
+                "300",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ScalableCapability::ScalableBehavior::SetValue"
+              },
+              "parameters": [
+                "Player_Fish",
+                "Scale",
+                "=",
+                "0.3"
+              ]
+            },
+            {
+              "type": {
+                "value": "Flash::Flash::Flash"
+              },
+              "parameters": [
+                "Player_Fish",
+                "Flash",
+                "2",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "PlayerGotEaten",
+                "False",
                 ""
               ]
             }
           ]
         }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "NumberVariable"
-          },
-          "parameters": [
-            "Health",
-            "=",
-            "4"
-          ]
-        }
       ],
-      "actions": [
-        {
-          "type": {
-            "value": "AnimatableCapability::AnimatableBehavior::SetName"
-          },
-          "parameters": [
-            "HeartNo1",
-            "Animation",
-            "=",
-            "\"empty\""
-          ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [],
-      "actions": []
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "BooleanVariable"
-          },
-          "parameters": [
-            "PlayerGotEaten",
-            "True",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "BuiltinCommonInstructions::Once"
-          },
-          "parameters": []
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "Wait"
-          },
-          "parameters": [
-            "2"
-          ]
-        },
-        {
-          "type": {
-            "value": "Create"
-          },
-          "parameters": [
-            "",
-            "Player_Fish",
-            "600",
-            "300",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "ScalableCapability::ScalableBehavior::SetValue"
-          },
-          "parameters": [
-            "Player_Fish",
-            "Scale",
-            "=",
-            "0.3"
-          ]
-        },
-        {
-          "type": {
-            "value": "Flash::Flash::Flash"
-          },
-          "parameters": [
-            "Player_Fish",
-            "Flash",
-            "2",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "SetBooleanVariable"
-          },
-          "parameters": [
-            "PlayerGotEaten",
-            "False",
-            ""
-          ]
-        }
-      ]
+      "parameters": []
     }
   ],
   "layers": [
@@ -6423,6 +10525,10 @@
     {
       "name": "Scale",
       "type": "ScalableCapability::ScalableBehavior"
+    },
+    {
+      "name": "ShakeObject_PositionAngle",
+      "type": "ShakeObject::ShakeObject_PositionAngle"
     },
     {
       "name": "Sticker",

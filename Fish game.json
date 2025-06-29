@@ -945,6 +945,80 @@
           "identifier": "https://asset-resources.gdevelop.io/public-resources/Kenney New Platformer Pack 1.0/HUD/fc7b160c4a60eeb22251536cc970f4fa0a03ac18ce5882f6ff07a9cb240fa7e9_hud heart_idle.png",
           "name": "hud heart_idle.png"
         }
+      },
+      {
+        "file": "assets/power-ups/heart icon.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\power-ups\\heart icon.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/sfx/heal sound.MP3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\sfx\\heal sound.MP3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/power-ups/target icon.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\power-ups\\target icon.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/sfx/charge sound.MP3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\sfx\\charge sound.MP3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/sfx/boost sound.MP3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\sfx\\boost sound.MP3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/sfx/metal sound.MP3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\sfx\\metal sound.MP3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/circular saw.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\circular saw.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/sfx/saw sound.MP3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\sfx\\saw sound.MP3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -981,6 +1055,21 @@
           "name": "MagnetEnabled",
           "type": "boolean",
           "value": false
+        },
+        {
+          "name": "CanRotate",
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "name": "Targetting",
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "name": "Boosting",
+          "type": "boolean",
+          "value": false
         }
       ],
       "effects": [],
@@ -1001,12 +1090,12 @@
           "TintColor": "\"255;255;255\""
         },
         {
+          "angularMaxSpeed": 360,
           "name": "Pathfinding",
           "type": "PathfindingBehavior::PathfindingBehavior",
           "acceleration": 600,
           "allowDiagonals": true,
           "angleOffset": 0,
-          "angularMaxSpeed": 180,
           "cellHeight": 20,
           "cellWidth": 20,
           "extraBorder": 0,
@@ -1015,6 +1104,10 @@
           "maxSpeed": 500,
           "rotateObject": false,
           "smoothingMaxCellGap": 1
+        },
+        {
+          "name": "ShakeObject_PositionAngle",
+          "type": "ShakeObject::ShakeObject_PositionAngle"
         },
         {
           "name": "Sticker",
@@ -3012,6 +3105,10 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/eventsFunctionsExtensions/tiledunitsbar"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/shakeobject"
     }
   ],
   "externalLayouts": []
