@@ -9,7 +9,7 @@
   "title": "",
   "v": 255,
   "uiSettings": {
-    "grid": false,
+    "grid": true,
     "gridType": "rectangular",
     "gridWidth": 64,
     "gridHeight": 64,
@@ -17,14 +17,19 @@
     "gridOffsetY": 0,
     "gridColor": 10401023,
     "gridAlpha": 0.4,
-    "snap": false,
-    "zoomFactor": 0.3673257545058866,
+    "snap": true,
+    "zoomFactor": 0.35534345588170313,
     "windowMask": false
   },
   "objectsGroups": [],
   "variables": [
     {
       "name": "Total_Score",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "name": "Pause",
       "type": "number",
       "value": 0
     }
@@ -193,6 +198,38 @@
       "x": 24,
       "y": 33,
       "zOrder": 19,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "UI",
+      "name": "retrybutton",
+      "persistentUuid": "173cd999-6385-4954-a8f5-5f13b1bf5b95",
+      "width": 0,
+      "x": 256,
+      "y": 512,
+      "zOrder": 20,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "UI",
+      "name": "homebutton",
+      "persistentUuid": "90809221-afd4-4f9e-98a1-b49fda10ed50",
+      "width": 0,
+      "x": 768,
+      "y": 512,
+      "zOrder": 21,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -1801,6 +1838,174 @@
           ]
         }
       ]
+    },
+    {
+      "assetStoreId": "055eaaaceaa6fa09820aff95e0291764fbd98d84a9c2fb8cb3c4e059010a477b",
+      "name": "retrybutton",
+      "type": "PanelSpriteButton::PanelSpriteButton",
+      "variant": "",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "BottomPadding": 16,
+        "TopPadding": 0,
+        "LeftPadding": 10,
+        "RightPadding": 10,
+        "PressedLabelOffsetY": 3
+      },
+      "childrenContent": {
+        "Hovered": {
+          "bottomMargin": 50,
+          "height": 128,
+          "leftMargin": 37,
+          "rightMargin": 32,
+          "texture": "Yellow Jelly Button_Hovered.png",
+          "tiled": false,
+          "topMargin": 50,
+          "width": 256
+        },
+        "Idle": {
+          "bottomMargin": 50,
+          "height": 128,
+          "leftMargin": 37,
+          "rightMargin": 32,
+          "texture": "Yellow Jelly Button_Idle.png",
+          "tiled": false,
+          "topMargin": 50,
+          "width": 256
+        },
+        "Label": {
+          "bold": false,
+          "italic": false,
+          "smoothed": true,
+          "underlined": false,
+          "string": "RETRY",
+          "font": "Aquaphonic-Dehydrated.otf",
+          "textAlignment": "center",
+          "characterSize": 60,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "RETRY",
+            "font": "Aquaphonic-Dehydrated.otf",
+            "textAlignment": "center",
+            "verticalTextAlignment": "top",
+            "characterSize": 60,
+            "color": "255;255;255"
+          }
+        },
+        "Pressed": {
+          "bottomMargin": 50,
+          "height": 128,
+          "leftMargin": 37,
+          "rightMargin": 32,
+          "texture": "Yellow Jelly Button_Pressed.png",
+          "tiled": false,
+          "topMargin": 50,
+          "width": 256
+        }
+      }
+    },
+    {
+      "assetStoreId": "055eaaaceaa6fa09820aff95e0291764fbd98d84a9c2fb8cb3c4e059010a477b",
+      "name": "homebutton",
+      "type": "PanelSpriteButton::PanelSpriteButton",
+      "variant": "",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "BottomPadding": 16,
+        "TopPadding": 0,
+        "LeftPadding": 10,
+        "RightPadding": 10,
+        "PressedLabelOffsetY": 3
+      },
+      "childrenContent": {
+        "Hovered": {
+          "bottomMargin": 50,
+          "height": 128,
+          "leftMargin": 37,
+          "rightMargin": 32,
+          "texture": "Yellow Jelly Button_Hovered.png",
+          "tiled": false,
+          "topMargin": 50,
+          "width": 256
+        },
+        "Idle": {
+          "bottomMargin": 50,
+          "height": 128,
+          "leftMargin": 37,
+          "rightMargin": 32,
+          "texture": "Yellow Jelly Button_Idle.png",
+          "tiled": false,
+          "topMargin": 50,
+          "width": 256
+        },
+        "Label": {
+          "bold": false,
+          "italic": false,
+          "smoothed": true,
+          "underlined": false,
+          "string": "HOME",
+          "font": "Aquaphonic-Dehydrated.otf",
+          "textAlignment": "center",
+          "characterSize": 60,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "HOME",
+            "font": "Aquaphonic-Dehydrated.otf",
+            "textAlignment": "center",
+            "verticalTextAlignment": "top",
+            "characterSize": 60,
+            "color": "255;255;255"
+          }
+        },
+        "Pressed": {
+          "bottomMargin": 50,
+          "height": 128,
+          "leftMargin": 37,
+          "rightMargin": 32,
+          "texture": "Yellow Jelly Button_Pressed.png",
+          "tiled": false,
+          "topMargin": 50,
+          "width": 256
+        }
+      }
     }
   ],
   "objectsFolderStructure": {
@@ -1865,6 +2070,12 @@
       },
       {
         "objectName": "FishBone"
+      },
+      {
+        "objectName": "retrybutton"
+      },
+      {
+        "objectName": "homebutton"
       }
     ]
   },
@@ -1894,7 +2105,7 @@
           },
           "parameters": [
             "",
-            "assets\\bgm\\underwater_sound.mp3",
+            "assets\\underwater_sound.MP3",
             "1",
             "yes",
             "25",
@@ -1907,7 +2118,7 @@
           },
           "parameters": [
             "",
-            "assets\\bgm\\salty_moon.mp3",
+            "salty_moon.mp3",
             "1",
             "yes",
             "25",
@@ -2298,6 +2509,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "Player Movement",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -2768,7 +2980,7 @@
               },
               "parameters": [
                 "",
-                "\"Level Three\"",
+                "\"victory screen\"",
                 ""
               ]
             }
@@ -2782,6 +2994,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "Player got eaten",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -3005,6 +3218,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "EnemySpawn",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -3855,6 +4069,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "FishEnemy1",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -4521,6 +4736,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "FishEnemy2",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -5308,6 +5524,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "FishEnemy3",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -6130,7 +6347,7 @@
               },
               "parameters": [
                 "",
-                "assets\\sfx\\eating sound 3.MP3",
+                "eating sound 3.MP3",
                 "",
                 "80",
                 ""
@@ -6188,6 +6405,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "ItemSpawn",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -6533,6 +6751,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "ItemEffect",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -6908,7 +7127,7 @@
                   },
                   "parameters": [
                     "",
-                    "assets\\sfx\\magnet sound.MP3",
+                    "magnet sound.MP3",
                     "",
                     "100",
                     ""
@@ -7709,6 +7928,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "Jellyfish",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -7958,6 +8178,366 @@
         }
       ],
       "parameters": []
+    },
+    {
+      "type": "BuiltinCommonInstructions::Comment",
+      "color": {
+        "b": 109,
+        "g": 230,
+        "r": 255,
+        "textB": 0,
+        "textG": 0,
+        "textR": 0
+      },
+      "comment": "pause"
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "DepartScene"
+          },
+          "parameters": [
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "SetNumberVariable"
+          },
+          "parameters": [
+            "Pause",
+            "=",
+            "0"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": [
+        {
+          "type": {
+            "value": "MettreXY"
+          },
+          "parameters": [
+            "retrybutton",
+            "=",
+            "256",
+            "=",
+            "512"
+          ]
+        },
+        {
+          "type": {
+            "value": "MettreXY"
+          },
+          "parameters": [
+            "homebutton",
+            "=",
+            "768",
+            "=",
+            "512"
+          ]
+        },
+        {
+          "type": {
+            "value": "ResizableCapability::ResizableBehavior::SetWidth"
+          },
+          "parameters": [
+            "blackpause",
+            "Resizable",
+            "=",
+            "SceneWindowWidth()"
+          ]
+        },
+        {
+          "type": {
+            "value": "ResizableCapability::ResizableBehavior::SetHeight"
+          },
+          "parameters": [
+            "blackpause",
+            "Resizable",
+            "=",
+            "SceneWindowHeight()"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "KeyFromTextPressed"
+          },
+          "parameters": [
+            "",
+            "\"Escape\""
+          ]
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "SetNumberVariable"
+          },
+          "parameters": [
+            "Pause",
+            "+",
+            "1"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "NumberVariable"
+          },
+          "parameters": [
+            "Pause",
+            "=",
+            "2"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "SetNumberVariable"
+          },
+          "parameters": [
+            "Pause",
+            "=",
+            "0"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "NumberVariable"
+          },
+          "parameters": [
+            "Pause",
+            "=",
+            "1"
+          ]
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "ChangeTimeScale"
+          },
+          "parameters": [
+            "",
+            "0"
+          ]
+        },
+        {
+          "type": {
+            "value": "PauseMusicCanal"
+          },
+          "parameters": [
+            "",
+            "1"
+          ]
+        },
+        {
+          "type": {
+            "value": "Create"
+          },
+          "parameters": [
+            "",
+            "retrybutton",
+            "256",
+            "512",
+            "\"UI\""
+          ]
+        },
+        {
+          "type": {
+            "value": "Create"
+          },
+          "parameters": [
+            "",
+            "homebutton",
+            "768",
+            "512",
+            "\"UI\""
+          ]
+        },
+        {
+          "type": {
+            "value": "Create"
+          },
+          "parameters": [
+            "",
+            "blackpause",
+            "0",
+            "0",
+            "\"UI\""
+          ]
+        },
+        {
+          "type": {
+            "value": "OpacityCapability::OpacityBehavior::SetValue"
+          },
+          "parameters": [
+            "blackpause",
+            "Opacity",
+            "=",
+            "100"
+          ]
+        },
+        {
+          "type": {
+            "value": "ChangePlan"
+          },
+          "parameters": [
+            "blackpause",
+            "=",
+            "1"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "NumberVariable"
+          },
+          "parameters": [
+            "Pause",
+            "=",
+            "0"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "ChangeTimeScale"
+          },
+          "parameters": [
+            "",
+            "1"
+          ]
+        },
+        {
+          "type": {
+            "value": "RePlayMusicCanal"
+          },
+          "parameters": [
+            "",
+            "1"
+          ]
+        },
+        {
+          "type": {
+            "value": "Delete"
+          },
+          "parameters": [
+            "retrybutton",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "Delete"
+          },
+          "parameters": [
+            "homebutton",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "Delete"
+          },
+          "parameters": [
+            "blackpause",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+          },
+          "parameters": [
+            "retrybutton",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Scene"
+          },
+          "parameters": [
+            "",
+            "\"Level One\"",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+          },
+          "parameters": [
+            "homebutton",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Scene"
+          },
+          "parameters": [
+            "",
+            "\"Main Menu\"",
+            ""
+          ]
+        }
+      ]
     }
   ],
   "layers": [

@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.14513286445533274,
+    "zoomFactor": 0.40575189059438804,
     "windowMask": false
   },
   "objectsGroups": [
@@ -209,41 +209,8 @@
       "persistentUuid": "58bf2d52-5009-4db0-b66b-c9ccbbc96a46",
       "width": 416,
       "x": 1888,
-      "y": 340,
-      "zOrder": 17,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 48,
-      "height": 28,
-      "keepRatio": true,
-      "layer": "",
-      "name": "musicbar",
-      "persistentUuid": "d1d8815b-5b86-4fbd-ac5d-505795549d1b",
-      "width": 416,
-      "x": 1888,
-      "y": 500,
-      "zOrder": 18,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "",
-      "name": "mustext",
-      "persistentUuid": "3a2c73eb-290f-4f19-8478-73c0765ba6df",
-      "width": 0,
-      "x": 2048,
       "y": 448,
-      "zOrder": 19,
+      "zOrder": 17,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -257,8 +224,8 @@
       "name": "soundtext",
       "persistentUuid": "3e5c650a-9f91-4ede-b42f-2a4d0d001e5a",
       "width": 0,
-      "x": 2048,
-      "y": 288,
+      "x": 2034,
+      "y": 384,
       "zOrder": 20,
       "numberProperties": [],
       "stringProperties": [],
@@ -287,7 +254,7 @@
       "height": 736,
       "keepRatio": true,
       "layer": "",
-      "name": "backgroundmain",
+      "name": "backgroundoption",
       "persistentUuid": "bccef8f6-00f3-47a8-955e-7325d6fa91b5",
       "width": 1280,
       "x": 1472,
@@ -427,38 +394,6 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "",
-      "name": "startbutton3",
-      "persistentUuid": "8bd079e1-a1fc-483e-abe2-b3b84baa25d9",
-      "width": 0,
-      "x": 928,
-      "y": 608,
-      "zOrder": 27,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "",
-      "name": "startbutton2",
-      "persistentUuid": "20511071-4a19-437e-b359-26bf25149c87",
-      "width": 0,
-      "x": 928,
-      "y": 544,
-      "zOrder": 28,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
     }
   ],
   "objects": [
@@ -482,7 +417,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "camera.png",
+                  "image": "came2ra.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -782,7 +717,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "camera.png",
+                  "image": "came2ra.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -1058,7 +993,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "camera.png",
+                  "image": "came2ra.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -1103,91 +1038,13 @@
       "name": "soundbar",
       "type": "PanelSpriteSlider::PanelSpriteSlider",
       "variant": "",
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "content": {
-        "BarTopPadding": 6,
-        "BarLeftPadding": 6,
-        "BarRightPadding": 6,
-        "BarBottomPadding": 6,
-        "LabelMargin": 6
-      },
-      "childrenContent": {
-        "Background": {
-          "bottomMargin": 4,
-          "height": 28,
-          "leftMargin": 2,
-          "rightMargin": 2,
-          "texture": "Square White Slider Border.png",
-          "tiled": false,
-          "topMargin": 4,
-          "width": 265
-        },
-        "FillBar": {
-          "bottomMargin": 2,
-          "height": 16,
-          "leftMargin": 0,
-          "rightMargin": 0,
-          "texture": "Square White Slider Fill Bar.png",
-          "tiled": false,
-          "topMargin": 0,
-          "width": 16
-        },
-        "Label": {
-          "bold": false,
-          "italic": false,
-          "smoothed": true,
-          "underlined": false,
-          "string": "It displays the value when it changes.",
-          "font": "Aquaphonic-Drought.otf",
-          "textAlignment": "",
-          "characterSize": 20,
-          "color": {
-            "b": 0,
-            "g": 0,
-            "r": 0
-          },
-          "content": {
-            "bold": false,
-            "isOutlineEnabled": true,
-            "isShadowEnabled": false,
-            "italic": false,
-            "outlineColor": "255;255;255",
-            "outlineThickness": 2,
-            "shadowAngle": 90,
-            "shadowBlurRadius": 2,
-            "shadowColor": "0;0;0",
-            "shadowDistance": 4,
-            "shadowOpacity": 127,
-            "smoothed": true,
-            "underlined": false,
-            "text": "It displays the value when it changes.",
-            "font": "Aquaphonic-Drought.otf",
-            "textAlignment": "",
-            "verticalTextAlignment": "top",
-            "characterSize": 20,
-            "color": "0;0;0"
-          }
-        },
-        "Thumb": {
-          "bottomMargin": 2,
-          "height": 36,
-          "leftMargin": 1,
-          "rightMargin": 1,
-          "texture": "Square White Slider Thumb.png",
-          "tiled": false,
-          "topMargin": 2,
-          "width": 22
+      "variables": [
+        {
+          "name": "Value",
+          "type": "number",
+          "value": 0
         }
-      }
-    },
-    {
-      "assetStoreId": "bfeeb465a4a164b560a2215e3ff9e78e66123af43cbf7ef1f22d56fca4271c80",
-      "name": "musicbar",
-      "type": "PanelSpriteSlider::PanelSpriteSlider",
-      "variant": "",
-      "variables": [],
+      ],
       "effects": [],
       "behaviors": [],
       "content": {
@@ -1309,51 +1166,9 @@
       }
     },
     {
-      "assetStoreId": "",
-      "bold": false,
-      "italic": false,
-      "name": "mustext",
-      "smoothed": true,
-      "type": "TextObject::Text",
-      "underlined": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "string": "MUSIC",
-      "font": "Aquaphonic-Downpour.otf",
-      "textAlignment": "left",
-      "characterSize": 30,
-      "color": {
-        "b": 0,
-        "g": 0,
-        "r": 0
-      },
-      "content": {
-        "bold": false,
-        "isOutlineEnabled": false,
-        "isShadowEnabled": false,
-        "italic": false,
-        "outlineColor": "255;255;255",
-        "outlineThickness": 2,
-        "shadowAngle": 90,
-        "shadowBlurRadius": 2,
-        "shadowColor": "0;0;0",
-        "shadowDistance": 4,
-        "shadowOpacity": 127,
-        "smoothed": true,
-        "underlined": false,
-        "text": "MUSIC",
-        "font": "Aquaphonic-Downpour.otf",
-        "textAlignment": "left",
-        "verticalTextAlignment": "top",
-        "characterSize": 30,
-        "color": "0;0;0"
-      }
-    },
-    {
       "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "",
-      "name": "backgroundmain",
+      "name": "backgroundoption",
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
@@ -1370,7 +1185,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "bgmainmenu.png",
+                  "image": "option_bg.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -1430,7 +1245,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "bgbg.png",
+                  "image": "main_bg.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -1490,7 +1305,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "creditbg.png",
+                  "image": "credit_bg.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -1850,7 +1665,7 @@
         "objectName": "bg3"
       },
       {
-        "objectName": "backgroundmain"
+        "objectName": "backgroundoption"
       },
       {
         "objectName": "title"
@@ -1886,9 +1701,6 @@
         "objectName": "soundtext"
       },
       {
-        "objectName": "mustext"
-      },
-      {
         "objectName": "name1"
       },
       {
@@ -1902,9 +1714,6 @@
       },
       {
         "objectName": "soundbar"
-      },
-      {
-        "objectName": "musicbar"
       }
     ]
   },
@@ -1958,10 +1767,10 @@
           },
           "parameters": [
             "",
-            "assets\\bgm\\main_menu_theme.mp3",
+            "main_menu_theme.mp3",
             "1",
             "",
-            "50",
+            "soundbar.Value()",
             ""
           ]
         }
@@ -2041,66 +1850,11 @@
       "actions": [
         {
           "type": {
-            "value": "Scene"
+            "value": "PushScene"
           },
           "parameters": [
             "",
-            "\"Level One\"",
-            ""
-          ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "ButtonStates::ButtonFSM::IsClicked"
-          },
-          "parameters": [
-            "startbutton2",
-            "ButtonFSM",
-            ""
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "Scene"
-          },
-          "parameters": [
-            "",
-            "\"Level Three\"",
-            ""
-          ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "ButtonStates::ButtonFSM::IsClicked"
-          },
-          "parameters": [
-            "startbutton3",
-            "ButtonFSM",
-            ""
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "Scene"
-          },
-          "parameters": [
-            "",
-            "\"Level Boss\"",
-            ""
+            "\"levelselect\""
           ]
         }
       ]
@@ -2219,6 +1973,58 @@
             "",
             "\"linear\"",
             "0.1"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "PanelSpriteSlider::PanelSpriteSlider::IsBeingDragged"
+          },
+          "parameters": [
+            "soundbar",
+            "="
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "SetNumberVariable"
+          },
+          "parameters": [
+            "Settings.Music",
+            "=",
+            "soundbar.Value()"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "PanelSpriteSlider::PanelSpriteSlider::IsBeingDragged"
+          },
+          "parameters": [
+            "soundbar",
+            "="
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "ModGlobalVolume"
+          },
+          "parameters": [
+            "",
+            "=",
+            "soundbar.Value()"
           ]
         }
       ]
