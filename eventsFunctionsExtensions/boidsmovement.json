@@ -2123,9 +2123,7 @@
           "type": "Number",
           "unit": "PixelSpeed",
           "label": "Maximum speed",
-          "description": "",
           "group": "Movement",
-          "extraInformation": [],
           "name": "MaxSpeed"
         },
         {
@@ -2133,18 +2131,14 @@
           "type": "Number",
           "unit": "PixelAcceleration",
           "label": "Maximum acceleration",
-          "description": "",
           "group": "Movement",
-          "extraInformation": [],
           "name": "MaxAcceleration"
         },
         {
           "value": "true",
           "type": "Boolean",
           "label": "Rotate object",
-          "description": "",
           "group": "Movement",
-          "extraInformation": [],
           "quickCustomizationVisibility": "hidden",
           "name": "ShouldRotate"
         },
@@ -2153,9 +2147,7 @@
           "type": "Number",
           "unit": "Pixel",
           "label": "Cohesion sight radius",
-          "description": "",
           "group": "Sight",
-          "extraInformation": [],
           "quickCustomizationVisibility": "hidden",
           "name": "CohesionRadius"
         },
@@ -2164,9 +2156,7 @@
           "type": "Number",
           "unit": "Pixel",
           "label": "Alignement sight radius",
-          "description": "",
           "group": "Sight",
-          "extraInformation": [],
           "quickCustomizationVisibility": "hidden",
           "name": "AlignmentRadius"
         },
@@ -2175,9 +2165,7 @@
           "type": "Number",
           "unit": "Pixel",
           "label": "Separation sight radius",
-          "description": "",
           "group": "Sight",
-          "extraInformation": [],
           "quickCustomizationVisibility": "hidden",
           "name": "SeparationRadius"
         },
@@ -2186,9 +2174,7 @@
           "type": "Number",
           "unit": "Dimensionless",
           "label": "Cohesion decision weight",
-          "description": "",
           "group": "Decision",
-          "extraInformation": [],
           "quickCustomizationVisibility": "hidden",
           "name": "CohesionWeight"
         },
@@ -2197,9 +2183,7 @@
           "type": "Number",
           "unit": "Dimensionless",
           "label": "Alignment decision weight",
-          "description": "",
           "group": "Decision",
-          "extraInformation": [],
           "quickCustomizationVisibility": "hidden",
           "name": "AlignmentWeight"
         },
@@ -2208,9 +2192,7 @@
           "type": "Number",
           "unit": "Dimensionless",
           "label": "Separation decision weight",
-          "description": "",
           "group": "Decision",
-          "extraInformation": [],
           "quickCustomizationVisibility": "hidden",
           "name": "SeparationWeight"
         },
@@ -2219,9 +2201,6 @@
           "type": "Number",
           "unit": "Dimensionless",
           "label": "Collision layer",
-          "description": "",
-          "group": "",
-          "extraInformation": [],
           "advanced": true,
           "quickCustomizationVisibility": "hidden",
           "name": "CollisionLayer"

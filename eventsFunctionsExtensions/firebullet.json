@@ -4734,17 +4734,12 @@
           "unit": "Second",
           "label": "Firing cooldown",
           "description": "Objects cannot shoot while firing cooldown is active.",
-          "group": "",
-          "extraInformation": [],
           "name": "FireCooldown"
         },
         {
           "value": "",
           "type": "Boolean",
           "label": "",
-          "description": "",
-          "group": "",
-          "extraInformation": [],
           "hidden": true,
           "name": "HasJustFired"
         },
@@ -4752,9 +4747,6 @@
           "value": "true",
           "type": "Boolean",
           "label": "Rotate bullets to match their trajectory",
-          "description": "",
-          "group": "",
-          "extraInformation": [],
           "name": "RotateBullet"
         },
         {
@@ -4764,7 +4756,6 @@
           "label": "Firing arc",
           "description": "Multi-Fire bullets will be evenly spaced inside the firing arc",
           "group": "Multi-Fire",
-          "extraInformation": [],
           "name": "FiringArc"
         },
         {
@@ -4773,7 +4764,6 @@
           "label": "Number of bullets created at once",
           "description": "Multi-Fire bullets will be evenly spaced inside the firing arc",
           "group": "Multi-Fire",
-          "extraInformation": [],
           "name": "BulletQuantity"
         },
         {
@@ -4783,7 +4773,6 @@
           "label": "Angle variance",
           "description": "Make imperfect aim (between 0 and 180 degrees).",
           "group": "Firing variance",
-          "extraInformation": [],
           "advanced": true,
           "name": "AngleVariance"
         },
@@ -4794,7 +4783,6 @@
           "label": "Bullet speed variance",
           "description": "Bullet speed will be adjusted by a random value within this range.",
           "group": "Firing variance",
-          "extraInformation": [],
           "advanced": true,
           "name": "BulletSpeedVariance"
         },
@@ -4802,9 +4790,6 @@
           "value": "0",
           "type": "Number",
           "label": "Ammo quantity (current)",
-          "description": "",
-          "group": "",
-          "extraInformation": [],
           "hidden": true,
           "name": "AmmoQuantity"
         },
@@ -4814,7 +4799,6 @@
           "label": "Shots per reload ",
           "description": "Use 0 to disable reloading.",
           "group": "Reload",
-          "extraInformation": [],
           "advanced": true,
           "name": "ShotsPerReload"
         },
@@ -4825,7 +4809,6 @@
           "label": "Reloading duration",
           "description": "Objects cannot shoot while reloading is in progress.",
           "group": "Reload",
-          "extraInformation": [],
           "advanced": true,
           "name": "ReloadDuration"
         },
@@ -4833,9 +4816,7 @@
           "value": "0",
           "type": "Number",
           "label": "Max ammo ",
-          "description": "",
           "group": "Ammo",
-          "extraInformation": [],
           "advanced": true,
           "name": "MaxAmmo"
         },
@@ -4843,9 +4824,6 @@
           "value": "0",
           "type": "Number",
           "label": "Shots before next reload",
-          "description": "",
-          "group": "",
-          "extraInformation": [],
           "hidden": true,
           "name": "ShotsBeforeNextReload"
         },
@@ -4854,8 +4832,6 @@
           "type": "Number",
           "label": "Total shots fired",
           "description": "Regardless of how many bullets are created, only 1 shot will be counted per frame",
-          "group": "",
-          "extraInformation": [],
           "hidden": true,
           "name": "TotalShotsFired"
         },
@@ -4863,9 +4839,6 @@
           "value": "0",
           "type": "Number",
           "label": "Total bullets created",
-          "description": "",
-          "group": "",
-          "extraInformation": [],
           "hidden": true,
           "name": "TotalBulletsCreated"
         },
@@ -4873,9 +4846,7 @@
           "value": "0",
           "type": "Number",
           "label": "Starting ammo",
-          "description": "",
           "group": "Ammo",
-          "extraInformation": [],
           "advanced": true,
           "name": "StartingAmmo"
         },
@@ -4883,9 +4854,6 @@
           "value": "0",
           "type": "Number",
           "label": "Total reloads completed",
-          "description": "",
-          "group": "",
-          "extraInformation": [],
           "hidden": true,
           "name": "TotalReloadsCompleted"
         },
@@ -4893,9 +4861,7 @@
           "value": "true",
           "type": "Boolean",
           "label": "Unlimited ammo",
-          "description": "",
           "group": "Ammo",
-          "extraInformation": [],
           "advanced": true,
           "name": "UnlimitedAmmo"
         },
@@ -4903,9 +4869,6 @@
           "value": "",
           "type": "Boolean",
           "label": "",
-          "description": "",
-          "group": "",
-          "extraInformation": [],
           "hidden": true,
           "name": "ReloadInProgress"
         },
@@ -4915,7 +4878,6 @@
           "label": "Heat increase per shot (between 0 and 1)",
           "description": " Object is overheated when Heat reaches 1.",
           "group": "Overheat",
-          "extraInformation": [],
           "advanced": true,
           "name": "HeatIncreasePerShot"
         },
@@ -4923,9 +4885,6 @@
           "value": "0",
           "type": "Number",
           "label": "Heat level (Range: 0 to 1)",
-          "description": "",
-          "group": "",
-          "extraInformation": [],
           "hidden": true,
           "name": "HeatLevel"
         },
@@ -4933,9 +4892,7 @@
           "value": "true",
           "type": "Boolean",
           "label": "Reload automatically",
-          "description": "",
           "group": "Reload",
-          "extraInformation": [],
           "advanced": true,
           "name": "AutomaticReloading"
         },
@@ -4946,7 +4903,6 @@
           "label": "Overheat duration",
           "description": "Object cannot shoot while overheat duration is active.",
           "group": "Overheat",
-          "extraInformation": [],
           "advanced": true,
           "name": "OverheatDuration"
         },
@@ -4954,9 +4910,7 @@
           "value": "0.1",
           "type": "Number",
           "label": "Linear cooling rate (per second)",
-          "description": "",
           "group": "Overheat",
-          "extraInformation": [],
           "advanced": true,
           "name": "LinearCoolingRate"
         },
@@ -4979,7 +4933,6 @@
           "label": "Layer the bullets are created on",
           "description": "Base layer by default.",
           "group": "Shooting configuration",
-          "extraInformation": [],
           "hidden": true,
           "name": "BulletLayer"
         },
@@ -4987,9 +4940,6 @@
           "value": "0",
           "type": "Number",
           "label": "",
-          "description": "",
-          "group": "",
-          "extraInformation": [],
           "hidden": true,
           "name": "RandomizedAngle"
         }

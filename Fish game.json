@@ -1,7 +1,7 @@
 {
-  "firstLayout": "",
+  "firstLayout": "Main Menu",
   "gdVersion": {
-    "build": 231,
+    "build": 233,
     "major": 5,
     "minor": 5,
     "revision": 0
@@ -19,7 +19,7 @@
     "sizeOnStartupMode": "",
     "templateSlug": "starting-point-and-click",
     "version": "1.0.0",
-    "name": "Fish game",
+    "name": "PiranHang Tuah : Legend of the Chomp",
     "description": "",
     "author": "",
     "windowWidth": 1280,
@@ -92,86 +92,6 @@
   "resources": {
     "resources": [
       {
-        "file": "assets/StartingGroundTilemap.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\StartingGroundTilemap.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "assets/StartingWater.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\StartingWater.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "assets/StartingPlayer.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\StartingPlayer.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "assets/StartingWall.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\StartingWall.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "assets/fish blue_rest.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "fish blue_rest.png",
-        "smoothed": true,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://asset-resources.gdevelop.io/public-resources/Kenney New Platformer Pack 1.0/Enemies/673ed4aaf139ecb02d8b749b6086484eae29f7e8e8a13a5c230401818b86972a_fish blue_rest.png",
-          "name": "fish blue_rest.png"
-        }
-      },
-      {
-        "file": "assets/fish blue_swim_1.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "fish blue_swim_1.png",
-        "smoothed": true,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://asset-resources.gdevelop.io/public-resources/Kenney New Platformer Pack 1.0/Enemies/352bd2c5577811fe2a8097a09a5654a6a6993b07bab2bc6d4dc25d02f5fb070b_fish blue_swim_1.png",
-          "name": "fish blue_swim_1.png"
-        }
-      },
-      {
-        "file": "assets/fish blue_swim_2.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "fish blue_swim_2.png",
-        "smoothed": true,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://asset-resources.gdevelop.io/public-resources/Kenney New Platformer Pack 1.0/Enemies/269e6cd93fe2afb4d4d15031953454a9c882a0c5cf53d4be2e9a78d37dee7f40_fish blue_swim_2.png",
-          "name": "fish blue_swim_2.png"
-        }
-      },
-      {
-        "file": "assets/water frizzy bright surface.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "water frizzy bright surface.png",
-        "smoothed": true,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://asset-resources.gdevelop.io/public-resources/RC Art - Water Aqua System/BG Water/624d78468bd20156af43d4563cbfbee6d6cf8f43452c156f7c50ab4e50c42ffb_water frizzy bright surface.png",
-          "name": "water frizzy bright surface.png"
-        }
-      },
-      {
         "file": "assets/fish yellow_rest.png",
         "kind": "image",
         "metadata": "",
@@ -181,30 +101,6 @@
         "origin": {
           "identifier": "https://asset-resources.gdevelop.io/public-resources/Kenney New Platformer Pack 1.0/Enemies/8d81f4e5dbe92da231bd4a1f77fcf34d341d95a0f2328d1de381f6b552e3ea72_fish yellow_rest.png",
           "name": "fish yellow_rest.png"
-        }
-      },
-      {
-        "file": "assets/fish yellow_swim_1.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "fish yellow_swim_1.png",
-        "smoothed": true,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://asset-resources.gdevelop.io/public-resources/Kenney New Platformer Pack 1.0/Enemies/4e7509e82473a7bcf9d1533ec28eaa78affe006c92bf30b1d8d479e317f26360_fish yellow_swim_1.png",
-          "name": "fish yellow_swim_1.png"
-        }
-      },
-      {
-        "file": "assets/fish yellow_swim_2.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "fish yellow_swim_2.png",
-        "smoothed": true,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://asset-resources.gdevelop.io/public-resources/Kenney New Platformer Pack 1.0/Enemies/2501e9ba199e63919dee7155d7514c88b3be7668b1ea4c44c7f71a094f074ba5_fish yellow_swim_2.png",
-          "name": "fish yellow_swim_2.png"
         }
       },
       {
@@ -218,40 +114,6 @@
           "identifier": "https://asset-resources.gdevelop.io/public-resources/On-Screen Controls/Sprites/Line Light/12f2bcfb5a80e71d3fa37e7ab444a2b2e31d7bcf789f1558b2364b0707312e76_Square joystick outer.png",
           "name": "Square joystick outer.png"
         }
-      },
-      {
-        "file": "assets/Tropical Fish_No Shadow.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Tropical Fish_No Shadow.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://asset-resources.gdevelop.io/public-resources/32x32 Fantasy Icons Pack v2/Icons/Fishing Items/dde2051fd2f2ee163e5e91e26dc188d14b759add8dd3c789890d72d2fecef567_Tropical Fish_No Shadow.png",
-          "name": "Tropical Fish_No Shadow.png"
-        }
-      },
-      {
-        "file": "assets/Tropical Fish_Shadow.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Tropical Fish_Shadow.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://asset-resources.gdevelop.io/public-resources/32x32 Fantasy Icons Pack v2/Icons/Fishing Items/ee387da34307ed6df68d916512849c89eca7b931be06de04ec5521c460dab725_Tropical Fish_Shadow.png",
-          "name": "Tropical Fish_Shadow.png"
-        }
-      },
-      {
-        "file": "assets/sfx/fish eating sound.MP3",
-        "kind": "audio",
-        "metadata": "",
-        "name": "assets\\sfx\\fish eating sound.MP3",
-        "preloadAsMusic": false,
-        "preloadAsSound": false,
-        "preloadInCache": false,
-        "userAdded": false
       },
       {
         "file": "assets/Copper Bar Border.png",
@@ -278,36 +140,6 @@
         }
       },
       {
-        "file": "assets/bgm/PEACEFUL UNDERWATER Sounds for DEEP SLEEP 🌊  Deep OCEAN ASMRAmbience.mp3",
-        "kind": "audio",
-        "metadata": "",
-        "name": "assets\\bgm\\PEACEFUL UNDERWATER Sounds for DEEP SLEEP 🌊  Deep OCEAN ASMRAmbience.mp3",
-        "preloadAsMusic": false,
-        "preloadAsSound": false,
-        "preloadInCache": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/sfx/vine boom sound.MP3",
-        "kind": "audio",
-        "metadata": "",
-        "name": "assets\\sfx\\vine boom sound.MP3",
-        "preloadAsMusic": false,
-        "preloadAsSound": false,
-        "preloadInCache": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/sfx/big sound.MP3",
-        "kind": "audio",
-        "metadata": "",
-        "name": "assets\\sfx\\big sound.MP3",
-        "preloadAsMusic": false,
-        "preloadAsSound": false,
-        "preloadInCache": false,
-        "userAdded": false
-      },
-      {
         "file": "assets/fish/Piranta/prn6.png",
         "kind": "image",
         "metadata": "",
@@ -320,14 +152,6 @@
         "kind": "image",
         "metadata": "",
         "name": "assets\\fish\\Piranta\\prn5.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "assets/fish/Piranta/prn4.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\fish\\Piranta\\prn4.png",
         "smoothed": true,
         "userAdded": false
       },
@@ -409,14 +233,6 @@
         "kind": "image",
         "metadata": "",
         "name": "assets\\bubble.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "assets/bubble2.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\bubble2.png",
         "smoothed": true,
         "userAdded": false
       },
@@ -532,16 +348,6 @@
         "userAdded": false
       },
       {
-        "file": "assets/bgm/Salty Moon - Honkai Star Rail [1 Hours Version].mp3",
-        "kind": "audio",
-        "metadata": "",
-        "name": "assets\\bgm\\Salty Moon - Honkai Star Rail [1 Hours Version].mp3",
-        "preloadAsMusic": false,
-        "preloadAsSound": false,
-        "preloadInCache": false,
-        "userAdded": false
-      },
-      {
         "file": "assets/sfx/dizzy sound.MP3",
         "kind": "audio",
         "metadata": "",
@@ -549,174 +355,6 @@
         "preloadAsMusic": false,
         "preloadAsSound": false,
         "preloadInCache": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/fish/Fish/bassmove15.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\fish\\Fish\\bassmove15.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "assets/fish/Fish/bassmove14.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\fish\\Fish\\bassmove14.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "assets/fish/Fish/bassmove13.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\fish\\Fish\\bassmove13.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "assets/fish/Fish/bassmove12.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\fish\\Fish\\bassmove12.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "assets/fish/Fish/bassmove11.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\fish\\Fish\\bassmove11.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "assets/fish/Fish/bassmove10.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\fish\\Fish\\bassmove10.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "assets/fish/Fish/bassmove9.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\fish\\Fish\\bassmove9.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "assets/fish/Fish/bassmove8.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\fish\\Fish\\bassmove8.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "assets/fish/Fish/bassmove7.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\fish\\Fish\\bassmove7.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "assets/fish/Fish/bassmove6.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\fish\\Fish\\bassmove6.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "assets/fish/Fish/bassmove5.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\fish\\Fish\\bassmove5.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "assets/fish/Fish/bassmove4.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\fish\\Fish\\bassmove4.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "assets/fish/Fish/bassmove3.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\fish\\Fish\\bassmove3.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "assets/fish/Fish/bassmove2.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\fish\\Fish\\bassmove2.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "assets/fish/Fish/bassmove1.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\fish\\Fish\\bassmove1.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "assets/fish/Fish/basseat6.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\fish\\Fish\\basseat6.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "assets/fish/Fish/basseat5.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\fish\\Fish\\basseat5.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "assets/fish/Fish/basseat4.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\fish\\Fish\\basseat4.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "assets/fish/Fish/basseat3.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\fish\\Fish\\basseat3.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "assets/fish/Fish/basseat2.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\fish\\Fish\\basseat2.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "assets/fish/Fish/basseat1.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\fish\\Fish\\basseat1.png",
-        "smoothed": true,
         "userAdded": false
       },
       {
@@ -756,18 +394,6 @@
         }
       },
       {
-        "file": "assets/Fish-Bone_Shadow.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Fish-Bone_Shadow.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://asset-resources.gdevelop.io/public-resources/32x32 Fantasy Icons Pack v2/Icons/Fishing Items/b4885b3d61d1f48120148d7612afdebc8f5ee498fa019b07bb3330fa6975f74d_Fish-Bone_Shadow.png",
-          "name": "Fish-Bone_Shadow.png"
-        }
-      },
-      {
         "file": "assets/background/deep ocean.jpg",
         "kind": "image",
         "metadata": "",
@@ -781,16 +407,6 @@
         "metadata": "",
         "name": "assets\\submarine.png",
         "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "assets/bgm/Dire Straits  Herta Space Station Battle Theme 6 (Extended) - Honkai_ Star Rail 1.0 OST.mp3",
-        "kind": "audio",
-        "metadata": "",
-        "name": "assets\\bgm\\Dire Straits  Herta Space Station Battle Theme 6 (Extended) - Honkai_ Star Rail 1.0 OST.mp3",
-        "preloadAsMusic": false,
-        "preloadAsSound": false,
-        "preloadInCache": false,
         "userAdded": false
       },
       {
@@ -885,30 +501,6 @@
         "preloadAsSound": false,
         "preloadInCache": false,
         "userAdded": false
-      },
-      {
-        "file": "assets/tiled_Tiled Empty UI Heart.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "tiled_Tiled Empty UI Heart.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://asset-resources.gdevelop.io/public-resources/Resource bars/pixel art/688519c5bb4abaf5805518633f2ff810928e29164497fb5c13dabf97044be843_tiled_Tiled Empty UI Heart.png",
-          "name": "tiled_Tiled Empty UI Heart.png"
-        }
-      },
-      {
-        "file": "assets/tiled_Tiled Filler UI Heart.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "tiled_Tiled Filler UI Heart.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://asset-resources.gdevelop.io/public-resources/Resource bars/pixel art/5b5c6c85ec4e1f5b6688be565c9a06920a76ee191915738afd61da1481fd6493_tiled_Tiled Filler UI Heart.png",
-          "name": "tiled_Tiled Filler UI Heart.png"
-        }
       },
       {
         "file": "assets/hud heart_empty.png",
@@ -1019,6 +611,767 @@
         "preloadAsSound": false,
         "preloadInCache": false,
         "userAdded": false
+      },
+      {
+        "file": "assets/sfx/swoosh sound.MP3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\sfx\\swoosh sound.MP3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/fish/Parrotfish/prtswim14.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\fish\\Parrotfish\\prtswim14.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/fish/Parrotfish/prtswim13.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\fish\\Parrotfish\\prtswim13.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/fish/Parrotfish/prtswim12.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\fish\\Parrotfish\\prtswim12.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/fish/Parrotfish/prtswim11.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\fish\\Parrotfish\\prtswim11.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/fish/Parrotfish/prtswim10.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\fish\\Parrotfish\\prtswim10.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/fish/Parrotfish/prtswim9.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\fish\\Parrotfish\\prtswim9.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/fish/Parrotfish/prtswim8.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\fish\\Parrotfish\\prtswim8.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/fish/Parrotfish/prtswim7.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\fish\\Parrotfish\\prtswim7.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/fish/Parrotfish/prtswim6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\fish\\Parrotfish\\prtswim6.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/fish/Parrotfish/prtswim5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\fish\\Parrotfish\\prtswim5.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/fish/Parrotfish/prtswim4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\fish\\Parrotfish\\prtswim4.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/fish/Parrotfish/prtswim3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\fish\\Parrotfish\\prtswim3.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/fish/Parrotfish/prtswim2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\fish\\Parrotfish\\prtswim2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/fish/Parrotfish/prtswim1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\fish\\Parrotfish\\prtswim1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/fish/Parrotfish/prteat6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\fish\\Parrotfish\\prteat6.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/fish/Parrotfish/prteat5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\fish\\Parrotfish\\prteat5.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/fish/Parrotfish/prteat4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\fish\\Parrotfish\\prteat4.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/fish/Parrotfish/prteat3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\fish\\Parrotfish\\prteat3.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/fish/Parrotfish/prteat2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\fish\\Parrotfish\\prteat2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/fish/Parrotfish/prteat1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\fish\\Parrotfish\\prteat1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/fish/Tuna/basseat6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\fish\\Tuna\\basseat6.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/fish/Tuna/basseat5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\fish\\Tuna\\basseat5.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/fish/Tuna/basseat4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\fish\\Tuna\\basseat4.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/fish/Tuna/basseat3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\fish\\Tuna\\basseat3.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/fish/Tuna/basseat2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\fish\\Tuna\\basseat2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/fish/Tuna/basseat1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\fish\\Tuna\\basseat1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/fish/Tuna/bassmove15.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\fish\\Tuna\\bassmove15.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/fish/Tuna/bassmove14.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\fish\\Tuna\\bassmove14.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/fish/Tuna/bassmove13.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\fish\\Tuna\\bassmove13.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/fish/Tuna/bassmove12.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\fish\\Tuna\\bassmove12.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/fish/Tuna/bassmove11.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\fish\\Tuna\\bassmove11.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/fish/Tuna/bassmove10.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\fish\\Tuna\\bassmove10.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/fish/Tuna/bassmove9.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\fish\\Tuna\\bassmove9.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/fish/Tuna/bassmove8.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\fish\\Tuna\\bassmove8.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/fish/Tuna/bassmove7.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\fish\\Tuna\\bassmove7.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/fish/Tuna/bassmove6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\fish\\Tuna\\bassmove6.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/fish/Tuna/bassmove5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\fish\\Tuna\\bassmove5.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/fish/Tuna/bassmove4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\fish\\Tuna\\bassmove4.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/fish/Tuna/bassmove3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\fish\\Tuna\\bassmove3.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/fish/Tuna/bassmove2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\fish\\Tuna\\bassmove2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/fish/Tuna/bassmove1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\fish\\Tuna\\bassmove1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Aquaphonic-Downpour.otf",
+        "kind": "font",
+        "metadata": "",
+        "name": "Aquaphonic-Downpour.otf",
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/7533f324-5d1c-424a-a344-361d437dd278/resources/3ab59ed1c5a7ef8361974f440e7531ab8e951ea4b9c3ab3d269e7b6350b8f6bd-Aquaphonic-Downpour.otf",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/camera.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "camera.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/7533f324-5d1c-424a-a344-361d437dd278/resources/47ada0df414d0553ed9e6b52688617f06ad5e872dc628964632eb2b3e836508c-camera.png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/Square White Slider Border.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Square White Slider Border.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Settings UI/Slider/pixel art/324e5f522f6242e9f93090e75ddc38427c3a6c42e8236dbf0ed541bd85cf7221_Square White Slider Border.png",
+          "name": "Square White Slider Border.png"
+        }
+      },
+      {
+        "file": "assets/Square White Slider Fill Bar.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Square White Slider Fill Bar.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Settings UI/Slider/pixel art/47bc684198cd25b3ec74b0e72c2e2c7abb1b6736bd9f4b78a943c663e83118bf_Square White Slider Fill Bar.png",
+          "name": "Square White Slider Fill Bar.png"
+        }
+      },
+      {
+        "file": "assets/Square White Slider Thumb.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Square White Slider Thumb.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Settings UI/Slider/pixel art/848f861767e7ce4581dba9e122ee7bafeaca57987655cebe1f78ab31d1300f0f_Square White Slider Thumb.png",
+          "name": "Square White Slider Thumb.png"
+        }
+      },
+      {
+        "file": "assets/Aquaphonic-Drought.otf",
+        "kind": "font",
+        "metadata": "",
+        "name": "Aquaphonic-Drought.otf",
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/7533f324-5d1c-424a-a344-361d437dd278/resources/7d60399794a055b756bf57dd7ffb4992183096240504d66053ca7f55c61ec9f5-Aquaphonic-Drought.otf",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/bgmainmenu.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "bgmainmenu.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/7533f324-5d1c-424a-a344-361d437dd278/resources/5a2587b26f7412e331f322cd6857a692337bb68136af23805f95df986f139656-bgmainmenu.png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/bgbg.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "bgbg.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/7533f324-5d1c-424a-a344-361d437dd278/resources/c4ade97b05a5028b39ec265606159ffc5bedb33e6c18805c24d8bb34e5100b93-bgbg.png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/Some Time Later.otf",
+        "kind": "font",
+        "metadata": "",
+        "name": "Some Time Later.otf",
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/7533f324-5d1c-424a-a344-361d437dd278/resources/1cd0e411a9408017422a49e214af79967272bc36e82f446126b23f26d23b0c1d-Some Time Later.otf",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/creditbg.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "creditbg.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/7533f324-5d1c-424a-a344-361d437dd278/resources/d4d3a6492a1d30098cf5cc1d4164df6dbc4f1908ae83dc1d42879998b8f67a19-creditbg.png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "file": "assets/sfx/magnet sound.MP3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\sfx\\magnet sound.MP3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/sfx/eating sound 3.MP3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\sfx\\eating sound 3.MP3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/fish blue_swim_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\fish blue_swim_1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/background/ocean3.jpg",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\background\\ocean3.jpg",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/fish/Shark/sharkmove6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\fish\\Shark\\sharkmove6.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/fish/Shark/sharkmove5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\fish\\Shark\\sharkmove5.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/fish/Shark/sharkmove4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\fish\\Shark\\sharkmove4.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/fish/Shark/sharkmove3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\fish\\Shark\\sharkmove3.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/fish/Shark/sharkmove2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\fish\\Shark\\sharkmove2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/fish/Shark/sharkmove1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\fish\\Shark\\sharkmove1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/fish/Shark/sharkeating2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\fish\\Shark\\sharkeating2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/fish/Shark/sharkeating3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\fish\\Shark\\sharkeating3.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/fish/Swordfish/sfmove15.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\fish\\Swordfish\\sfmove15.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/fish/Swordfish/sfmove14.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\fish\\Swordfish\\sfmove14.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/fish/Swordfish/sfmove13.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\fish\\Swordfish\\sfmove13.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/fish/Swordfish/sfmove12.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\fish\\Swordfish\\sfmove12.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/fish/Swordfish/sfmove11.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\fish\\Swordfish\\sfmove11.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/fish/Swordfish/sfmove10.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\fish\\Swordfish\\sfmove10.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/fish/Swordfish/sfmove9.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\fish\\Swordfish\\sfmove9.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/fish/Swordfish/sfmove8.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\fish\\Swordfish\\sfmove8.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/fish/Swordfish/sfmove7.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\fish\\Swordfish\\sfmove7.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/fish/Swordfish/sfmove6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\fish\\Swordfish\\sfmove6.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/fish/Swordfish/sfmove5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\fish\\Swordfish\\sfmove5.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/fish/Swordfish/sfmove4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\fish\\Swordfish\\sfmove4.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/fish/Swordfish/sfmove3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\fish\\Swordfish\\sfmove3.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/fish/Swordfish/sfmove2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\fish\\Swordfish\\sfmove2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/fish/Swordfish/sfmove1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\fish\\Swordfish\\sfmove1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/danger sign.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\danger sign.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/sfx/danger sound.MP3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\sfx\\danger sound.MP3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/cursor.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\cursor.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/bgm/main_menu_theme.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\bgm\\main_menu_theme.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/bgm/underwater_sound.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\bgm\\underwater_sound.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/bgm/boss_theme.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\bgm\\boss_theme.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/bgm/miracle_sea.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\bgm\\miracle_sea.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/sfx/tnt_explosion.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\sfx\\tnt_explosion.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/bgm/salty_moon.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\bgm\\salty_moon.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -1038,6 +1391,16 @@
         },
         {
           "name": "Stage3",
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "name": "Stage4",
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "name": "Stage5",
           "type": "boolean",
           "value": false
         },
@@ -1090,9 +1453,9 @@
           "TintColor": "\"255;255;255\""
         },
         {
-          "angularMaxSpeed": 360,
           "name": "Pathfinding",
           "type": "PathfindingBehavior::PathfindingBehavior",
+          "angularMaxSpeed": 360,
           "acceleration": 600,
           "allowDiagonals": true,
           "angleOffset": 0,
@@ -1364,7 +1727,24 @@
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
-      "effects": [],
+      "effects": [
+        {
+          "effectType": "Adjustment",
+          "name": "Effect",
+          "doubleParameters": {
+            "alpha": 1,
+            "blue": 1,
+            "brightness": 1,
+            "contrast": 1,
+            "gamma": 1,
+            "green": 1,
+            "red": 1,
+            "saturation": 1
+          },
+          "stringParameters": {},
+          "booleanParameters": {}
+        }
+      ],
       "behaviors": [
         {
           "name": "Tween",
@@ -1377,12 +1757,12 @@
           "useMultipleDirections": false,
           "directions": [
             {
-              "looping": true,
+              "looping": false,
               "timeBetweenFrames": 0.025,
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "fish yellow_swim_1.png",
+                  "image": "assets\\fish blue_swim_1.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -1399,47 +1779,11 @@
                     [
                       {
                         "x": 0,
-                        "y": 6
+                        "y": 7
                       },
                       {
                         "x": 64,
-                        "y": 6
-                      },
-                      {
-                        "x": 64,
-                        "y": 59
-                      },
-                      {
-                        "x": 0,
-                        "y": 59
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "fish yellow_swim_2.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 32,
-                    "y": 32
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 0,
-                        "y": 6
-                      },
-                      {
-                        "x": 64,
-                        "y": 6
+                        "y": 7
                       },
                       {
                         "x": 64,
@@ -1461,7 +1805,7 @@
           "useMultipleDirections": false,
           "directions": [
             {
-              "looping": true,
+              "looping": false,
               "timeBetweenFrames": 0.025,
               "sprites": [
                 {
@@ -1483,11 +1827,11 @@
                     [
                       {
                         "x": 0,
-                        "y": 6
+                        "y": 7
                       },
                       {
                         "x": 64,
-                        "y": 6
+                        "y": 7
                       },
                       {
                         "x": 64,
@@ -1507,7 +1851,7 @@
       ]
     },
     {
-      "adaptCollisionMaskAutomatically": true,
+      "adaptCollisionMaskAutomatically": false,
       "assetStoreId": "0ec68dcc18a52c02470a6557d4c2aeabac1b5e4e6ce49ad9d24fdcbfa1705eb1",
       "name": "EnemyFish_2",
       "type": "Sprite",
@@ -1516,27 +1860,49 @@
       "effects": [],
       "behaviors": [
         {
+          "name": "Pathfinding",
+          "type": "PathfindingBehavior::PathfindingBehavior",
+          "acceleration": 200,
+          "allowDiagonals": true,
+          "angleOffset": 0,
+          "angularMaxSpeed": 180,
+          "cellHeight": 20,
+          "cellWidth": 20,
+          "extraBorder": 0,
+          "gridOffsetX": 0,
+          "gridOffsetY": 0,
+          "maxSpeed": 200,
+          "rotateObject": false,
+          "smoothingMaxCellGap": 1
+        },
+        {
           "name": "Tween",
           "type": "Tween::TweenBehavior"
         }
       ],
       "animations": [
         {
-          "name": "No Shadow",
+          "name": "Idle",
           "useMultipleDirections": false,
           "directions": [
             {
               "looping": true,
-              "timeBetweenFrames": 0.025,
+              "timeBetweenFrames": 0.08,
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "Tropical Fish_No Shadow.png",
-                  "points": [],
+                  "image": "assets\\fish\\Parrotfish\\prtswim14.png",
+                  "points": [
+                    {
+                      "name": "eat",
+                      "x": 15,
+                      "y": 75
+                    }
+                  ],
                   "originPoint": {
                     "name": "origine",
-                    "x": 16,
-                    "y": 16
+                    "x": 100,
+                    "y": 72.5
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -1547,20 +1913,566 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 3,
-                        "y": 3
+                        "x": 0,
+                        "y": 24
                       },
                       {
-                        "x": 28,
-                        "y": 3
+                        "x": 200,
+                        "y": 24
                       },
                       {
-                        "x": 28,
-                        "y": 28
+                        "x": 200,
+                        "y": 117.5
                       },
                       {
-                        "x": 3,
-                        "y": 28
+                        "x": 0,
+                        "y": 117.5
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\fish\\Parrotfish\\prtswim13.png",
+                  "points": [
+                    {
+                      "name": "eat",
+                      "x": 15,
+                      "y": 75
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 100,
+                    "y": 72.5
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 24
+                      },
+                      {
+                        "x": 200,
+                        "y": 24
+                      },
+                      {
+                        "x": 200,
+                        "y": 117.5
+                      },
+                      {
+                        "x": 0,
+                        "y": 117.5
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\fish\\Parrotfish\\prtswim12.png",
+                  "points": [
+                    {
+                      "name": "eat",
+                      "x": 15,
+                      "y": 75
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 100,
+                    "y": 72.5
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 24
+                      },
+                      {
+                        "x": 200,
+                        "y": 24
+                      },
+                      {
+                        "x": 200,
+                        "y": 117.5
+                      },
+                      {
+                        "x": 0,
+                        "y": 117.5
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\fish\\Parrotfish\\prtswim11.png",
+                  "points": [
+                    {
+                      "name": "eat",
+                      "x": 15,
+                      "y": 75
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 100,
+                    "y": 72.5
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 24
+                      },
+                      {
+                        "x": 200,
+                        "y": 24
+                      },
+                      {
+                        "x": 200,
+                        "y": 117.5
+                      },
+                      {
+                        "x": 0,
+                        "y": 117.5
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\fish\\Parrotfish\\prtswim10.png",
+                  "points": [
+                    {
+                      "name": "eat",
+                      "x": 15,
+                      "y": 75
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 100,
+                    "y": 72.5
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 24
+                      },
+                      {
+                        "x": 200,
+                        "y": 24
+                      },
+                      {
+                        "x": 200,
+                        "y": 117.5
+                      },
+                      {
+                        "x": 0,
+                        "y": 117.5
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\fish\\Parrotfish\\prtswim9.png",
+                  "points": [
+                    {
+                      "name": "eat",
+                      "x": 15,
+                      "y": 75
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 100,
+                    "y": 72.5
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 24
+                      },
+                      {
+                        "x": 200,
+                        "y": 24
+                      },
+                      {
+                        "x": 200,
+                        "y": 117.5
+                      },
+                      {
+                        "x": 0,
+                        "y": 117.5
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\fish\\Parrotfish\\prtswim8.png",
+                  "points": [
+                    {
+                      "name": "eat",
+                      "x": 15,
+                      "y": 75
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 100,
+                    "y": 72.5
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 24
+                      },
+                      {
+                        "x": 200,
+                        "y": 24
+                      },
+                      {
+                        "x": 200,
+                        "y": 117.5
+                      },
+                      {
+                        "x": 0,
+                        "y": 117.5
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\fish\\Parrotfish\\prtswim7.png",
+                  "points": [
+                    {
+                      "name": "eat",
+                      "x": 15,
+                      "y": 75
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 100,
+                    "y": 72.5
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 24
+                      },
+                      {
+                        "x": 200,
+                        "y": 24
+                      },
+                      {
+                        "x": 200,
+                        "y": 117.5
+                      },
+                      {
+                        "x": 0,
+                        "y": 117.5
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\fish\\Parrotfish\\prtswim6.png",
+                  "points": [
+                    {
+                      "name": "eat",
+                      "x": 15,
+                      "y": 75
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 100,
+                    "y": 72.5
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 24
+                      },
+                      {
+                        "x": 200,
+                        "y": 24
+                      },
+                      {
+                        "x": 200,
+                        "y": 117.5
+                      },
+                      {
+                        "x": 0,
+                        "y": 117.5
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\fish\\Parrotfish\\prtswim5.png",
+                  "points": [
+                    {
+                      "name": "eat",
+                      "x": 15,
+                      "y": 75
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 100,
+                    "y": 72.5
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 24
+                      },
+                      {
+                        "x": 200,
+                        "y": 24
+                      },
+                      {
+                        "x": 200,
+                        "y": 117.5
+                      },
+                      {
+                        "x": 0,
+                        "y": 117.5
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\fish\\Parrotfish\\prtswim4.png",
+                  "points": [
+                    {
+                      "name": "eat",
+                      "x": 15,
+                      "y": 75
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 100,
+                    "y": 72.5
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 24
+                      },
+                      {
+                        "x": 200,
+                        "y": 24
+                      },
+                      {
+                        "x": 200,
+                        "y": 117.5
+                      },
+                      {
+                        "x": 0,
+                        "y": 117.5
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\fish\\Parrotfish\\prtswim3.png",
+                  "points": [
+                    {
+                      "name": "eat",
+                      "x": 15,
+                      "y": 75
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 100,
+                    "y": 72.5
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 24
+                      },
+                      {
+                        "x": 200,
+                        "y": 24
+                      },
+                      {
+                        "x": 200,
+                        "y": 117.5
+                      },
+                      {
+                        "x": 0,
+                        "y": 117.5
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\fish\\Parrotfish\\prtswim2.png",
+                  "points": [
+                    {
+                      "name": "eat",
+                      "x": 15,
+                      "y": 75
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 100,
+                    "y": 72.5
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 24
+                      },
+                      {
+                        "x": 200,
+                        "y": 24
+                      },
+                      {
+                        "x": 200,
+                        "y": 117.5
+                      },
+                      {
+                        "x": 0,
+                        "y": 117.5
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\fish\\Parrotfish\\prtswim1.png",
+                  "points": [
+                    {
+                      "name": "eat",
+                      "x": 15,
+                      "y": 75
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 100,
+                    "y": 72.5
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 24
+                      },
+                      {
+                        "x": 200,
+                        "y": 24
+                      },
+                      {
+                        "x": 200,
+                        "y": 117.5
+                      },
+                      {
+                        "x": 0,
+                        "y": 117.5
                       }
                     ]
                   ]
@@ -1570,21 +2482,27 @@
           ]
         },
         {
-          "name": "Shadow",
+          "name": "Eat",
           "useMultipleDirections": false,
           "directions": [
             {
-              "looping": true,
-              "timeBetweenFrames": 0.025,
+              "looping": false,
+              "timeBetweenFrames": 0.08,
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "Tropical Fish_Shadow.png",
-                  "points": [],
+                  "image": "assets\\fish\\Parrotfish\\prteat6.png",
+                  "points": [
+                    {
+                      "name": "eat",
+                      "x": 15,
+                      "y": 75
+                    }
+                  ],
                   "originPoint": {
                     "name": "origine",
-                    "x": 16,
-                    "y": 16
+                    "x": 100,
+                    "y": 72.5
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -1595,20 +2513,230 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 3,
-                        "y": 3
+                        "x": 0,
+                        "y": 24
                       },
                       {
-                        "x": 28,
-                        "y": 3
+                        "x": 200,
+                        "y": 24
                       },
                       {
-                        "x": 28,
-                        "y": 28
+                        "x": 200,
+                        "y": 117.5
                       },
                       {
-                        "x": 3,
-                        "y": 28
+                        "x": 0,
+                        "y": 117.5
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\fish\\Parrotfish\\prteat5.png",
+                  "points": [
+                    {
+                      "name": "eat",
+                      "x": 15,
+                      "y": 75
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 100,
+                    "y": 72.5
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 24
+                      },
+                      {
+                        "x": 200,
+                        "y": 24
+                      },
+                      {
+                        "x": 200,
+                        "y": 117.5
+                      },
+                      {
+                        "x": 0,
+                        "y": 117.5
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\fish\\Parrotfish\\prteat4.png",
+                  "points": [
+                    {
+                      "name": "eat",
+                      "x": 15,
+                      "y": 75
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 100,
+                    "y": 72.5
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 24
+                      },
+                      {
+                        "x": 200,
+                        "y": 24
+                      },
+                      {
+                        "x": 200,
+                        "y": 117.5
+                      },
+                      {
+                        "x": 0,
+                        "y": 117.5
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\fish\\Parrotfish\\prteat3.png",
+                  "points": [
+                    {
+                      "name": "eat",
+                      "x": 15,
+                      "y": 75
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 100,
+                    "y": 72.5
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 24
+                      },
+                      {
+                        "x": 200,
+                        "y": 24
+                      },
+                      {
+                        "x": 200,
+                        "y": 117.5
+                      },
+                      {
+                        "x": 0,
+                        "y": 117.5
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\fish\\Parrotfish\\prteat2.png",
+                  "points": [
+                    {
+                      "name": "eat",
+                      "x": 15,
+                      "y": 75
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 100,
+                    "y": 72.5
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 24
+                      },
+                      {
+                        "x": 200,
+                        "y": 24
+                      },
+                      {
+                        "x": 200,
+                        "y": 117.5
+                      },
+                      {
+                        "x": 0,
+                        "y": 117.5
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\fish\\Parrotfish\\prteat1.png",
+                  "points": [
+                    {
+                      "name": "eat",
+                      "x": 15,
+                      "y": 75
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 100,
+                    "y": 72.5
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 24
+                      },
+                      {
+                        "x": 200,
+                        "y": 24
+                      },
+                      {
+                        "x": 200,
+                        "y": 117.5
+                      },
+                      {
+                        "x": 0,
+                        "y": 117.5
                       }
                     ]
                   ]
@@ -1675,7 +2803,7 @@
       "effects": [],
       "behaviors": [],
       "content": {
-        "MaxValue": 1000,
+        "MaxValue": 5000,
         "InitialValue": 0,
         "BarLeftPadding": 9,
         "BarRightPadding": 9,
@@ -1764,6 +2892,22 @@
       "effects": [],
       "behaviors": [
         {
+          "name": "Pathfinding",
+          "type": "PathfindingBehavior::PathfindingBehavior",
+          "acceleration": 200,
+          "allowDiagonals": true,
+          "angleOffset": 0,
+          "angularMaxSpeed": 180,
+          "cellHeight": 20,
+          "cellWidth": 20,
+          "extraBorder": 0,
+          "gridOffsetX": 0,
+          "gridOffsetY": 0,
+          "maxSpeed": 200,
+          "rotateObject": false,
+          "smoothingMaxCellGap": 1
+        },
+        {
           "name": "Tween",
           "type": "Tween::TweenBehavior"
         }
@@ -1779,12 +2923,12 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets\\fish\\Fish\\bassmove1.png",
+                  "image": "assets\\fish\\Tuna\\bassmove1.png",
                   "points": [
                     {
                       "name": "eat",
-                      "x": 10,
-                      "y": 70
+                      "x": 15,
+                      "y": 65
                     }
                   ],
                   "originPoint": {
@@ -1805,11 +2949,11 @@
                         "y": 0
                       },
                       {
-                        "x": 217.5,
+                        "x": 236,
                         "y": 0
                       },
                       {
-                        "x": 217.5,
+                        "x": 236,
                         "y": 116
                       },
                       {
@@ -1821,12 +2965,12 @@
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets\\fish\\Fish\\bassmove2.png",
+                  "image": "assets\\fish\\Tuna\\bassmove2.png",
                   "points": [
                     {
                       "name": "eat",
-                      "x": 10,
-                      "y": 70
+                      "x": 15,
+                      "y": 65
                     }
                   ],
                   "originPoint": {
@@ -1847,11 +2991,11 @@
                         "y": 0
                       },
                       {
-                        "x": 217.5,
+                        "x": 236,
                         "y": 0
                       },
                       {
-                        "x": 217.5,
+                        "x": 236,
                         "y": 116
                       },
                       {
@@ -1863,12 +3007,12 @@
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets\\fish\\Fish\\bassmove3.png",
+                  "image": "assets\\fish\\Tuna\\bassmove3.png",
                   "points": [
                     {
                       "name": "eat",
-                      "x": 10,
-                      "y": 70
+                      "x": 15,
+                      "y": 65
                     }
                   ],
                   "originPoint": {
@@ -1889,11 +3033,11 @@
                         "y": 0
                       },
                       {
-                        "x": 217.5,
+                        "x": 236,
                         "y": 0
                       },
                       {
-                        "x": 217.5,
+                        "x": 236,
                         "y": 116
                       },
                       {
@@ -1905,12 +3049,12 @@
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets\\fish\\Fish\\bassmove4.png",
+                  "image": "assets\\fish\\Tuna\\bassmove4.png",
                   "points": [
                     {
                       "name": "eat",
-                      "x": 10,
-                      "y": 70
+                      "x": 15,
+                      "y": 65
                     }
                   ],
                   "originPoint": {
@@ -1931,11 +3075,11 @@
                         "y": 0
                       },
                       {
-                        "x": 217.5,
+                        "x": 236,
                         "y": 0
                       },
                       {
-                        "x": 217.5,
+                        "x": 236,
                         "y": 116
                       },
                       {
@@ -1947,12 +3091,12 @@
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets\\fish\\Fish\\bassmove5.png",
+                  "image": "assets\\fish\\Tuna\\bassmove5.png",
                   "points": [
                     {
                       "name": "eat",
-                      "x": 10,
-                      "y": 70
+                      "x": 15,
+                      "y": 65
                     }
                   ],
                   "originPoint": {
@@ -1973,11 +3117,11 @@
                         "y": 0
                       },
                       {
-                        "x": 217.5,
+                        "x": 236,
                         "y": 0
                       },
                       {
-                        "x": 217.5,
+                        "x": 236,
                         "y": 116
                       },
                       {
@@ -1989,12 +3133,12 @@
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets\\fish\\Fish\\bassmove6.png",
+                  "image": "assets\\fish\\Tuna\\bassmove6.png",
                   "points": [
                     {
                       "name": "eat",
-                      "x": 10,
-                      "y": 70
+                      "x": 15,
+                      "y": 65
                     }
                   ],
                   "originPoint": {
@@ -2015,11 +3159,11 @@
                         "y": 0
                       },
                       {
-                        "x": 217.5,
+                        "x": 236,
                         "y": 0
                       },
                       {
-                        "x": 217.5,
+                        "x": 236,
                         "y": 116
                       },
                       {
@@ -2031,12 +3175,12 @@
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets\\fish\\Fish\\bassmove7.png",
+                  "image": "assets\\fish\\Tuna\\bassmove7.png",
                   "points": [
                     {
                       "name": "eat",
-                      "x": 10,
-                      "y": 70
+                      "x": 15,
+                      "y": 65
                     }
                   ],
                   "originPoint": {
@@ -2057,11 +3201,11 @@
                         "y": 0
                       },
                       {
-                        "x": 217.5,
+                        "x": 236,
                         "y": 0
                       },
                       {
-                        "x": 217.5,
+                        "x": 236,
                         "y": 116
                       },
                       {
@@ -2073,12 +3217,12 @@
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets\\fish\\Fish\\bassmove8.png",
+                  "image": "assets\\fish\\Tuna\\bassmove8.png",
                   "points": [
                     {
                       "name": "eat",
-                      "x": 10,
-                      "y": 70
+                      "x": 15,
+                      "y": 65
                     }
                   ],
                   "originPoint": {
@@ -2099,11 +3243,11 @@
                         "y": 0
                       },
                       {
-                        "x": 217.5,
+                        "x": 236,
                         "y": 0
                       },
                       {
-                        "x": 217.5,
+                        "x": 236,
                         "y": 116
                       },
                       {
@@ -2115,12 +3259,12 @@
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets\\fish\\Fish\\bassmove9.png",
+                  "image": "assets\\fish\\Tuna\\bassmove9.png",
                   "points": [
                     {
                       "name": "eat",
-                      "x": 10,
-                      "y": 70
+                      "x": 15,
+                      "y": 65
                     }
                   ],
                   "originPoint": {
@@ -2141,11 +3285,11 @@
                         "y": 0
                       },
                       {
-                        "x": 217.5,
+                        "x": 236,
                         "y": 0
                       },
                       {
-                        "x": 217.5,
+                        "x": 236,
                         "y": 116
                       },
                       {
@@ -2157,12 +3301,12 @@
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets\\fish\\Fish\\bassmove10.png",
+                  "image": "assets\\fish\\Tuna\\bassmove10.png",
                   "points": [
                     {
                       "name": "eat",
-                      "x": 10,
-                      "y": 70
+                      "x": 15,
+                      "y": 65
                     }
                   ],
                   "originPoint": {
@@ -2183,11 +3327,11 @@
                         "y": 0
                       },
                       {
-                        "x": 217.5,
+                        "x": 236,
                         "y": 0
                       },
                       {
-                        "x": 217.5,
+                        "x": 236,
                         "y": 116
                       },
                       {
@@ -2199,12 +3343,12 @@
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets\\fish\\Fish\\bassmove11.png",
+                  "image": "assets\\fish\\Tuna\\bassmove11.png",
                   "points": [
                     {
                       "name": "eat",
-                      "x": 10,
-                      "y": 70
+                      "x": 15,
+                      "y": 65
                     }
                   ],
                   "originPoint": {
@@ -2225,11 +3369,11 @@
                         "y": 0
                       },
                       {
-                        "x": 217.5,
+                        "x": 236,
                         "y": 0
                       },
                       {
-                        "x": 217.5,
+                        "x": 236,
                         "y": 116
                       },
                       {
@@ -2241,12 +3385,12 @@
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets\\fish\\Fish\\bassmove12.png",
+                  "image": "assets\\fish\\Tuna\\bassmove12.png",
                   "points": [
                     {
                       "name": "eat",
-                      "x": 10,
-                      "y": 70
+                      "x": 15,
+                      "y": 65
                     }
                   ],
                   "originPoint": {
@@ -2267,11 +3411,11 @@
                         "y": 0
                       },
                       {
-                        "x": 217.5,
+                        "x": 236,
                         "y": 0
                       },
                       {
-                        "x": 217.5,
+                        "x": 236,
                         "y": 116
                       },
                       {
@@ -2283,12 +3427,12 @@
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets\\fish\\Fish\\bassmove13.png",
+                  "image": "assets\\fish\\Tuna\\bassmove13.png",
                   "points": [
                     {
                       "name": "eat",
-                      "x": 10,
-                      "y": 70
+                      "x": 15,
+                      "y": 65
                     }
                   ],
                   "originPoint": {
@@ -2309,11 +3453,11 @@
                         "y": 0
                       },
                       {
-                        "x": 217.5,
+                        "x": 236,
                         "y": 0
                       },
                       {
-                        "x": 217.5,
+                        "x": 236,
                         "y": 116
                       },
                       {
@@ -2325,12 +3469,12 @@
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets\\fish\\Fish\\bassmove14.png",
+                  "image": "assets\\fish\\Tuna\\bassmove14.png",
                   "points": [
                     {
                       "name": "eat",
-                      "x": 10,
-                      "y": 70
+                      "x": 15,
+                      "y": 65
                     }
                   ],
                   "originPoint": {
@@ -2351,11 +3495,11 @@
                         "y": 0
                       },
                       {
-                        "x": 217.5,
+                        "x": 236,
                         "y": 0
                       },
                       {
-                        "x": 217.5,
+                        "x": 236,
                         "y": 116
                       },
                       {
@@ -2367,12 +3511,12 @@
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets\\fish\\Fish\\bassmove15.png",
+                  "image": "assets\\fish\\Tuna\\bassmove15.png",
                   "points": [
                     {
                       "name": "eat",
-                      "x": 10,
-                      "y": 70
+                      "x": 15,
+                      "y": 65
                     }
                   ],
                   "originPoint": {
@@ -2393,11 +3537,11 @@
                         "y": 0
                       },
                       {
-                        "x": 217.5,
+                        "x": 236,
                         "y": 0
                       },
                       {
-                        "x": 217.5,
+                        "x": 236,
                         "y": 116
                       },
                       {
@@ -2421,7 +3565,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets\\fish\\Fish\\basseat1.png",
+                  "image": "assets\\fish\\Tuna\\basseat1.png",
                   "points": [
                     {
                       "name": "eat",
@@ -2447,11 +3591,11 @@
                         "y": 0
                       },
                       {
-                        "x": 217.5,
+                        "x": 236,
                         "y": 0
                       },
                       {
-                        "x": 217.5,
+                        "x": 236,
                         "y": 116
                       },
                       {
@@ -2463,7 +3607,7 @@
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets\\fish\\Fish\\basseat2.png",
+                  "image": "assets\\fish\\Tuna\\basseat2.png",
                   "points": [
                     {
                       "name": "eat",
@@ -2489,11 +3633,11 @@
                         "y": 0
                       },
                       {
-                        "x": 217.5,
+                        "x": 236,
                         "y": 0
                       },
                       {
-                        "x": 217.5,
+                        "x": 236,
                         "y": 116
                       },
                       {
@@ -2505,7 +3649,7 @@
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets\\fish\\Fish\\basseat3.png",
+                  "image": "assets\\fish\\Tuna\\basseat3.png",
                   "points": [
                     {
                       "name": "eat",
@@ -2531,11 +3675,11 @@
                         "y": 0
                       },
                       {
-                        "x": 217.5,
+                        "x": 236,
                         "y": 0
                       },
                       {
-                        "x": 217.5,
+                        "x": 236,
                         "y": 116
                       },
                       {
@@ -2547,7 +3691,7 @@
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets\\fish\\Fish\\basseat4.png",
+                  "image": "assets\\fish\\Tuna\\basseat4.png",
                   "points": [
                     {
                       "name": "eat",
@@ -2573,11 +3717,11 @@
                         "y": 0
                       },
                       {
-                        "x": 217.5,
+                        "x": 236,
                         "y": 0
                       },
                       {
-                        "x": 217.5,
+                        "x": 236,
                         "y": 116
                       },
                       {
@@ -2589,7 +3733,7 @@
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets\\fish\\Fish\\basseat5.png",
+                  "image": "assets\\fish\\Tuna\\basseat5.png",
                   "points": [
                     {
                       "name": "eat",
@@ -2615,11 +3759,11 @@
                         "y": 0
                       },
                       {
-                        "x": 217.5,
+                        "x": 236,
                         "y": 0
                       },
                       {
-                        "x": 217.5,
+                        "x": 236,
                         "y": 116
                       },
                       {
@@ -2631,7 +3775,7 @@
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets\\fish\\Fish\\basseat6.png",
+                  "image": "assets\\fish\\Tuna\\basseat6.png",
                   "points": [
                     {
                       "name": "eat",
@@ -2657,11 +3801,11 @@
                         "y": 0
                       },
                       {
-                        "x": 217.5,
+                        "x": 236,
                         "y": 0
                       },
                       {
-                        "x": 217.5,
+                        "x": 236,
                         "y": 116
                       },
                       {
@@ -2723,7 +3867,11 @@
           "TintColor": "\"255;255;255\""
         },
         {
-          "acceleration": 400,
+          "name": "Pathfinding",
+          "type": "PathfindingBehavior::PathfindingBehavior",
+          "acceleration": 500,
+          "maxSpeed": 500,
+          "rotateObject": false,
           "allowDiagonals": true,
           "angleOffset": 0,
           "angularMaxSpeed": 180,
@@ -2732,11 +3880,7 @@
           "extraBorder": 0,
           "gridOffsetX": 0,
           "gridOffsetY": 0,
-          "maxSpeed": 200,
-          "name": "Pathfinding",
-          "rotateObject": true,
-          "smoothingMaxCellGap": 1,
-          "type": "PathfindingBehavior::PathfindingBehavior"
+          "smoothingMaxCellGap": 1
         },
         {
           "name": "Sticker",
@@ -2985,6 +4129,1273 @@
           ]
         }
       ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": false,
+      "assetStoreId": "",
+      "name": "EnemyFish_5",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Pathfinding",
+          "type": "PathfindingBehavior::PathfindingBehavior",
+          "acceleration": 200,
+          "maxSpeed": 200,
+          "allowDiagonals": true,
+          "angleOffset": 0,
+          "angularMaxSpeed": 180,
+          "cellHeight": 20,
+          "cellWidth": 20,
+          "extraBorder": 0,
+          "gridOffsetX": 0,
+          "gridOffsetY": 0,
+          "rotateObject": false,
+          "smoothingMaxCellGap": 1
+        },
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ],
+      "animations": [
+        {
+          "name": "Idle",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.1,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\fish\\Shark\\sharkmove1.png",
+                  "points": [
+                    {
+                      "name": "eat",
+                      "x": 20,
+                      "y": 45
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 97,
+                    "y": 35
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                },
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\fish\\Shark\\sharkmove2.png",
+                  "points": [
+                    {
+                      "name": "eat",
+                      "x": 20,
+                      "y": 45
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 97,
+                    "y": 35
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                },
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\fish\\Shark\\sharkmove3.png",
+                  "points": [
+                    {
+                      "name": "eat",
+                      "x": 20,
+                      "y": 45
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 97,
+                    "y": 35
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                },
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\fish\\Shark\\sharkmove4.png",
+                  "points": [
+                    {
+                      "name": "eat",
+                      "x": 20,
+                      "y": 45
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 97,
+                    "y": 35
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                },
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\fish\\Shark\\sharkmove5.png",
+                  "points": [
+                    {
+                      "name": "eat",
+                      "x": 20,
+                      "y": 45
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 97,
+                    "y": 35
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                },
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\fish\\Shark\\sharkmove6.png",
+                  "points": [
+                    {
+                      "name": "eat",
+                      "x": 20,
+                      "y": 45
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 97,
+                    "y": 35
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Eating",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\fish\\Shark\\sharkeating2.png",
+                  "points": [
+                    {
+                      "name": "eat",
+                      "x": 20,
+                      "y": 45
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 97,
+                    "y": 35
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                },
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\fish\\Shark\\sharkeating3.png",
+                  "points": [
+                    {
+                      "name": "eat",
+                      "x": 20,
+                      "y": 45
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 97,
+                    "y": 35
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": false,
+      "assetStoreId": "",
+      "name": "EnemyFish_4",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Pathfinding",
+          "type": "PathfindingBehavior::PathfindingBehavior",
+          "acceleration": 200,
+          "allowDiagonals": true,
+          "angleOffset": 0,
+          "angularMaxSpeed": 180,
+          "cellHeight": 20,
+          "cellWidth": 20,
+          "extraBorder": 0,
+          "gridOffsetX": 0,
+          "gridOffsetY": 0,
+          "maxSpeed": 200,
+          "rotateObject": false,
+          "smoothingMaxCellGap": 1
+        },
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ],
+      "animations": [
+        {
+          "name": "Idle",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\fish\\Swordfish\\sfmove15.png",
+                  "points": [
+                    {
+                      "name": "sword",
+                      "x": 40,
+                      "y": 92
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 125,
+                    "y": 87.5
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 236,
+                        "y": 0
+                      },
+                      {
+                        "x": 236,
+                        "y": 116
+                      },
+                      {
+                        "x": 0,
+                        "y": 116
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\fish\\Swordfish\\sfmove14.png",
+                  "points": [
+                    {
+                      "name": "sword",
+                      "x": 40,
+                      "y": 92
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 125,
+                    "y": 87.5
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 236,
+                        "y": 0
+                      },
+                      {
+                        "x": 236,
+                        "y": 116
+                      },
+                      {
+                        "x": 0,
+                        "y": 116
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\fish\\Swordfish\\sfmove13.png",
+                  "points": [
+                    {
+                      "name": "sword",
+                      "x": 40,
+                      "y": 92
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 125,
+                    "y": 87.5
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 236,
+                        "y": 0
+                      },
+                      {
+                        "x": 236,
+                        "y": 116
+                      },
+                      {
+                        "x": 0,
+                        "y": 116
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\fish\\Swordfish\\sfmove12.png",
+                  "points": [
+                    {
+                      "name": "sword",
+                      "x": 40,
+                      "y": 92
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 125,
+                    "y": 87.5
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 236,
+                        "y": 0
+                      },
+                      {
+                        "x": 236,
+                        "y": 116
+                      },
+                      {
+                        "x": 0,
+                        "y": 116
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\fish\\Swordfish\\sfmove11.png",
+                  "points": [
+                    {
+                      "name": "sword",
+                      "x": 40,
+                      "y": 92
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 125,
+                    "y": 87.5
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 236,
+                        "y": 0
+                      },
+                      {
+                        "x": 236,
+                        "y": 116
+                      },
+                      {
+                        "x": 0,
+                        "y": 116
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\fish\\Swordfish\\sfmove10.png",
+                  "points": [
+                    {
+                      "name": "sword",
+                      "x": 40,
+                      "y": 92
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 125,
+                    "y": 87.5
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 236,
+                        "y": 0
+                      },
+                      {
+                        "x": 236,
+                        "y": 116
+                      },
+                      {
+                        "x": 0,
+                        "y": 116
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\fish\\Swordfish\\sfmove9.png",
+                  "points": [
+                    {
+                      "name": "sword",
+                      "x": 40,
+                      "y": 92
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 125,
+                    "y": 87.5
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 236,
+                        "y": 0
+                      },
+                      {
+                        "x": 236,
+                        "y": 116
+                      },
+                      {
+                        "x": 0,
+                        "y": 116
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\fish\\Swordfish\\sfmove8.png",
+                  "points": [
+                    {
+                      "name": "sword",
+                      "x": 40,
+                      "y": 92
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 125,
+                    "y": 87.5
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 236,
+                        "y": 0
+                      },
+                      {
+                        "x": 236,
+                        "y": 116
+                      },
+                      {
+                        "x": 0,
+                        "y": 116
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\fish\\Swordfish\\sfmove7.png",
+                  "points": [
+                    {
+                      "name": "sword",
+                      "x": 40,
+                      "y": 92
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 125,
+                    "y": 87.5
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 236,
+                        "y": 0
+                      },
+                      {
+                        "x": 236,
+                        "y": 116
+                      },
+                      {
+                        "x": 0,
+                        "y": 116
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\fish\\Swordfish\\sfmove6.png",
+                  "points": [
+                    {
+                      "name": "sword",
+                      "x": 40,
+                      "y": 92
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 125,
+                    "y": 87.5
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 236,
+                        "y": 0
+                      },
+                      {
+                        "x": 236,
+                        "y": 116
+                      },
+                      {
+                        "x": 0,
+                        "y": 116
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\fish\\Swordfish\\sfmove5.png",
+                  "points": [
+                    {
+                      "name": "sword",
+                      "x": 40,
+                      "y": 92
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 125,
+                    "y": 87.5
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 236,
+                        "y": 0
+                      },
+                      {
+                        "x": 236,
+                        "y": 116
+                      },
+                      {
+                        "x": 0,
+                        "y": 116
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\fish\\Swordfish\\sfmove4.png",
+                  "points": [
+                    {
+                      "name": "sword",
+                      "x": 40,
+                      "y": 92
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 125,
+                    "y": 87.5
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 236,
+                        "y": 0
+                      },
+                      {
+                        "x": 236,
+                        "y": 116
+                      },
+                      {
+                        "x": 0,
+                        "y": 116
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\fish\\Swordfish\\sfmove3.png",
+                  "points": [
+                    {
+                      "name": "sword",
+                      "x": 40,
+                      "y": 92
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 125,
+                    "y": 87.5
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 236,
+                        "y": 0
+                      },
+                      {
+                        "x": 236,
+                        "y": 116
+                      },
+                      {
+                        "x": 0,
+                        "y": 116
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\fish\\Swordfish\\sfmove2.png",
+                  "points": [
+                    {
+                      "name": "sword",
+                      "x": 40,
+                      "y": 92
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 125,
+                    "y": 87.5
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 236,
+                        "y": 0
+                      },
+                      {
+                        "x": 236,
+                        "y": 116
+                      },
+                      {
+                        "x": 0,
+                        "y": 116
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\fish\\Swordfish\\sfmove1.png",
+                  "points": [
+                    {
+                      "name": "sword",
+                      "x": 40,
+                      "y": 92
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 125,
+                    "y": 87.5
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 236,
+                        "y": 0
+                      },
+                      {
+                        "x": 236,
+                        "y": 116
+                      },
+                      {
+                        "x": 0,
+                        "y": 116
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": false,
+      "assetStoreId": "d3c7e3d0eed042c9ebcde2ef04b35e43001e65313f12a62e5549265b96585ffb",
+      "name": "Player_Fish_Dead",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [
+        {
+          "effectType": "BlackAndWhite",
+          "name": "Effect",
+          "doubleParameters": {
+            "opacity": 1
+          },
+          "stringParameters": {},
+          "booleanParameters": {}
+        }
+      ],
+      "behaviors": [
+        {
+          "name": "Sticker",
+          "type": "Sticker::Sticker",
+          "OnlyFollowPosition": false,
+          "IsDestroyedWithParent": true
+        }
+      ],
+      "animations": [
+        {
+          "name": "idle",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.025,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\fish\\Piranta\\prn6.png",
+                  "points": [
+                    {
+                      "name": "Mouth",
+                      "x": 270,
+                      "y": 200
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 160,
+                    "y": 160
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 240.5,
+                        "y": 227
+                      },
+                      {
+                        "x": 242,
+                        "y": 173
+                      },
+                      {
+                        "x": 292.5,
+                        "y": 173.5
+                      },
+                      {
+                        "x": 290,
+                        "y": 227
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "eat",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\fish\\Piranta\\prn1.png",
+                  "points": [
+                    {
+                      "name": "Mouth",
+                      "x": 270,
+                      "y": 200
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 160,
+                    "y": 160
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 240.5,
+                        "y": 227
+                      },
+                      {
+                        "x": 242,
+                        "y": 173
+                      },
+                      {
+                        "x": 292.5,
+                        "y": 173.5
+                      },
+                      {
+                        "x": 290,
+                        "y": 227
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\fish\\Piranta\\prn2.png",
+                  "points": [
+                    {
+                      "name": "Mouth",
+                      "x": 270,
+                      "y": 200
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 160,
+                    "y": 160
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 240.5,
+                        "y": 227
+                      },
+                      {
+                        "x": 242,
+                        "y": 173
+                      },
+                      {
+                        "x": 292.5,
+                        "y": 173.5
+                      },
+                      {
+                        "x": 290,
+                        "y": 227
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\fish\\Piranta\\prn3.png",
+                  "points": [
+                    {
+                      "name": "Mouth",
+                      "x": 270,
+                      "y": 200
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 160,
+                    "y": 160
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 240.5,
+                        "y": 227
+                      },
+                      {
+                        "x": 242,
+                        "y": 173
+                      },
+                      {
+                        "x": 292.5,
+                        "y": 173.5
+                      },
+                      {
+                        "x": 290,
+                        "y": 227
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\fish\\Piranta\\prn5.png",
+                  "points": [
+                    {
+                      "name": "Mouth",
+                      "x": 270,
+                      "y": 200
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 160,
+                    "y": 160
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 240.5,
+                        "y": 227
+                      },
+                      {
+                        "x": 242,
+                        "y": 173
+                      },
+                      {
+                        "x": 292.5,
+                        "y": 173.5
+                      },
+                      {
+                        "x": 290,
+                        "y": 227
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetStoreId": "6a16d25e5a4b7e16b72187c4cab1164e2e8fba46d78b9af0132f10301b4224e9",
+      "name": "FillBar2",
+      "type": "PanelSpriteContinuousBar::PanelSpriteContinuousBar",
+      "variant": "",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "MaxValue": 1000,
+        "InitialValue": 0,
+        "BarLeftPadding": 9,
+        "BarRightPadding": 9,
+        "BarBottomPadding": 3,
+        "BarTopPadding": 3,
+        "EasingDuration": 0.25,
+        "PreviousHighValueDuration": 0,
+        "ShowLabel": false
+      },
+      "childrenContent": {
+        "Background": {
+          "bottomMargin": 6,
+          "height": 15,
+          "leftMargin": 11,
+          "rightMargin": 11,
+          "texture": "Copper Bar Border.png",
+          "tiled": false,
+          "topMargin": 6,
+          "width": 96
+        },
+        "Buffer": {
+          "bottomMargin": 0,
+          "height": 8,
+          "leftMargin": 0,
+          "rightMargin": 0,
+          "texture": "Framed Pixel Red Fill Bar.png",
+          "tiled": false,
+          "topMargin": 0,
+          "width": 32
+        },
+        "FillBar": {
+          "bottomMargin": 3,
+          "height": 8,
+          "leftMargin": 4,
+          "rightMargin": 4,
+          "texture": "Framed Pixel Red Fill Bar.png",
+          "tiled": false,
+          "topMargin": 3,
+          "width": 32
+        },
+        "Label": {
+          "bold": false,
+          "italic": false,
+          "smoothed": true,
+          "underlined": false,
+          "string": "8 / 16",
+          "font": "",
+          "textAlignment": "center",
+          "characterSize": 8,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "8 / 16",
+            "font": "",
+            "textAlignment": "center",
+            "verticalTextAlignment": "top",
+            "characterSize": 8,
+            "color": "255;255;255"
+          }
+        }
+      }
     }
   ],
   "objectsFolderStructure": {
@@ -2997,10 +5408,22 @@
         "objectName": "Player_FishClone"
       },
       {
+        "objectName": "Player_Fish_Dead"
+      },
+      {
         "objectName": "EnemyFish_1"
       },
       {
         "objectName": "EnemyFish_2"
+      },
+      {
+        "objectName": "EnemyFish_3"
+      },
+      {
+        "objectName": "EnemyFish_4"
+      },
+      {
+        "objectName": "EnemyFish_5"
       },
       {
         "objectName": "ScoreEarned_Text"
@@ -3009,7 +5432,7 @@
         "objectName": "FillBar"
       },
       {
-        "objectName": "EnemyFish_3"
+        "objectName": "FillBar2"
       }
     ]
   },
@@ -3025,6 +5448,12 @@
         },
         {
           "name": "EnemyFish_3"
+        },
+        {
+          "name": "EnemyFish_5"
+        },
+        {
+          "name": "EnemyFish_4"
         }
       ]
     }
@@ -3049,11 +5478,19 @@
   "layouts": [
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/layouts/game-scene"
+      "referenceTo": "/layouts/level-one"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/level-three"
     },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/layouts/level-boss"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/main-menu"
     }
   ],
   "externalEvents": [],
@@ -3109,6 +5546,18 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/eventsFunctionsExtensions/shakeobject"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/camerashake"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/buttonstates"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/panelspriteslider"
     }
   ],
   "externalLayouts": []
